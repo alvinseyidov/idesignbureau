@@ -30,11 +30,12 @@ def index(request):
         print("hey hey---------------------------------------------------------------------------------------------------------------1")
         n = 0
         name = request.POST['name']
+        catt = request.POST['cat']
         for image in images:
             print("hey hey------------------------------------------------------------------------------------------------------------")
             n = n + 1
             nm = name + " " + str(n)
-            sub = SubCategory.objects.get(pk=5)
+            sub = SubCategory.objects.get(pk=int(catt))
             category = Category.objects.get(pk=1)
             product = Product.objects.create(main_category=category,price=30,sub_category=sub,name=nm)
             image = ProductImage.objects.create(image = image, product=product)
