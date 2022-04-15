@@ -517,15 +517,7 @@ figure.effect-apollo:hover figcaption::before {
                     
                     <div class="block-product">
                         <div class="title-block">{% trans 'Featured products' %}</div>
-        <form action="" method="POST" enctype="multipart/form-data" >
-                            {% csrf_token %}
-                            <input type="file" multiple name="images"/>
-                            <input type="text"  name="name"/>
-                            <input type="text"  name="cat"/>
-<input type="text" name="tags" placeholder="tags"/>
-
-                            <button type="submit">Yukle</button>
-                        </form>                
+                      
                         <div class="catalog grid new-collection row without-mebel">
 						
 						{% for p in products %}
