@@ -1,0 +1,629 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta name="nameserver" content="LIVE">
+    <meta name="description" content="Наша творческая студия предлагает недорого купить фотообои на стену для дома и офиса. Помощь дизайнера в выборе изображения, печать без предоплаты, производство 1 день, доставка, скидки!">
+    <meta name="Keywords" content="фотообои на стену Москва купить недорого цена заказ доставка интернет магазин">
+    <title>iDesign Bureau</title>
+	
+
+
+<!-- assets/template/js/fancybox/jquery.fancybox.pack.js, assets/template/js/fancybox/jquery.fancybox.css,-->
+<!-- assets/template/libs/fancybox/dist/jquery.fancybox.min.js, assets/template/libs/fancybox/dist/jquery.fancybox.css,-->
+
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <meta name='yandex-verification' content='58951250a690fe6d' />
+    <meta name="google-site-verification" content="LIT4t_3gktWJVrpTpFTRRkrApFWZkzkEmPTEFmjEQkQ" />
+    <meta name='yandex-verification' content='729b52e5c3bcb68d' />
+    <meta name="yandex-verification" content="58951250a690fe6d" />
+    <meta name="cmsmagazine" content="092f0df6e32ac917a7d298c4265042e4" />
+    <meta name="yandex-verification" content="7f935cbb666e2ee4" />
+    
+    <meta name="yandex-verification" content="c7ac87cea76f8192" />
+    
+    <script src="//code-eu1.jivosite.com/widget/vprirZRm5q" async></script>
+    
+ 
+    
+    <link rel="stylesheet" href="{% static 'css/main.min.css'%}" type="text/css" />
+    
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+ 
+    
+    
+      <style>
+	@media only screen and (max-width: 600px) {
+ .logo {
+    width: 41px !important;
+}
+.footerlogo {
+    width: 100px !important;
+    margin: 3px 0 -40px -17px !important;
+
+}
+}	
+	
+	</style>
+
+<meta name="msfavorites:version" content="3.0.5-beta">
+<meta name="msfavorites:ctx" content="web">
+<style>
+
+.block-process-landing .wrrp {
+    background: url(/static/images/path.png) no-repeat center !important;
+    height: 412px;
+    margin-top: 50px;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="top-promo" style="background-image: url({% static 'images/topbannerr.png'%}	)"></div>
+
+    <div class="top-line clearfix">
+        <div class="container">
+            <a class="item icon-1 last" href="{% url 'contact'%}">{% trans 'Contact' %}</a>
+            <a class="item icon-2" href="https://g.page/fotooboibaku?share" target="_blank">{% trans 'Stores' %}</a>
+            <a class="item icon-3" href="{% url 'about'%}">{% trans 'Shipping and Payment' %}</a>
+            <!-- <a class="item icon-4" href="/send-reviews">Оставить отзыв</a> -->
+            <a class="item" href="{% url 'about'%}" >{% trans 'About' %}</a>
+			
+			<table style=" float: right; margin: 8px 0 0 0; ">
+				<tr>
+				<td style=" padding: 0 3px 0 3px; "><a href="/az"><img src="{% static 'images/az.png'%}"/></a></td>
+				<td style=" padding: 0 3px 0 3px; "><a href="/ru"><img src="{% static 'images/ru.png'%}"/></a></td>
+				<td style=" padding: 0 3px 0 3px; "><a href="/en"><img src="{% static 'images/en.png'%}"/></a></td>
+				</tr>
+				</table>
+        </div>
+    </div>
+    
+	<div class="container top clearfix">
+		<div class="logo left">
+			<a href="{% url 'index'%}">
+			    <img src="{% static 'images/logo.png'%}" style="width:70px;margin-top:-10px;" alt="Photostena - крупнейший интернет-магазин фотообоев, картин и фресок" title="Photostena - крупнейший интернет-магазин фотообоев, картин и фресок" class="footerlogo"/>
+			</a>
+		</div>
+		
+		<div class="center clearfix">
+    		<div class="item-col col-1">
+    		    
+    		    <div class="col-info">
+        		    <div href="#popup_callback" class="link ">
+        		         <a href="{% url 'contact' %}"><span>{% trans 'Let us call you' %}</span></a>
+                    </div>
+        		    <span>{% trans 'Enter you phone number' %}</span>
+    			</div>
+    		</div>
+    		
+    		<div class="item-col col-2">
+    		    <div class="col-info">
+    		        <span>{% trans 'Contact' %}</span><br>
+        		    
+        		    <span class="phone_brand num-city2">+994 556777410</span><br>
+        		    <span> {% trans 'Work hours' %} 08.00 - 21.00 </span><br>
+    			</div>
+    		</div> 
+    		
+    		<div class="item-col col-3">
+    		    <div class="col-info">
+        		    <div class=""><span class="" style=" color: #2fa8dd; font-size: 22px; ">{% trans 'Baku' %}</span></div>
+			        <div class="cityheader"></div> 
+			        <a class=" headermap "  href="https://g.page/fotooboibaku?share" target="_blank"><span>{% trans 'See on map' %}</span></a>
+    			</div>
+    		</div>
+    		
+		</div>
+	</div>
+
+    <nav class="top_menu_1">
+	    <div class="container">
+    		<ul class="clearfix">
+			
+<li class="item_menu" style="    width: 185px !important;">
+        		    <a class="main-link" href="{% url 'fotooboy' %}" style=" font-family: system-ui; font-weight: 600;     padding: 0 11px 2px 51px;">
+					<span class="icon oboi"></span>{% trans 'FOTOOBOY VƏ FRESKA'%}</a>
+                    
+        		</li>
+				<li class="item_menu " style="    width: 185px !important;">
+        		    <a class="main-link" href="{% url 'tablo' %}" style=" font-family: system-ui; font-weight: 600;     padding: 0 11px 2px 51px;">
+					<span class="icon freski"></span>{% trans 'TABLO VƏ ÇƏRÇİVƏLƏR'%}</a>
+                    
+        		</li>
+				<li class="item_menu " style="    width: 185px !important;">
+        		    <a class="main-link" href="{% url 'selftablo' %}" style=" font-family: system-ui; font-weight: 600;     padding: 0 11px 2px 51px;">
+					<span class="icon poster"></span>{% trans 'ÖZ ŞƏKİLİNİZ İLƏ TABLO'%}</a>
+                    
+        		</li>
+				<li class="item_menu " style="    width: 185px !important;">
+        		    <a class="main-link" href="{% url 'skinali' %}" style=" font-family: system-ui; font-weight: 600;     padding: 0 11px 2px 51px;">
+					<span class="icon photo"></span>{% trans 'SKİNALİ'%}</a>
+                    
+        		</li>
+				<li class="item_menu " style="    width: 185px !important;">
+        		    <a class="main-link" href="{% url 'evdekor' %}" style=" font-family: system-ui; font-weight: 600;     padding: 0 11px 2px 51px;">
+					<span class="icon curtains"></span>{% trans 'EV ÜÇÜN DEKOR'%}</a>
+                    
+        		</li>
+				<li class="item_menu " style="    width: 185px !important;">
+        		    <a class="main-link" href="{% url 'exclusive' %}" style=" font-family: system-ui; font-weight: 600;     padding: 0 11px 2px 51px;">
+					<span class="icon pillow"></span>{% trans 'EXCLUSİVE ƏL İŞLƏRİ'%}</a>
+                    
+        		</li>
+        		
+        		
+    		</ul>
+		</div>
+		<div class="line-menu"></div>
+	</nav>
+	 <br>
+</header>
+
+<div class="container search-container open" id="search-container">
+    
+    
+        
+         
+            <div class="wrrp-search-box full-width">
+                <form action="{% url 'search' %}" method="get" class="search-box clearfix" id="searchSiteBox">
+                    
+                    <div class="change-type-product">
+                        <div class="btn-select orange">
+                              <div class="type-selected"><span>{% trans 'Search' %}</span></div>    
+                        </div>
+                        
+                      
+                    </div>
+                    
+                    <input type="text" name="q" placeholder="{% trans 'Product Name' %} ...." value=""/>
+                    <button type="submit" class="btn"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#icon-search"></use></svg>{% trans 'Search' %}</button>
+                </form>
+            </div>
+    
+</div>
+<header class="header-mobile">
+	<nav class="cd-main-nav-wrapper">
+		<ul class="cd-main-nav">
+		    <li>
+		        <div class="social">
+        	        <br> </div>
+		    </li>
+		    
+		    <li class="category"><a href="{% url 'index'%}"><span class="icon main"></span>{% trans 'Home' %}</a></li>
+		   
+		   <li class="category"><a href="{% url 'fotooboy'%}" class="dropdown" style=" font-size: 16px; ">
+				 <span class="icon oboi"></span>{% trans 'FOTOOBOY VƏ FRESKA'%}</a>
+		    </li>
+			<li class="category"><a href="{% url 'tablo'%}" class="dropdown" style=" font-size: 16px; ">
+				<span class="icon freski"></span>{% trans 'TABLO VƏ ÇƏRÇİVƏLƏR'%}</a>
+		    </li>
+			<li class="category"><a href="{% url 'selftablo'%}" class="dropdown" style=" font-size: 16px; ">
+				<span class="icon poster"></span>{% trans 'ÖZ ŞƏKİLİNİZ İLƏ TABLO'%}</a>
+		    </li>
+			<li class="category"><a href="{% url 'skinali'%}" class="dropdown" style=" font-size: 16px; ">
+				<span class="icon photo"></span>{% trans 'SKİNALİ'%}</a>
+		    </li>
+			<li class="category"><a href="{% url 'evdekor'%}" class="dropdown" style=" font-size: 16px; ">
+				<span class="icon curtains"></span>{% trans 'EV ÜÇÜN DEKOR'%}</a>
+		    </li>
+			<li class="category"><a href="{% url 'exclusive'%}" class="dropdown" style=" font-size: 16px; ">
+				<span class="icon pillow"></span>{% trans 'EXCLUSİVE ƏL İŞLƏRİ'%}</a>
+		    </li>
+			<table style=" float: right; margin: 8px 0 0 0; ">
+				<tr>
+				<td style=" padding: 0 3px 0 3px; "><a href="/az" style=" text-align: center; margin: 0 9px 0 10px; padding: 0 19px 0 22px; "><img src="{% static 'images/az.png'%}"/></a></td>
+				<td style=" padding: 0 3px 0 3px; "><a href="/ru" style=" text-align: center; margin: 0 9px 0 10px; padding: 0 19px 0 22px; "><img src="{% static 'images/ru.png'%}"/></a></td>
+				<td style=" padding: 0 3px 0 3px; "><a href="/en" style=" text-align: center; margin: 0 9px 0 10px; padding: 0 19px 0 22px; "><img src="{% static 'images/en.png'%}"/></a></td>
+				</tr>
+				</table>
+		  
+		</ul> 
+	</nav>
+	
+	<a href="#0" class="cd-nav-trigger"><span></span></a>
+	<!-- <a class="btn-fast btn-mobile-map gl-current-select change_city"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#icon-map"></use></svg></a> -->
+	<a class="btn-fast favorite" href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg></a>
+	<a class="btn-fast btn-mobile-search"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#icon-search"></use></svg></a>
+	<a href="/" class="logo"><img src="{% static 'images/logo.png'%}" alt=""></a>
+	 
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            
+			
+			
+			
+			
+			
+			
+			
+			
+		 <div class="container">
+    	<div class="breadcrumbs">
+    <ul itemscope itemtype="http://schema.org/BreadcrumbList"><li><a href="/">{% trans 'Home' %}</a></li><span> /</span><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{% trans 'About' %}</span>
+    <meta itemprop="position" content="3" />
+</li></ul>
+</div>
+    </div>
+	<div class="container">
+		<div class="page-title"><h1>{% trans 'About Us' %}</h1></div>
+		
+		<div class="content-block">
+		    <p><h3 style="text-align: center;">3D Oboy İstehsalı Azərbaycanda !</h3></p>
+
+<h2>Ünvanımız</h2>
+<p>Фотообои оплачиваются на сайте или при получении курьеру или в пункте самовывоза СДЭК</p>
+
+<h2>Xidmətlərimiz</h2>
+<p>
+- Azərbaycanda №1 3D Fotooboy Istehsalçısı<br>
+- Ən böyük və keyfiyyətli şəkil seçimi<br>
+- İstədəyiniz ölçüdə<br>
+- Dizayn dəstəyi<br>
+- Professional Usta xidmətlərı<br>
+- Korporativ {% trans 'Prices' %}<br>
+- Mükəmməl keyfiyyət və sürət<br>
+</p>
+
+<h2>11 il sizinle ❤️</h2>
+<p>
+
+
+•𝟑𝐃 𝐨𝐛𝐨𝐲(𝐜𝐚𝐥𝐚𝐪𝐬𝐢𝐳) <br>•𝐇𝐞𝐫 𝐨𝐥𝐜𝐮𝐝𝐞<br>
+•𝟗𝟎 𝐦𝐢𝐥𝐥𝐢𝐨𝐧 𝐬𝐡𝐞𝐤𝐢𝐥<br> •𝐃𝐢𝐳𝐚𝐲𝐧<br> •𝐔𝐬𝐭𝐚<br>
+•𝟑-𝟒 𝐠𝐮𝐧𝐞 𝐭𝐞𝐡𝐯𝐢𝐥<br> •𝐂𝐡𝐚𝐭𝐝𝐢𝐫𝐢𝐥𝐦𝐚<br>
+BirKart Kredit 6 ay 0% 😊
+
+</p>
+
+<h2>Əlaqə Məlumatları</h2>
+    <p>
+    - Email: info@idesignbureau.com<br />
+    - {% trans 'Phone ' %}: +994 556777410<br />
+    - {% trans 'Address' %}: Subhi Salayev kuc.102 az1022 Baku, Azerbaijan<br />
+    </p>
+    
+    <!--<h2>Cамовывоз временно не доступен. Только доставка до дома или до пункта выдачи заказов транспортной компании</h2>-->
+    
+    
+
+ 
+    
+</div>
+	
+ 
+		</div>
+            
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+        </div>
+    </div>
+
+    <div class="container">
+    
+        <!--div class="we_works row">
+            <div class="title-block">Наши работы</div>
+            <div class="items slider-work owl-carousel owl-theme">
+                
+            </div>
+        </div-->
+        
+        <section>
+            <div class="block-process-landing landing container">
+                <div class="title-block">{% trans 'Processes' %}</div>
+                <div class="wrrp clearfix">
+                    <div class="item-process item-1">
+                        <img src="{% static 'images/1.jpg'%}" alt="">
+                        <div class="text">{% trans 'Choose material and texture' %}</div>
+                    </div>
+                    <div class="item-process item-2">
+                        <img src="{% static 'images/4.jpg'%}" alt="">
+                        <div class="text">{% trans 'We print wallpapers with high quality' %}</div>
+                    </div>
+                    <div class="item-process item-3">
+                        <img src="{% static 'images/5.jpg'%}" alt="">
+                        <div class="text">{% trans 'We control every steps carefully' %}</div>
+                    </div>
+                    <div class="item-process item-4">
+                        <img src="{% static 'images/2.jpg'%}" alt="">
+                        <div class="text">{% trans 'We cut materials with professional aparats' %}</div>
+                    </div>
+                    <div class="item-process item-5">
+                        <img src="{% static 'images/3.jpg'%}" alt="">
+                        <div class="text">{% trans 'In the final we packaging orders and deliver to your address.' %}.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="block-partners">
+            <div class="title-block">{% trans 'Our Clients' %}</div>
+
+            <div class="slider-partners">
+			{% for i in clients %}
+			<div> <img src="{{i.image.url}}" alt=""> </div>
+			{% endfor %}
+               
+            </div>
+        </div>
+
+        <div style=" margin-top: 0; " class="block-seo">
+            
+        </div>
+        
+    </div>
+
+</main>
+
+
+<footer style=" margin-top: 64px; ">
+<div class="action-bnr-top">
+    <img src="upload/action/winter/17/Photostena_368х60.png" alt="" class="mobile">
+</div>
+
+
+	<div class="container">
+	    <div class="menu">
+	        <div class="item-menu">
+	            <div class="title">{% trans 'Our Catalog' %}</div>
+	            <ul>
+				<li><a href="{% url 'fotooboy' %}">FOTOOBOY VƏ FRESKA</a></li>
+					<li><a href="{% url 'tablo'%}">TABLO VƏ ÇƏRÇİVƏLƏR</a></li>
+            		<li><a href="{% url 'selftablo' %}">ÖZ ŞƏKİLİNİZ İLƏ TABLO</a></li>
+					<li><a href="{% url 'skinali' %}">SKİNALİ</a></li>
+					<li><a href="{% url 'evdekor' %}">EV ÜÇÜN DEKOR</a></li>
+					<li><a href="{% url 'exclusive' %}">EXCLUSİVE ƏL İŞLƏRİ</a></li>
+        		</ul>    
+	        </div>
+	        <div class="item-menu">
+	            <div class="title">{% trans 'Shotcuts' %}</div>
+	            <ul>
+	                <li><a href="{% url 'index'%}">{% trans 'Home' %}</a></li>
+	                <li><a href="{% url 'about'%}">{% trans 'About' %}</a></li>
+					<li><a href="https://g.page/fotooboibaku?share" target="_blank">{% trans 'Stores' %}</a></li>
+					<li><a href="{% url 'about'%}">{% trans 'Shipping' %}</a></li>
+					<li><a href="{% url 'about'%}">{% trans 'Prices' %}</a></li>
+					<li><a href="{% url 'contact'%}">{% trans 'Contact' %}</a></li>
+            		 
+            		
+        		</ul>    
+	        </div>
+	    </div>
+	    <div class="form-footer wrrp-form-ajax">
+	        
+		    <div class="item-menu" style=" text-align: center; ">
+	            <div class="title">{% trans 'Shotcuts' %}</div>
+	            <ul>
+	                <li><a href="{% url 'index'%}">{% trans 'Home' %}</a></li>
+	                <li><a href="{% url 'about'%}">{% trans 'About' %}</a></li>
+					<li><a href="https://g.page/fotooboibaku?share" target="_blank">{% trans 'Stores' %}</a></li>
+					<li><a href="{% url 'about'%}">{% trans 'Shipping' %}</a></li>
+					<li><a href="{% url 'about'%}">{% trans 'Prices' %}</a></li>
+					<li><a href="{% url 'contact'%}">{% trans 'Contact' %}</a></li>
+            		 
+            		
+        		</ul>    
+	        </div>
+            <div class="form-success">
+                <img src="/assets/template/images/tick.png" alt="">
+                <div class="title">Ваш заказ принят.</div>
+                <div class="description">Мы обязательно свяжемся с вами в самое ближайшее время, расскажем про материалы и пришлем макет на утверждение.</div> 
+                <div class="text">Обратный звонок заказывать уже не нужно.</div>
+            </div>
+		</div>
+		<div class="col1 right">
+			<img src="{% static 'images/logo.png'%}" alt="Photostena - крупнейший интернет-магазин фотообоев, картин и фресок" title="Photostena - крупнейший интернет-магазин фотообоев, картин и фресок" class="footerlogo" style=" width: 100px; margin: -14px 0 -50px 43px; "/>
+			 <div class="rating"><div class="rating__best" style=" background: url(/static/images/stars_vector.png) no-repeat; width: 130px; height: 35px; position: absolute; background-size: 130px 210px; ">
+        <div class="rating__current" data-id="1" style="display: block;width: 122.173px;background: url(/static/images/stars_vector.png) 0 -35px no-repeat;height: 35px;position: absolute;background-size: 130px 210px;"></div>
+        <div class="rating__star rating__star_5" data-title="5"></div>
+        <div class="rating__star rating__star_4" data-title="4"></div>
+        <div class="rating__star rating__star_3" data-title="3"></div>
+        <div class="rating__star rating__star_2" data-title="2"></div>
+        <div class="rating__star rating__star_1" data-title="1"></div>
+    </div>
+	
+</div>
+<div class="raiting-value">
+    Рейтинг: <span id="ratingValue" class="rating-value">4.7</span>/5 - <span id="ratingCount" class="rating-count">1653</span> голосов
+</div>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "Фотообои на стену",
+    "image": "#assets/template/images/logo.png"
+    ,"aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": "5",
+        "ratingValue": "4.7",
+        "ratingCount": "1634"
+    },"offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "290",
+        "highPrice": "900",
+        "priceCurrency": "RUB",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "http://schema.org/NewCondition"
+}}
+</script>
+			<p>{% trans 'No1 3D Photooboy manufacturer in Azerbaijan. Great quality and affordable prices.' %}</p>
+			<p>© 2010-2022 iDesign Bureau.{% trans 'All rights reserved' %}</p>
+		</div>
+		<div class="col2 right">
+		    
+			<div class="social">
+				{%for i in socials%}
+				<a href="{{i.url}}" target="_blank" style="background-image: url({{i.icon.url}})"></a>
+				{% endfor %}
+				
+			</div>
+			<a class="email" href="mailto:info@idesignbureau.com">info@idesignbureau.com</a><br>
+			<a>Subhi Salayev küç.102</a><br>
+			<a>+994 556777410</a>
+		</div>
+		
+		<div class="clear"></div>
+		<div class="footer-text">
+		    <p style=" margin-top: 89px; ">{% trans 'Foto divar kağızları, freskalar və kətan şəkilləri əldə etmək mümkündür! Aşağı qiymətlər və Azərbaycanın bütün şəhərlərinə çatdırılma: Bakı, Sumqayıt, Gəncə, Qəbələ, Şamaxı, Quba, Lənkaran, Astara, Qazax, Şuşa, Mingəçevir, İsmayıllı, Kürdəmir, Ucar, Balakən, Zaqatala' %}
+		   <br>
+            
+		</div>
+	</div>
+  
+
+</footer>
+
+<div class="btn-whatsapp">
+    <a href="https://wa.link/atc0qj" target="_blank">
+	<img style=" width: 51px; " src={% static 'images/whatsapp.png'%}>
+	</a>
+    <!-- <a href="viber://pa?chatURI=photostena_ru" target="_blank"><svg><use xlink:href="/assets/template/svg/sprite.svg#viber"></use></svg></a> -->
+</div>
+
+<div class="bottom__cookie-block">
+    <div class="container">
+    <div class="wrrp">
+    <p>Продолжая использовать сайт, вы соглашаетесь на сбор файлов cookie</p>
+    <a href="javascript:void(0);" class="btn btn-blue-2 ok">Ок</a>
+    </div>
+    </div>
+</div>
+
+<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="resource" data-msfavorites-animation style="display: none;">
+    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
+</div>
+<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="poster" data-msfavorites-animation style="display: none;">
+    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
+</div>
+<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="module" data-msfavorites-animation style="display: none;">
+    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
+</div>
+<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="curtains" data-msfavorites-animation style="display: none;">
+    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
+</div>
+<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="shower" data-msfavorites-animation style="display: none;">
+    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
+</div>
+<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="pillow" data-msfavorites-animation style="display: none;">
+    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
+</div>
+
+
+<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="/static/components/minifyx/cache/scripts_fb61d70ee4.min.js"></script>
+
+
+<!-- ROISTAT-->
+<!--script>
+(function(w, d, s, h, id) {
+    w.roistatProjectId = id; w.roistatHost = h;
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+    var js = d.createElement(s); js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+})(window, document, 'script', 'cloud.roistat.com', '2696');
+</script-->
+
+ <script>
+(function(w, d, s, h, id) {
+    w.roistatProjectId = id; w.roistatHost = h;
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+})(window, document, 'script', 'cloud.roistat.com', 'fe491518a326f075216a01e1d0d52928');
+</script>
+ <!--ROISTAT-->
+ 
+
+<!--BITRIX CHAT--> 
+<!--script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://crm.topzavod.ru/upload/crm/site_button/loader_2_15max1.js');
+</script-->
+<!--BITRIX CHAT-->
+
+ 
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75370028-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-75370028-1');
+</script>
+<!-- END site tag (gtag.js) - Google Analytics -->
+
+<!-- Begin LeadBack code {literal} -->
+<!--script>
+    var _emv = _emv || [];
+    _emv['campaign'] = 'f02b3153b7cd949403726f74';
+    _emv['lang'] = 'ru';
+
+    (function() {
+        var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+        em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+    })();
+</script-->
+<!-- End LeadBack code {/literal} -->
+
+
+
+
+
+<script src="/static/template/js/wazzap_roistat.js"></script>
+ 
+
+<script>
+// Слайдер на главной
+$('.main-slider').owlCarousel( {
+    items: 1, 
+    margin: 0,
+    loop: true,
+    nav: false, 
+    navText: false, 
+    dots: true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    animateOut: 'fadeOut',
+    smartSpeed:1000
+});
+
+/*$('.change-type-product .btn-select').click(function(){
+   $('.list-select-type-product').fadeIn(); 
+});*/
+
+</script>
+
+<script type="text/javascript" src="{% static 'js/default.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/default.js'%}"></script>
+</body>
+</html>

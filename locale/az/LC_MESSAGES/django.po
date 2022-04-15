@@ -1,0 +1,2117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-18 15:02+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\about.html:74 .\templates\about.html:110
+#: .\templates\about.html:370 .\templates\about.html:386
+#: .\templates\contact.html:74 .\templates\contact.html:110
+#: .\templates\contact.html:374 .\templates\contact.html:390
+#: .\templates\filter.html:74 .\templates\filter.html:110
+#: .\templates\filter.html:573 .\templates\filter.html:589
+#: .\templates\filterotaq.html:74 .\templates\filterotaq.html:110
+#: .\templates\filterotaq.html:573 .\templates\filterotaq.html:589
+#: .\templates\filterreng.html:74 .\templates\filterreng.html:110
+#: .\templates\filterreng.html:573 .\templates\filterreng.html:589
+#: .\templates\index.html:75 .\templates\index.html:111
+#: .\templates\index.html:658 .\templates\index.html:674
+#: .\templates\main_category.html:74 .\templates\main_category.html:110
+#: .\templates\main_category.html:663 .\templates\main_category.html:679
+#: .\templates\ordersuccess.html:74 .\templates\ordersuccess.html:110
+#: .\templates\ordersuccess.html:805 .\templates\ordersuccess.html:821
+#: .\templates\product.html:74 .\templates\product.html:110
+#: .\templates\product.html:736 .\templates\product.html:752
+#: .\templates\search.html:74 .\templates\search.html:110
+#: .\templates\search.html:573 .\templates\search.html:589
+#: .\templates\success.html:74 .\templates\success.html:110
+#: .\templates\success.html:335 .\templates\success.html:351
+msgid "Contact"
+msgstr "Əlaqə"
+
+#: .\templates\about.html:75 .\templates\about.html:367
+#: .\templates\about.html:383 .\templates\contact.html:75
+#: .\templates\contact.html:371 .\templates\contact.html:387
+#: .\templates\filter.html:75 .\templates\filter.html:570
+#: .\templates\filter.html:586 .\templates\filterotaq.html:75
+#: .\templates\filterotaq.html:570 .\templates\filterotaq.html:586
+#: .\templates\filterreng.html:75 .\templates\filterreng.html:570
+#: .\templates\filterreng.html:586 .\templates\index.html:76
+#: .\templates\index.html:655 .\templates\index.html:671
+#: .\templates\main_category.html:75 .\templates\main_category.html:660
+#: .\templates\main_category.html:676 .\templates\ordersuccess.html:75
+#: .\templates\ordersuccess.html:802 .\templates\ordersuccess.html:818
+#: .\templates\product.html:75 .\templates\product.html:733
+#: .\templates\product.html:749 .\templates\search.html:75
+#: .\templates\search.html:570 .\templates\search.html:586
+#: .\templates\success.html:75 .\templates\success.html:332
+#: .\templates\success.html:348
+msgid "Stores"
+msgstr "Mağazalar"
+
+#: .\templates\about.html:76 .\templates\contact.html:76
+#: .\templates\filter.html:76 .\templates\filterotaq.html:76
+#: .\templates\filterreng.html:76 .\templates\index.html:77
+#: .\templates\main_category.html:76 .\templates\ordersuccess.html:76
+#: .\templates\product.html:76 .\templates\search.html:76
+#: .\templates\success.html:76
+msgid "Shipping and Payment"
+msgstr "Çatdırılma"
+
+#: .\templates\about.html:78 .\templates\about.html:218
+#: .\templates\about.html:366 .\templates\about.html:382
+#: .\templates\contact.html:78 .\templates\contact.html:370
+#: .\templates\contact.html:386 .\templates\filter.html:78
+#: .\templates\filter.html:569 .\templates\filter.html:585
+#: .\templates\filterotaq.html:78 .\templates\filterotaq.html:569
+#: .\templates\filterotaq.html:585 .\templates\filterreng.html:78
+#: .\templates\filterreng.html:569 .\templates\filterreng.html:585
+#: .\templates\index.html:79 .\templates\index.html:654
+#: .\templates\index.html:670 .\templates\main_category.html:78
+#: .\templates\main_category.html:659 .\templates\main_category.html:675
+#: .\templates\ordersuccess.html:78 .\templates\ordersuccess.html:801
+#: .\templates\ordersuccess.html:817 .\templates\product.html:78
+#: .\templates\product.html:732 .\templates\product.html:748
+#: .\templates\search.html:78 .\templates\search.html:569
+#: .\templates\search.html:585 .\templates\success.html:78
+#: .\templates\success.html:331 .\templates\success.html:347
+msgid "About"
+msgstr "Haqqımızda"
+
+#: .\templates\about.html:102 .\templates\contact.html:102
+#: .\templates\filter.html:102 .\templates\filterotaq.html:102
+#: .\templates\filterreng.html:102 .\templates\index.html:103
+#: .\templates\main_category.html:102 .\templates\ordersuccess.html:102
+#: .\templates\product.html:102 .\templates\search.html:102
+#: .\templates\success.html:102
+msgid "Let us call you"
+msgstr "Biz sizə zəng edək"
+
+#: .\templates\about.html:104 .\templates\contact.html:104
+#: .\templates\filter.html:104 .\templates\filterotaq.html:104
+#: .\templates\filterreng.html:104 .\templates\index.html:105
+#: .\templates\main_category.html:104 .\templates\ordersuccess.html:104
+#: .\templates\product.html:104 .\templates\search.html:104
+#: .\templates\success.html:104
+msgid "Enter you phone number"
+msgstr "Telefon nömrənizi daxil edin."
+
+#: .\templates\about.html:113 .\templates\contact.html:113
+#: .\templates\contact.html:224 .\templates\filter.html:113
+#: .\templates\filterotaq.html:113 .\templates\filterreng.html:113
+#: .\templates\index.html:114 .\templates\main_category.html:113
+#: .\templates\ordersuccess.html:113 .\templates\product.html:113
+#: .\templates\search.html:113 .\templates\success.html:113
+msgid "Work hours"
+msgstr "İş saatları"
+
+#: .\templates\about.html:119 .\templates\contact.html:118
+#: .\templates\filter.html:118 .\templates\filterotaq.html:118
+#: .\templates\filterreng.html:118 .\templates\index.html:120
+#: .\templates\main_category.html:118 .\templates\ordersuccess.html:119
+#: .\templates\product.html:119 .\templates\search.html:118
+#: .\templates\success.html:119
+msgid "Baku"
+msgstr "Bakı"
+
+#: .\templates\about.html:121 .\templates\contact.html:120
+#: .\templates\filter.html:120 .\templates\filterotaq.html:120
+#: .\templates\filterreng.html:120 .\templates\index.html:122
+#: .\templates\main_category.html:120 .\templates\ordersuccess.html:121
+#: .\templates\product.html:121 .\templates\search.html:120
+#: .\templates\success.html:121
+msgid "See on map"
+msgstr "Xəritədə bax"
+
+#: .\templates\about.html:157 .\templates\about.html:164
+#: .\templates\contact.html:156 .\templates\contact.html:163
+#: .\templates\filter.html:156 .\templates\filter.html:163
+#: .\templates\filterotaq.html:156 .\templates\filterotaq.html:163
+#: .\templates\filterreng.html:156 .\templates\filterreng.html:163
+#: .\templates\index.html:160 .\templates\index.html:167
+#: .\templates\main_category.html:156 .\templates\main_category.html:163
+#: .\templates\ordersuccess.html:157 .\templates\ordersuccess.html:164
+#: .\templates\product.html:157 .\templates\product.html:164
+#: .\templates\search.html:156 .\templates\search.html:163
+#: .\templates\success.html:156 .\templates\success.html:163
+msgid "Search"
+msgstr "Axtar"
+
+#: .\templates\about.html:163 .\templates\contact.html:162
+#: .\templates\filter.html:162 .\templates\filterotaq.html:162
+#: .\templates\filterreng.html:162 .\templates\index.html:166
+#: .\templates\main_category.html:162 .\templates\ordersuccess.html:163
+#: .\templates\product.html:163 .\templates\search.html:162
+#: .\templates\success.html:162
+msgid "Product Name"
+msgstr "Məhsul Adı"
+
+#: .\templates\about.html:177 .\templates\about.html:217
+#: .\templates\about.html:365 .\templates\about.html:381
+#: .\templates\contact.html:178 .\templates\contact.html:369
+#: .\templates\contact.html:385 .\templates\filter.html:178
+#: .\templates\filter.html:568 .\templates\filter.html:584
+#: .\templates\filterotaq.html:178 .\templates\filterotaq.html:568
+#: .\templates\filterotaq.html:584 .\templates\filterreng.html:178
+#: .\templates\filterreng.html:568 .\templates\filterreng.html:584
+#: .\templates\index.html:183 .\templates\index.html:653
+#: .\templates\index.html:669 .\templates\main_category.html:177
+#: .\templates\main_category.html:658 .\templates\main_category.html:674
+#: .\templates\ordersuccess.html:179 .\templates\ordersuccess.html:215
+#: .\templates\ordersuccess.html:800 .\templates\ordersuccess.html:816
+#: .\templates\product.html:180 .\templates\product.html:216
+#: .\templates\product.html:731 .\templates\product.html:747
+#: .\templates\search.html:178 .\templates\search.html:568
+#: .\templates\search.html:584 .\templates\success.html:177
+#: .\templates\success.html:330 .\templates\success.html:346
+msgid "Home"
+msgstr "Ana Səhifə"
+
+#: .\templates\about.html:224
+#, fuzzy
+#| msgid "About"
+msgid "About Us"
+msgstr "Haqqımızda"
+
+#: .\templates\about.html:239 .\templates\about.html:369
+#: .\templates\about.html:385 .\templates\contact.html:268
+#: .\templates\contact.html:373 .\templates\contact.html:389
+#: .\templates\filter.html:572 .\templates\filter.html:588
+#: .\templates\filterotaq.html:572 .\templates\filterotaq.html:588
+#: .\templates\filterreng.html:572 .\templates\filterreng.html:588
+#: .\templates\index.html:657 .\templates\index.html:673
+#: .\templates\main_category.html:662 .\templates\main_category.html:678
+#: .\templates\ordersuccess.html:804 .\templates\ordersuccess.html:820
+#: .\templates\product.html:735 .\templates\product.html:751
+#: .\templates\search.html:572 .\templates\search.html:588
+#: .\templates\success.html:229 .\templates\success.html:334
+#: .\templates\success.html:350
+msgid "Prices"
+msgstr "Qiymətlər"
+
+#: .\templates\about.html:257 .\templates\contact.html:229
+msgid "Phone "
+msgstr "Telefon"
+
+#: .\templates\about.html:258
+msgid "Address"
+msgstr "Ünvan"
+
+#: .\templates\about.html:300 .\templates\contact.html:304
+#: .\templates\index.html:588 .\templates\success.html:265
+msgid "Processes"
+msgstr "Proseslər"
+
+#: .\templates\about.html:304 .\templates\contact.html:308
+#: .\templates\index.html:592 .\templates\success.html:269
+msgid "Choose material and texture"
+msgstr "Material və tekstura seçirsiniz."
+
+#: .\templates\about.html:308 .\templates\contact.html:312
+#: .\templates\index.html:596 .\templates\success.html:273
+msgid "We print wallpapers with high quality"
+msgstr "Divar kağızlarını yüksək keyfiyyətlə çap edirik."
+
+#: .\templates\about.html:312 .\templates\contact.html:316
+#: .\templates\index.html:600 .\templates\success.html:277
+msgid "We control every steps carefully"
+msgstr "Bütün mərhələlər diqqətlə nəzərdən keçirilir."
+
+#: .\templates\about.html:316 .\templates\contact.html:320
+#: .\templates\index.html:604 .\templates\success.html:281
+msgid "We cut materials with professional aparats"
+msgstr "Materialları professional alətlərlə kəsirik."
+
+#: .\templates\about.html:320 .\templates\contact.html:324
+#: .\templates\index.html:608 .\templates\success.html:285
+msgid "In the final we packaging orders and deliver to your address."
+msgstr "Yekunda qablaşdırılır və ünvanınıza göndərilir."
+
+#: .\templates\about.html:327 .\templates\contact.html:331
+#: .\templates\index.html:615 .\templates\main_category.html:620
+#: .\templates\ordersuccess.html:762 .\templates\product.html:693
+#: .\templates\success.html:292
+msgid "Our Clients"
+msgstr "Müştərilərimiz"
+
+#: .\templates\about.html:355 .\templates\contact.html:359
+#: .\templates\filter.html:558 .\templates\filterotaq.html:558
+#: .\templates\filterreng.html:558 .\templates\index.html:643
+#: .\templates\main_category.html:648 .\templates\ordersuccess.html:790
+#: .\templates\product.html:721 .\templates\search.html:558
+#: .\templates\success.html:320
+msgid "Our Catalog"
+msgstr "Kataloq"
+
+#: .\templates\about.html:363 .\templates\about.html:379
+#: .\templates\contact.html:367 .\templates\contact.html:383
+#: .\templates\filter.html:566 .\templates\filter.html:582
+#: .\templates\filterotaq.html:566 .\templates\filterotaq.html:582
+#: .\templates\filterreng.html:566 .\templates\filterreng.html:582
+#: .\templates\index.html:651 .\templates\index.html:667
+#: .\templates\main_category.html:656 .\templates\main_category.html:672
+#: .\templates\ordersuccess.html:798 .\templates\ordersuccess.html:814
+#: .\templates\product.html:729 .\templates\product.html:745
+#: .\templates\search.html:566 .\templates\search.html:582
+#: .\templates\success.html:328 .\templates\success.html:344
+msgid "Shotcuts"
+msgstr "Qısa yollar"
+
+#: .\templates\about.html:368 .\templates\about.html:384
+#: .\templates\contact.html:372 .\templates\contact.html:388
+#: .\templates\filter.html:571 .\templates\filter.html:587
+#: .\templates\filterotaq.html:571 .\templates\filterotaq.html:587
+#: .\templates\filterreng.html:571 .\templates\filterreng.html:587
+#: .\templates\index.html:656 .\templates\index.html:672
+#: .\templates\main_category.html:661 .\templates\main_category.html:677
+#: .\templates\ordersuccess.html:803 .\templates\ordersuccess.html:819
+#: .\templates\product.html:734 .\templates\product.html:750
+#: .\templates\search.html:571 .\templates\search.html:587
+#: .\templates\success.html:333 .\templates\success.html:349
+msgid "Shipping"
+msgstr "Çatıdırılma"
+
+#: .\templates\about.html:425 .\templates\contact.html:429
+#: .\templates\filter.html:628 .\templates\filterotaq.html:628
+#: .\templates\filterreng.html:628 .\templates\index.html:713
+#: .\templates\main_category.html:718 .\templates\ordersuccess.html:860
+#: .\templates\product.html:791 .\templates\search.html:628
+#: .\templates\success.html:390
+msgid ""
+"No1 3D Photooboy manufacturer in Azerbaijan. Great quality and affordable "
+"prices."
+msgstr ""
+"Azərbaycanda №1 3D Fotooboy Istehsalçısı Ən böyük və keyfiyyətli şəkil "
+"seçimi İstədəyiniz ölçüdə."
+
+#: .\templates\about.html:426 .\templates\contact.html:430
+#: .\templates\filter.html:629 .\templates\filterotaq.html:629
+#: .\templates\filterreng.html:629 .\templates\index.html:714
+#: .\templates\main_category.html:719 .\templates\ordersuccess.html:861
+#: .\templates\product.html:792 .\templates\search.html:629
+#: .\templates\success.html:391
+msgid "All rights reserved"
+msgstr "Bütün hüquqlar qorunur."
+
+#: .\templates\about.html:443 .\templates\contact.html:447
+#: .\templates\filter.html:646 .\templates\filterotaq.html:646
+#: .\templates\filterreng.html:646 .\templates\index.html:731
+#: .\templates\main_category.html:736 .\templates\ordersuccess.html:878
+#: .\templates\product.html:809 .\templates\search.html:646
+#: .\templates\success.html:408
+msgid ""
+"No1 3D Photooboy manufacturer in Azerbaijan. Great quality and affordable "
+"prices. Fast shipping."
+msgstr ""
+"Azərbaycanda №1 3D Fotooboy Istehsalçısı Ən böyük və keyfiyyətli şəkil "
+"seçimi İstədəyiniz ölçüdə Dizayn dəstəyi Professional Usta xidmətlərı "
+"Korporativ qiymətlər Mükəmməl keyfiyyət və sürət"
+
+#: .\templates\contact.html:217
+msgid "Contact Us"
+msgstr "Bizimlə Əlaqə"
+
+#: .\templates\contact.html:234
+msgid "Email Address"
+msgstr "Email ünvanı"
+
+#: .\templates\contact.html:242
+msgid "Write to us.."
+msgstr "Bizə yazın .."
+
+#: .\templates\contact.html:245
+msgid "Name Surname"
+msgstr "Ad Soyad"
+
+#: .\templates\contact.html:246
+msgid "Phone"
+msgstr "Telefon"
+
+#: .\templates\contact.html:247
+msgid "Your Message"
+msgstr "Mesajınız"
+
+#: .\templates\contact.html:249
+msgid "Send"
+msgstr "Göndər"
+
+#: .\templates\contact.html:252 .\templates\filter.html:512
+#: .\templates\filterotaq.html:512 .\templates\filterreng.html:512
+#: .\templates\main_category.html:576 .\templates\ordersuccess.html:525
+#: .\templates\product.html:356 .\templates\search.html:512
+msgid "By clicking you are agree our terms and conditions "
+msgstr ""
+"Məlumat təqdim etməklə, Şəxsi məlumatlar haqqında Qanuna uyğun olaraq şəxsi "
+"məlumatlarımın emalına razılığımı verirəm, şərtləri oxudum və qəbul edirəm.."
+
+#: .\templates\filter.html:356 .\templates\filterotaq.html:356
+#: .\templates\filterreng.html:356
+msgid "Selected Filter"
+msgstr "Seçilmiş Filter"
+
+#: .\templates\filter.html:362 .\templates\filterotaq.html:362
+#: .\templates\filterreng.html:362 .\templates\search.html:362
+msgid "No products found"
+msgstr "Məhsul tapılmadı"
+
+#: .\templates\filter.html:384 .\templates\filterotaq.html:384
+#: .\templates\filterreng.html:384 .\templates\index.html:498
+#: .\templates\main_category.html:463 .\templates\ordersuccess.html:423
+#: .\templates\search.html:384
+msgid "Quick View"
+msgstr "Sürətli baxış"
+
+#: .\templates\filter.html:424 .\templates\filter.html:510
+#: .\templates\filterotaq.html:424 .\templates\filterotaq.html:510
+#: .\templates\filterreng.html:424 .\templates\filterreng.html:510
+#: .\templates\index.html:538 .\templates\main_category.html:503
+#: .\templates\main_category.html:574 .\templates\ordersuccess.html:452
+#: .\templates\ordersuccess.html:523 .\templates\product.html:329
+#: .\templates\product.html:482 .\templates\search.html:424
+#: .\templates\search.html:510
+msgid "Quick Order"
+msgstr "Sürətli sifariş"
+
+#: .\templates\filter.html:427 .\templates\filterotaq.html:427
+#: .\templates\filterreng.html:427 .\templates\index.html:536
+#: .\templates\main_category.html:506 .\templates\ordersuccess.html:454
+#: .\templates\product.html:484 .\templates\search.html:427
+msgid "Ordered count"
+msgstr "Sifariş sayı"
+
+#: .\templates\index.html:220 .\templates\main_category.html:208
+msgid "Sub Categories"
+msgstr "Alt kateqoriyalar"
+
+#: .\templates\index.html:233 .\templates\main_category.html:221
+msgid "New Products"
+msgstr "Yeni Məhsullar"
+
+#: .\templates\index.html:253 .\templates\main_category.html:241
+msgid "Room"
+msgstr "Otaqlar"
+
+#: .\templates\index.html:264 .\templates\main_category.html:252
+msgid "Colors"
+msgstr "Rənglər"
+
+#: .\templates\index.html:288
+msgid "Features"
+msgstr "Üstünlüklərimiz"
+
+#: .\templates\index.html:293 .\templates\main_category.html:278
+#: .\templates\ordersuccess.html:380 .\templates\ordersuccess.html:564
+#: .\templates\product.html:407
+msgid "Products Count"
+msgstr "Məhsul sayı"
+
+#: .\templates\index.html:294 .\templates\main_category.html:279
+#: .\templates\ordersuccess.html:381 .\templates\ordersuccess.html:565
+#: .\templates\product.html:408
+msgid "Checkout our products"
+msgstr "Məhsullarımızı nəzərdən keçirin"
+
+#: .\templates\index.html:297 .\templates\main_category.html:282
+#: .\templates\ordersuccess.html:384 .\templates\ordersuccess.html:568
+#: .\templates\product.html:411
+msgid "Affordable Prices"
+msgstr "Uyğun qiymətlər"
+
+#: .\templates\index.html:298 .\templates\main_category.html:283
+#: .\templates\ordersuccess.html:385 .\templates\ordersuccess.html:569
+#: .\templates\product.html:412
+msgid "Discounts, Campaigns"
+msgstr "Endirimlər, Güzəştlər"
+
+#: .\templates\index.html:301 .\templates\main_category.html:286
+#: .\templates\ordersuccess.html:388 .\templates\ordersuccess.html:572
+#: .\templates\product.html:415
+msgid "No Prepayment need"
+msgstr "Öncədən ödəniş tələb edilmir"
+
+#: .\templates\index.html:302 .\templates\main_category.html:287
+#: .\templates\ordersuccess.html:389 .\templates\ordersuccess.html:573
+#: .\templates\product.html:416
+msgid "Pay after order delivered"
+msgstr "Sifariş təhvil verildikdən sonra ödəniş alınır."
+
+#: .\templates\index.html:305 .\templates\main_category.html:290
+#: .\templates\ordersuccess.html:392 .\templates\ordersuccess.html:576
+#: .\templates\product.html:419
+msgid "Fast Delivery"
+msgstr "Sürətli çatdırılma"
+
+#: .\templates\index.html:306 .\templates\main_category.html:291
+#: .\templates\ordersuccess.html:393 .\templates\ordersuccess.html:577
+#: .\templates\product.html:420
+msgid "We deliver orders on time"
+msgstr "Sifarişlər vaxtında təhvil verilir."
+
+#: .\templates\index.html:309 .\templates\main_category.html:294
+#: .\templates\ordersuccess.html:396 .\templates\ordersuccess.html:580
+#: .\templates\product.html:423
+msgid "Delivery time slots"
+msgstr "Uyğun çatdırılma grafiki"
+
+#: .\templates\index.html:310 .\templates\main_category.html:295
+#: .\templates\ordersuccess.html:397 .\templates\ordersuccess.html:581
+#: .\templates\product.html:424
+msgid "We deliver when appropriate for you"
+msgstr "Sizin vaxtınıza uyğun vaxt təyin edilir."
+
+#: .\templates\index.html:313 .\templates\main_category.html:298
+#: .\templates\ordersuccess.html:400 .\templates\ordersuccess.html:584
+#: .\templates\product.html:427
+msgid "Delivery"
+msgstr "Çatıdırılma"
+
+#: .\templates\index.html:314 .\templates\main_category.html:299
+#: .\templates\ordersuccess.html:401 .\templates\ordersuccess.html:585
+#: .\templates\product.html:428
+msgid "We Deliver to your address"
+msgstr "Ünvanınıza çatdırırıq"
+
+#: .\templates\index.html:448
+msgid "Categories"
+msgstr "Kateqoriyalar"
+
+#: .\templates\index.html:458
+msgid "Category"
+msgstr "Kateqoriya"
+
+#: .\templates\index.html:476
+msgid "Featured products"
+msgstr "Seçilmiş məhsullar"
+
+#: .\templates\index.html:486 .\templates\ordersuccess.html:416
+#: .\templates\product.html:443
+msgid "Featured"
+msgstr "Seçilmiş"
+
+#: .\templates\index.html:500
+msgid "Discount"
+msgstr "Endirim"
+
+#: .\templates\main_category.html:439 .\templates\ordersuccess.html:217
+#: .\templates\product.html:218
+msgid "Products"
+msgstr "Məhsullar"
+
+#: .\templates\ordersuccess.html:271 .\templates\product.html:272
+msgid "Choose one of furniture to see how it looks like."
+msgstr ""
+"Aşağıdakı mebelləri seçərək, mebellərlə uyğunluğunu təyin edə bilərsiniz."
+
+#: .\templates\ordersuccess.html:275
+msgid "Without Furniture"
+msgstr "Mebelsiz"
+
+#: .\templates\ordersuccess.html:335
+msgid "Order received"
+msgstr "Sifarişiniz qəbul olundu"
+
+#: .\templates\ordersuccess.html:350
+msgid "We will contact you soon"
+msgstr "Sizinlə tezliklə əlaqə saxlanılacaq"
+
+#: .\templates\ordersuccess.html:406 .\templates\product.html:433
+msgid "Other products"
+msgstr "Digər məhsullar"
+
+#: .\templates\product.html:276
+msgid "Without furniture"
+msgstr "Mebelsiz"
+
+#: .\templates\product.html:348
+msgid "Our designer will contact you"
+msgstr "Dizaynerimiz sizinlə əlaqə saxlayacaq."
+
+#: .\templates\product.html:350
+msgid "Enter you phone"
+msgstr "Telefonunuzu daxil edin"
+
+#: .\templates\product.html:353
+#: .\venv\Lib\site-packages\django\forms\formsets.py:405
+#: .\venv\Lib\site-packages\django\forms\formsets.py:412
+msgid "Order"
+msgstr "Sifariş"
+
+#: .\templates\product.html:376
+msgid "Order Now"
+msgstr "İndi Sifariş edin"
+
+#: .\templates\product.html:378
+msgid "And Get Discount"
+msgstr "Endirimlərdən yararlanın"
+
+#: .\templates\search.html:356
+msgid "Search Results"
+msgstr "Axtarış nəticələri"
+
+#: .\templates\success.html:216
+#, fuzzy
+#| msgid "Your Message"
+msgid "Your message received"
+msgstr "Mesajınız"
+
+#: .\venv\Lib\site-packages\click\_termui_impl.py:496
+#, python-brace-format
+msgid "{editor}: Editing failed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\_termui_impl.py:500
+#, python-brace-format
+msgid "{editor}: Editing failed: {e}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\_unicodefun.py:20
+msgid ""
+"Click will abort further execution because Python was configured to use "
+"ASCII as encoding for the environment. Consult https://click.palletsprojects."
+"com/unicode-support/ for mitigation steps."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\_unicodefun.py:56
+msgid ""
+"Additional information: on this system no suitable UTF-8 locales were "
+"discovered. This most likely requires resolving by reconfiguring the locale "
+"system."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\_unicodefun.py:65
+msgid ""
+"This system supports the C.UTF-8 locale which is recommended. You might be "
+"able to resolve your issue by exporting the following environment variables:"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\_unicodefun.py:75
+#, python-brace-format
+msgid ""
+"This system lists some UTF-8 supporting locales that you can pick from. The "
+"following suitable locales were discovered: {locales}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\_unicodefun.py:93
+msgid ""
+"Click discovered that you exported a UTF-8 locale but the locale system "
+"could not pick up from it because it does not exist. The exported locale is "
+"{locale!r} but it is not supported."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1095
+msgid "Aborted!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1279
+#: .\venv\Lib\site-packages\click\decorators.py:434
+msgid "Show this message and exit."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1308
+#: .\venv\Lib\site-packages\click\core.py:1334
+#, python-brace-format
+msgid "(Deprecated) {text}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1351
+msgid "Options"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1375
+#, python-brace-format
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\core.py:1390
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1607
+msgid "Commands"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1639
+msgid "Missing command."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1717
+msgid "No such command {name!r}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2258
+msgid "Value must be an iterable."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2278
+#, python-brace-format
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\core.py:2701
+#, python-brace-format
+msgid "env var: {var}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2724
+msgid "(dynamic)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2735
+#, python-brace-format
+msgid "default: {default}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2748
+msgid "required"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\decorators.py:339
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\decorators.py:403
+msgid "Show the version and exit."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:43
+#: .\venv\Lib\site-packages\click\exceptions.py:79
+#, python-brace-format
+msgid "Error: {message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:71
+#, python-brace-format
+msgid "Try '{command} {option}' for help."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:120
+#, python-brace-format
+msgid "Invalid value: {message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:122
+#, python-brace-format
+msgid "Invalid value for {param_hint}: {message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:178
+msgid "Missing argument"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:180
+msgid "Missing option"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:182
+msgid "Missing parameter"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:184
+#, python-brace-format
+msgid "Missing {param_type}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:191
+#, python-brace-format
+msgid "Missing parameter: {param_name}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:211
+#, python-brace-format
+msgid "No such option: {name}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:223
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:261
+msgid "unknown error"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:268
+msgid "Could not open file {filename!r}: {message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\parser.py:231
+msgid "Argument {name!r} takes {nargs} values."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\parser.py:413
+msgid "Option {name!r} does not take a value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\parser.py:474
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\shell_completion.py:316
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\shell_completion.py:322
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:161
+msgid "Repeat for confirmation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:178
+msgid "Error: The value you entered was invalid."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:180
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:191
+msgid "Error: The two entered values do not match."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:247
+msgid "Error: invalid input"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:798
+msgid "Press any key to continue..."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:258
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:290
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\types.py:380
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\types.py:402
+msgid "{value!r} is not a valid {number_type}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:458
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:599
+msgid "{value!r} is not a valid boolean."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:623
+msgid "{value!r} is not a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:801
+msgid "file"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:803
+msgid "directory"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:805
+msgid "path"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:851
+msgid "{name} {filename!r} does not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:860
+msgid "{name} {filename!r} is a file."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:868
+msgid "{name} {filename!r} is a directory."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:876
+msgid "{name} {filename!r} is not writable."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:884
+msgid "{name} {filename!r} is not readable."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:951
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
+msgid "Messages"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:51
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:53
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:58
+msgid "That page contains no results"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:93
+#: .\venv\Lib\site-packages\django\forms\fields.py:664
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:147
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:158
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:266
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:275
+#: .\venv\Lib\site-packages\django\core\validators.py:295
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:280
+#: .\venv\Lib\site-packages\django\core\validators.py:296
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:290
+#: .\venv\Lib\site-packages\django\core\validators.py:294
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:324
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:330
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:363
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:372
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:382
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:397
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:416
+#: .\venv\Lib\site-packages\django\forms\fields.py:292
+#: .\venv\Lib\site-packages\django\forms\fields.py:327
+msgid "Enter a number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:418
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:423
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:428
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:490
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:543
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1197
+#: .\venv\Lib\site-packages\django\forms\models.py:768
+msgid "and"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1199
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:100
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:101
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:102
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:103
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:107
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:126
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:958
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:959
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:961
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1002
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1096
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1145
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1290
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1150
+msgid "Date (without time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1288
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1292
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1296
+msgid "Date (with time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1444
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1446
+msgid "Decimal number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1585
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1588
+msgid "Duration"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1638
+msgid "Email address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1661
+msgid "File path"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1727
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1729
+msgid "Floating point number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1767
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1769
+msgid "Integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1852
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1867
+msgid "Small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1875
+msgid "IPv4 address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1906
+msgid "IP address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1986
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1987
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1989
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2043
+msgid "Positive big integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2056
+msgid "Positive integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2069
+msgid "Positive small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2083
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2115
+msgid "Text"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2181
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2183
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2186
+msgid "Time"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2312
+msgid "URL"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2334
+msgid "Raw binary data"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2399
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2401
+msgid "Universally unique identifier"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:225
+msgid "File"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:373
+msgid "Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:18
+msgid "A JSON object"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:20
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:790
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:792
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1045
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1099
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1100
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1142
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:150
+msgid ":?.!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:54
+msgid "This field is required."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:247
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:391
+#: .\venv\Lib\site-packages\django\forms\fields.py:1132
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:415
+#: .\venv\Lib\site-packages\django\forms\fields.py:1133
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:443
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:477
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:478
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:538
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:539
+msgid "No file was submitted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:540
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:542
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:545
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:606
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:768
+#: .\venv\Lib\site-packages\django\forms\fields.py:858
+#: .\venv\Lib\site-packages\django\forms\models.py:1309
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:859
+#: .\venv\Lib\site-packages\django\forms\fields.py:974
+#: .\venv\Lib\site-packages\django\forms\models.py:1308
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:975
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1191
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1221
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:76
+msgid ":"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:203
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:370
+#, python-format
+msgid "Please submit at most %d form."
+msgid_plural "Please submit at most %d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:377
+#, python-format
+msgid "Please submit at least %d form."
+msgid_plural "Please submit at least %d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:417
+msgid "Delete"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:763
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:767
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:773
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:782
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1109
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1193
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1311
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:172
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:403
+msgid "Clear"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:404
+msgid "Currently"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:405
+msgid "Change"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:714
+msgid "Unknown"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:715
+msgid "Yes"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:716
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:805
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:834
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:851
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:853
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:855
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:857
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:859
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:861
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:66
+msgid "p.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:67
+msgid "a.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:72
+msgid "PM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:73
+msgid "AM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:146
+msgid "midnight"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:148
+msgid "noon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Sat"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:14
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:15
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "jan"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "feb"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "mar"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "apr"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "may"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "jun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "jul"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "aug"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "sep"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "oct"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "nov"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "dec"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:23
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:24
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:37
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:38
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:70
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:236
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:255
+#: .\venv\Lib\site-packages\django\utils\timesince.py:94
+msgid ", "
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:14
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:110
+msgid "Forbidden"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:111
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:115
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:120
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:124
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" …> for links to third-party sites."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:132
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:137
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:142
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:41
+msgid "No year specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:61
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:111
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:208
+msgid "Date out of range"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:90
+msgid "No month specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:142
+msgid "No day specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:188
+msgid "No week specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:338
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:367
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:594
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:628
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:54
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:67
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:72
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:154
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:40
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:42
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:80
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\widgets.py:25
+msgid "None"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\apps.py:7
+#: .\venv\Lib\site-packages\translations\models.py:60
+msgid "translations"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:20
+msgid "content type"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:21
+msgid "the content type of the object to translate"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:26
+msgid "object id"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:27
+msgid "the id of the object to translate"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:35
+msgid "field"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:36
+msgid "the field of the object to translate"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:40
+msgid "language"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:41
+msgid "the language of the translation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:46
+msgid "text"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:47
+msgid "the text of the translation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\translations\models.py:59
+msgid "translation"
+msgstr ""
