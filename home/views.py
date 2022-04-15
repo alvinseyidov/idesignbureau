@@ -38,7 +38,7 @@ def index(request):
             category = Category.objects.get(pk=1)
             product = Product.objects.create(main_category=category,price=30,sub_category=sub,name=nm)
             image = ProductImage.objects.create(image = image, product=product)
-            list = request.POST['tags'].split()
+            list = request.POST['tags'].split(",")
             for l in list:
                 tag = Tag.objects.filter(name=l).last()
                 if tag:
