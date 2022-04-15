@@ -284,7 +284,7 @@
 				<div class="item-li">
 				<img src={{i.icon.url}} style="width: 32px;float: left;margin: 6px -27px 1px 24px;"/>
                     <a href="{% url 'filter' i.id %}" class="">
-                        {{i.name}}                    </a>
+                        {{i.name}}     ({{i.products.count}})               </a>
                 </div>
 				{% endfor %}
                              </nav>
