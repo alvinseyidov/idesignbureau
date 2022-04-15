@@ -434,6 +434,13 @@ figure.effect-apollo:hover figcaption::before {
             </div>
             <a href="{% url 'product' p.id %}" >
             <div class="title">{{p.name}}</div></a>
+                <div class="d-flex">
+            {% for tag in p.tags.all %}
+
+                
+                <a href="#">#<div class="title" style="display: inline;font-size: 13px;">{{tag.name}}</div></a>
+            
+            {% endfor %}</div>
             <div class="wrrp-price clearfix">
                 
                                    
