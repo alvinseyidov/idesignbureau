@@ -30,7 +30,7 @@
     
     <script src="//code-eu1.jivosite.com/widget/vprirZRm5q" async></script>
     
- 
+  
     
     <link rel="stylesheet" href="{% static 'css/main.min.css'%}" type="text/css" />
     
@@ -200,14 +200,19 @@
                     
                     <div class="change-type-product">
                         <div class="btn-select orange">
-                              <div class="type-selected"><span>{% trans 'Search' %}</span></div>    
+                        <svg class="icon">
+                        <use xlink:href="/static/template/svg/sprite.svg#searchpic"></use>
+                    </svg>
+                              <div ><span>{% trans 'Search' %}</span></div>    
                         </div>
                         
                       
                     </div>
                     
                     <input type="text" name="q" placeholder="{% trans 'Product Name' %} ...." value=""/>
-                    <button type="submit" class="btn"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#icon-search"></use></svg>{% trans 'Search' %}</button>
+                    <button type="submit" class="btn"><svg class="icon">
+                        <use xlink:href="/static/template/svg/sprite.svg#icon-search"></use>
+                    </svg>{% trans 'Search' %}</button>
                 </form>
             </div>
     

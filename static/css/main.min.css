@@ -11,6 +11,10 @@ body {margin: 0;}
     width: 21px !important;
     margin-top: 12px !important;
 }
+@media only screen and (max-width: 768px){
+footer .col1 .rating {
+    margin: 52px auto 0 auto !important;
+}}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display: block;}
 audio, canvas, progress, video {display: inline-block;vertical-align: baseline;}
 audio:not([controls]) {display: none;height: 0;}

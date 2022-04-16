@@ -25,7 +25,7 @@
     <meta name="yandex-verification" content="58951250a690fe6d" />
     <meta name="cmsmagazine" content="092f0df6e32ac917a7d298c4265042e4" />
     <meta name="yandex-verification" content="7f935cbb666e2ee4" />
-    
+     
     <meta name="yandex-verification" content="c7ac87cea76f8192" />
     
     <script src="//code-eu1.jivosite.com/widget/vprirZRm5q" async></script>
@@ -192,14 +192,19 @@
                     
                     <div class="change-type-product">
                         <div class="btn-select orange">
-                              <div class="type-selected"><span>{% trans 'Search' %}</span></div>    
+                        <svg class="icon">
+                        <use xlink:href="/static/template/svg/sprite.svg#searchpic"></use>
+                    </svg>
+                              <div ><span>{% trans 'Search' %}</span></div>    
                         </div>
                         
                       
                     </div>
                     
                     <input type="text" name="q" placeholder="{% trans 'Product Name' %} ...." value=""/>
-                    <button type="submit" class="btn"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#icon-search"></use></svg>{% trans 'Search' %}</button>
+                    <button type="submit" class="btn"><svg class="icon">
+                        <use xlink:href="/static/template/svg/sprite.svg#icon-search"></use>
+                    </svg>{% trans 'Search' %}</button>
                 </form>
             </div>
     
