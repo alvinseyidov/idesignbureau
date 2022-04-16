@@ -194,7 +194,7 @@ def search(request):
     }
     return render(request, "search.html", context)
 
-def filter(request,id):
+def filter(request,id): 
     query = SubCategory.objects.get(pk=id)
     products = Product.objects.filter(sub_category__pk=id)
     
