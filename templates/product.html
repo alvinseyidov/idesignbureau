@@ -55,7 +55,37 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!--<script src="?v=1.1"></script>-->
+        <script>
+            var img = new Image();
+        var width;
+        var height;
+        var length = 30;
+        var ylength = 20;
+        img.src = 'http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg';
+        img.onload = function() {
+            width = this.width;
+        height = this.height;
+            for (var j = 0; j < length; j++){
+            for (var i = 0; i < length; i++){
+                var left = (-1 * width/length * i).toString() +"px";
+                var top = (-1 * height/ylength * j).toString() +"px";
+                var element = jQuery('<div/>', {
+                    id: i + ""+j,
+                    class: "splitImg",
+                    css: {
+                    "width" : Math.floor(width/length),
+                    "height":Math.floor(height/ylength),
+                "background-position": left  + " " +  top,
+                "background-image" : 'url(' + img.src + ')'
+                    }
+                    })
+                    element.appendTo('#wrapper');
+                $("#wrapper").width(width + (length *2))
+            }
+            }
+        }
 
+        </script>
     <script>
         //Куки
         function SetCookie(id, minutes) {

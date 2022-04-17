@@ -7,7 +7,7 @@ from django.db.models import Q
 
 def index(request):
 
-    featured = SubCategory.objects.filter()
+    featured = SubCategory.objects.filter(parent__isnull=True) 
     general = General.objects.all()[0]
     clients = Client.objects.all()
     socials = Social.objects.all()

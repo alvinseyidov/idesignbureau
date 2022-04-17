@@ -1,3 +1,4 @@
+from tkinter.tix import Tree
 from django.db import models
 
 
@@ -26,7 +27,7 @@ class Category(models.Model):
 
 class SubCategory(models.Model):
     icon = models.FileField()
-
+    parent = models.ForeignKey("self", on_delete=models.CASCADE, related_name="subs", null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     name = models.CharField(max_length=250)
     class Meta:

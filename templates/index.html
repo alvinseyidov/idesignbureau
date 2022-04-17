@@ -49,7 +49,7 @@
 }
 }	
 
- 
+
 	</style>
     
      
@@ -281,11 +281,54 @@
                            
 						   
 						{% for i in featured %}
-				<div class="item-li">
-				<img src={{i.icon.url}} style="width: 32px;float: left;margin: 6px -27px 1px 24px;"/>
-                    <a href="{% url 'filter' i.id %}" class="">
-                        {{i.name}}     ({{i.products.count}})               </a>
-                </div>
+                        <script>
+                            function setToActive{{i.id}}(){
+                                var color = document.getElementById("sub{{i.id}}").style.display;
+                                if (color === "none")
+                                    document.getElementById("sub{{i.id}}").style.display="block";
+                                else
+                                    document.getElementById("sub{{i.id}}").style.display="none";
+                                
+                            }
+                        </script>
+
+                        {% if i.subs.count > 0%}
+                        <div class="item-li" style="padding-right: 0 !important;" onclick="setToActive{{i.id}}();">
+                            <img src={{i.icon.url}} style="width: 32px;float: left;margin: 6px -27px 1px 24px;"/>
+                                
+                                   
+                                    <div style="    width: 246px;outline: 0;   margin: 18px 2px 15px 16px; height: 100%; padding-left: 50px; line-height: 1; align-items: center; cursor: pointer;position: relative; font-size: 12px !important; text-decoration: none;" class="">
+                                        {{i.name}}     ({{i.products.count}})              
+                                    <img style="margin-top: -3px !important;float: right;    width: 15px !important;"  src={% static 'downarrow.svg'%}/></div>
+                                 
+            
+                            </div>
+                        {% else %}
+                        <div class="item-li">
+                            <img src={{i.icon.url}} style="width: 32px;float: left;margin: 6px -27px 1px 24px;"/>
+                                
+                                   
+                                    <a href="{% url 'filter' i.id %}" class="">
+                                        {{i.name}}     ({{i.products.count}})            </a>
+                                 
+            
+                            </div>
+                        {% endif %}
+				
+               
+               
+                <ul class="sidebar-list sidebar-list-2 pop-5" id="sub{{i.id}}" style="display: none;">
+                    {% for c in i.subs.all%}
+                        <li class="first level3">
+                        <div class="item-li">
+                            <a href="{% url 'filter' i.id %}" class="">
+                                <svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#"></use></svg>
+                                {{c.name}}     ({{c.products.count}})                                 </a>
+                        </div>
+                                                
+                    </li>{% endfor%}
+                </ul>
+                
 				{% endfor %}
                              </nav>
 							 
