@@ -198,7 +198,7 @@ def filter(request,id):
     query = SubCategory.objects.get(pk=id)
     products = Product.objects.filter(sub_category__pk=id)
     
-    featured = SubCategory.objects.filter()
+    featured = SubCategory.objects.filter(parent__isnull=True) 
     general = General.objects.all()[0]
     clients = Client.objects.all()
     socials = Social.objects.all()
