@@ -19,7 +19,15 @@
     <meta property="og:image" content="https://photostena.ru/assets/images/products/28753/18901.jpg" />
 
 
-
+    <style>
+        @media only screen and (max-width: 600px) {
+     
+    .searchasdgas {
+        display:none !important;
+    }
+    }	
+        
+        </style>
 
     <!-- assets/template/js/fancybox/jquery.fancybox.pack.js, assets/template/js/fancybox/jquery.fancybox.css,-->
     <!-- assets/template/libs/fancybox/dist/jquery.fancybox.min.js, assets/template/libs/fancybox/dist/jquery.fancybox.css,-->
@@ -484,7 +492,7 @@
                     <svg class="icon">
                     <use xlink:href="/static/template/svg/sprite.svg#searchpic"></use>
                 </svg>
-                          <div ><span>{% trans 'Search' %}</span></div>    
+                <div ><span class="searchasdgas">{% trans 'Search' %}</span></div>
                     </div>
                     
                   
