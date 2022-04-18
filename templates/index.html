@@ -321,7 +321,7 @@
                     {% for c in i.subs.all%}
                         <li class="first level3">
                         <div class="item-li">
-                            <a href="{% url 'filter' i.id %}" class="">
+                            <a href="{% url 'filter' c.id %}" class="">
                                 <svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#"></use></svg>
                                 {{c.name}}     ({{c.products.count}})                                 </a>
                         </div>

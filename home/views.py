@@ -219,7 +219,7 @@ def filterotaq(request,id):
     query = Room.objects.get(pk=id)
     products = Product.objects.filter(room__pk=id)
     
-    featured = SubCategory.objects.filter()
+    featured = SubCategory.objects.filter(parent__isnull=True) 
     general = General.objects.all()[0]
     clients = Client.objects.all()
     socials = Social.objects.all()
