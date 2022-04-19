@@ -57,7 +57,7 @@ class Product(models.Model):
     color = models.ForeignKey(Color, on_delete=models.SET_NULL, related_name="products", null=True, blank=True)
     name = models.CharField(max_length=250)
     code = models.CharField(max_length=250, null=True,blank=True)
-    price = models.FloatField(default=180)
+    price = models.FloatField(default=30)
     is_featured = models.BooleanField(default=False)
     is_new = models.BooleanField(default=False)
     discount_price = models.FloatField(blank=True, null=True)
