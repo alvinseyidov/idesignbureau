@@ -116,7 +116,7 @@ def skinali(request):
     general = General.objects.all()[0]
     clients = Client.objects.all()
     socials = Social.objects.all()
-    products = Product.objects.all()[:10]
+    products = Product.objects.filter(main_category=4)
     colors = Color.objects.all()
     rooms = Room.objects.all()
     context = {

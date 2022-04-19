@@ -259,68 +259,9 @@
 <main>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
-                <aside class="left-sidebar clearfix" id="popup-sidebar">
-    <nav><a class="sidebar-title">{% trans 'Sub Categories' %}</a><ul class="sidebar-list pop-1"><li  class="first level2">
-                <div class="item-li">
-				<img src={% static 'images/trend.png'%} style="width: 32px;float: left;margin: 6px -27px 1px 24px;"/>
-                    <a href="javascript:void(0)" >
-                         
-                        Trend 2022                    </a>
-                    
-                </div>
-                        </li><li  class="level2">
-                            <div class="item-li">
-							<img src={% static 'images/new.png'%} style="width: 32px;float: left;margin: 6px -27px 1px 24px;"/>
-                                <a href="javascript:void(0)" class="">
-                                    <svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#001-store-new-badges"></use></svg>
-                                    {% trans 'New Products' %}                               </a>
-                            </div>
-                                                    </li><li  class="level2">
-                            
-                                                    </li><li  class="level2">
-                           
-						   
-						{% for i in featured %}
-				<div class="item-li">
-				<img src={{i.icon.url}} style="width: 32px;float: left;margin: 6px -27px 1px 24px;"/>
-                    <a href="{% url 'filter' i.id %}" class="">
-                        {{i.name}}                    </a>
-                </div>
-				{% endfor %}
-                             </nav>
-							 
-							 
-							 
-							 
-							 
-							  <nav class="menu-placement"><a class="sidebar-title">{% trans 'Room' %}</a><ul class="sidebar-list pop-1"><li  class="first level2">
-                
-				{% for i in rooms %}
-				<div class="item-li">
-				<img src={{i.icon.url}} style="width: 32px;float: left;margin: 6px 0 0 24px;"/>
-                    <a href="{% url 'filterotaq' i.id %}" class="">
-                        {{i.name}}                    </a>
-                </div>
-				{% endfor %}
-                             </nav>
+            
 
-    <nav class="menu-color"><a class="sidebar-title" >{% trans 'Colors' %}</a>
-	<ul class="colors">
-	{% for i in colors %}
-	<li class="color" style="background:#{{i.color_code}}">
-		<a href="{% url 'filterreng' i.id %}" alt="{{i.name}}" title="{{i.name}}" ></a></li>
-	 {% endfor %}
-	</ul></nav>
-	
-	 
-</aside>
-<div class="clear"></div>
-
- 
-            </div>
-
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="content">
                     <div class="big_slider">
                         
