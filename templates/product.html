@@ -607,17 +607,42 @@
                                     <img src="upload/action/stiker-discount-2.png" alt="">
                                     <span>SALE - 63%</span>
                                 </div>
-                                <div class="browsing wallpaper">
+                                <div class="browsing wallpaper" id="imagearea" onload="myFunc()">
                                     {% if product.images.first %}
-                                    <div class="imgf" id="imagearea1" style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;">
+
+                                    
+                                    <script type="text/javascript">
+                                        console.log("heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeyy")
+
+                                        const imgg = new Image();
+                                            imgg.addEventListener("load", function() {
+                                                if(this.naturalWidth>this.naturalHeight){
+                                                    const myElement = document.getElementById("imagearea");
+                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; margin-left: auto; margin-right: auto;"><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div>';
+                                                }
+                                                else if(this.naturalWidth<this.naturalHeight){
+                                                    const myElement = document.getElementById("imagearea");
+                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; "><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div>';
+                                             
+                                                }
+                                                else {
+                                                    const myElement = document.getElementById("imagearea");
+                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; "><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div>';
+                                             
+                                                }
 
 
-                                        <div>
-                                            <img src="{{product.images.first.image.url}}"
-                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
-                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru">
-                                        </div>
-                                    </div>
+                                            });
+                                            imgg.src = "{{product.images.first.image.url}}";
+
+
+                                     </script>
+
+
+                                    
+
+
+
 
 
                                     <div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;">
@@ -651,9 +676,7 @@
 
 
                                     {% endif %}
-                                    <div class="mebel">
-                                        <img src="" style="display: inline;">
-                                    </div>
+                                    <div class="mebel"><img src="" style="display: inline;"></div>
 
 
 
