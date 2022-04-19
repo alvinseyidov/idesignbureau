@@ -51,7 +51,7 @@ class Room(models.Model):
         return self.name 
 
 class Product(models.Model):
-    main_category = models.ForeignKey(Category, on_delete=models.SET_NULL, related_name="products", null=True, default=1)
+    main_category = models.ForeignKey(Category, on_delete=models.SET_NULL, related_name="products", null=True, default=4)
     sub_category = models.ForeignKey(SubCategory, on_delete=models.SET_NULL, related_name="products", null=True, blank=True)
     room = models.ForeignKey(Room, on_delete=models.SET_NULL, related_name="products", null=True, blank=True)
     color = models.ForeignKey(Color, on_delete=models.SET_NULL, related_name="products", null=True, blank=True)
