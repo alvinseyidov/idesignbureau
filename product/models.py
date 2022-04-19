@@ -55,7 +55,7 @@ class Product(models.Model):
     sub_category = models.ForeignKey(SubCategory, on_delete=models.SET_NULL, related_name="products", null=True, blank=True)
     room = models.ForeignKey(Room, on_delete=models.SET_NULL, related_name="products", null=True, blank=True)
     color = models.ForeignKey(Color, on_delete=models.SET_NULL, related_name="products", null=True, blank=True)
-    name = models.CharField(max_length=250)
+    name = models.CharField(max_length=250, default="SKINALI ")
     code = models.CharField(max_length=250, null=True,blank=True)
     price = models.FloatField(default=30)
     is_featured = models.BooleanField(default=False)
