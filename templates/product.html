@@ -19,15 +19,7 @@
     <meta property="og:image" content="https://photostena.ru/assets/images/products/28753/18901.jpg" />
 
 
-    <style>
-        @media only screen and (max-width: 600px) {
-     
-    .searchasdgas {
-        display:none !important;
-    }
-    }	
-        
-        </style>
+
 
     <!-- assets/template/js/fancybox/jquery.fancybox.pack.js, assets/template/js/fancybox/jquery.fancybox.css,-->
     <!-- assets/template/libs/fancybox/dist/jquery.fancybox.min.js, assets/template/libs/fancybox/dist/jquery.fancybox.css,-->
@@ -38,7 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
- 
+
     <meta name='yandex-verification' content='58951250a690fe6d' />
     <meta name="google-site-verification" content="LIT4t_3gktWJVrpTpFTRRkrApFWZkzkEmPTEFmjEQkQ" />
     <meta name='yandex-verification' content='729b52e5c3bcb68d' />
@@ -63,37 +55,7 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!--<script src="?v=1.1"></script>-->
-        <script>
-            var img = new Image();
-        var width;
-        var height;
-        var length = 30;
-        var ylength = 20;
-        img.src = 'http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg';
-        img.onload = function() {
-            width = this.width;
-        height = this.height;
-            for (var j = 0; j < length; j++){
-            for (var i = 0; i < length; i++){
-                var left = (-1 * width/length * i).toString() +"px";
-                var top = (-1 * height/ylength * j).toString() +"px";
-                var element = jQuery('<div/>', {
-                    id: i + ""+j,
-                    class: "splitImg",
-                    css: {
-                    "width" : Math.floor(width/length),
-                    "height":Math.floor(height/ylength),
-                "background-position": left  + " " +  top,
-                "background-image" : 'url(' + img.src + ')'
-                    }
-                    })
-                    element.appendTo('#wrapper');
-                $("#wrapper").width(width + (length *2))
-            }
-            }
-        }
 
-        </script>
     <script>
         //Куки
         function SetCookie(id, minutes) {
@@ -192,26 +154,6 @@
             font-family: CirceRegular;
             display: block;
         }
-#imagearea1 img {
-    width: 100% !important;
-}
-#imagearea2 img {
-    width: 100% !important;
-}
-#imagearea2 {
-    width: 799px !important; height: 300px;
-}
-#imagearea3 img {
-    width: 100% !important;
-}
-
-#imagearea4 img {
-    width: 100% !important;
-}
-@media only screen and (max-width: 768px){
-.browsing.wallpaper {
-    padding-top: 20% !important;
-}}
     </style>
 
 
@@ -251,6 +193,27 @@
                 width: 100px !important;
                 margin: 3px 0 -40px -17px !important;
 
+            }
+            #imagearea1 img {
+                width: 100% !important;
+            }
+            #imagearea2 img {
+                width: 100% !important;
+            }
+            #imagearea3 img {
+                width: 100% !important;
+            }
+            #imagearea4 img {
+                width: 100% !important;
+            }
+            .browsing.wallpaper {
+                padding-top: 0 !important;
+            }
+            .sdfbsdfbsdf {
+                z-index: 1000 !important;
+            }
+            .save-foto {
+                display: block !important;
             }
         }
 
@@ -313,7 +276,6 @@
             height: 22px !important;
             border-radius: 50% !important;
             opacity: 1 !important;
-            display:block !important;
             background-color: #39f !important;
         }
 
@@ -327,7 +289,6 @@
 
         .myimage2style {
             opacity: 1 !important;
-            display:block !important;
             position: inherit !important;
         }
 
@@ -342,11 +303,6 @@
         .imagearea2hide {
             display: none !important;
         }
-
-@media only screen and (max-width: 768px)
-{.save-foto {
-    display: block !important;
-}}
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/2.0.0-alpha.2/cropper.min.js"
@@ -489,22 +445,19 @@
 
         <div class="wrrp-search-box full-width">
             <form action="{% url 'search' %}" method="get" class="search-box clearfix" id="searchSiteBox">
-                    
+
                 <div class="change-type-product">
                     <div class="btn-select orange">
-                    <svg class="icon">
-                    <use xlink:href="/static/template/svg/sprite.svg#searchpic"></use>
-                </svg>
-                <div ><span class="searchasdgas">{% trans 'Search' %}</span></div>
+                        <div class="type-selected"><span>{% trans 'Search' %}</span></div>
                     </div>
-                    
-                  
+
+
                 </div>
-                
-                <input type="text" name="q" placeholder="{% trans 'Product Name' %} ...." value=""/>
+
+                <input type="text" name="q" placeholder="{% trans 'Product Name' %} ...." value="" />
                 <button type="submit" class="btn"><svg class="icon">
-                    <use xlink:href="/static/template/svg/sprite.svg#icon-search"></use>
-                </svg>{% trans 'Search' %}</button>
+                        <use xlink:href="/static/template/svg/sprite.svg#icon-search"></use>
+                    </svg>{% trans 'Search' %}</button>
             </form>
         </div>
 
@@ -610,49 +563,53 @@
                                     <img src="upload/action/stiker-discount-2.png" alt="">
                                     <span>SALE - 63%</span>
                                 </div>
-                                <div class="browsing wallpaper" id="imagearea" onload="myFunc()">
+                                <div class="browsing wallpaper">
                                     {% if product.images.first %}
-
-                                    
-                                    <script type="text/javascript">
-                                        console.log("heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeyy")
-
-                                        const imgg = new Image();
-                                            imgg.addEventListener("load", function() {
-                                                if(this.naturalWidth>this.naturalHeight){
-                                                    const myElement = document.getElementById("imagearea");
-                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; margin-left: auto; margin-right: auto;"><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div><div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div><img id="image" src="{{product.images.first.image.url}}" class="cropper-hidden"></div></div><div class="imgf" id="imagearea3" style="display:none; margin-left: auto; margin-right: auto; margin-top: 0px; margin-bottom: 0px;"><div id="fitimage" style=" text-align: center;  "></div></div><div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div style=" text-align: center; "><img id="fittedimage" style=" width: 798px; " src="{{product.images.first.image.url}}"></div></div>';
-                                                }
-                                                else if(this.naturalWidth<this.naturalHeight){
-                                                    const myElement = document.getElementById("imagearea");
-                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; "><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div><div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div><img id="image" src="{{product.images.first.image.url}}" class="cropper-hidden"></div></div><div class="imgf" id="imagearea3" style="display:none; margin-left: auto; margin-right: auto; margin-top: 0px; margin-bottom: 0px;"><div id="fitimage" style=" text-align: center;  "></div></div><div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div style=" text-align: center; "><img id="fittedimage" style=" width: 798px; " src="{{product.images.first.image.url}}"></div></div>';
-                                             
-                                                }
-                                                else {
-                                                    const myElement = document.getElementById("imagearea");
-                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; "><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div><div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div><img id="image" src="{{product.images.first.image.url}}" class="cropper-hidden"></div></div><div class="imgf" id="imagearea3" style="display:none; margin-left: auto; margin-right: auto; margin-top: 0px; margin-bottom: 0px;"><div id="fitimage" style=" text-align: center;  "></div></div><div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div style=" text-align: center; "><img id="fittedimage" style=" width: 798px; " src="{{product.images.first.image.url}}"></div></div>';
-                                             
-                                                }
+                                    <div class="imgf" id="imagearea1" style="opacity: 1 !important;">
 
 
-                                            });
-                                            imgg.src = "{{product.images.first.image.url}}";
+                                        <div>
+                                            <img src="{{product.images.first.image.url}}"
+                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
+                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru">
+                                        </div>
+                                    </div>
 
 
-                                     </script>
+                                    <div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;">
 
 
-                                    
+                                        <div>
+                                            <img id="image" src="{{product.images.first.image.url}}"
+                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
+                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
+                                                class="cropper-hidden">
+                                        </div>
+                                    </div>
+
+                                    <div class="imgf" id="imagearea3" style="display:none;">
 
 
+                                        <div id="fitimage" style=" text-align: center; height: 401px; ">
+                                        </div>
+                                    </div>
+
+                                    <div class="imgf" id="imagearea4" style="display:none;">
 
 
-
-                                    <div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div><img id="image" src="{{product.images.first.image.url}}" class="cropper-hidden"></div></div><div class="imgf" id="imagearea3" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div id="fitimage" style=" text-align: center; height: 401px; "></div></div><div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div style=" text-align: center; "><img id="fittedimage" style=" width: 798px; " src="{{product.images.first.image.url}}"></div></div>
+                                        <div style=" text-align: center; ">
+                                            <img id="fittedimage" style=" width: 798px; "
+                                                src="{{product.images.first.image.url}}"
+                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
+                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru">
+                                        </div>
+                                    </div>
 
 
                                     {% endif %}
-                                    <div class="mebel"><img src="" style="display: inline;"></div>
+                                    <div class="mebel">
+                                        <img src="" style="display: inline;">
+                                    </div>
 
 
 
@@ -718,7 +675,7 @@
                                             <!--div class="item first" data-tab="quick-order">Быстрый заказ</div>
                 <div class="item last active" data-tab="full-order">Полный заказ</div-->
                                             <div class="item first active" data-tab="quick-order">SÜRƏTLİ SİFARİŞ</div>
-                                            <div class="item last" data-tab="full-order">TAM SİFARİŞ</div>
+                                            <div class="item last sdfbsdfbsdf" data-tab="full-order">TAM SİFARİŞ</div>
                                         </div>
                                         <div class="wrrp-decision">
                                             <div class="tab-content quick-order">
@@ -761,7 +718,7 @@
 
                                                         <div class="price-total" itemprop="offers" itemscope
                                                             itemtype="http://schema.org/Offer">
-                                                            18A0 AZN'dən
+                                                            180 AZN'dən
                                                         </div>
 
                                                         <div class="wrrp-option">
@@ -775,7 +732,7 @@
 
                                                     <div class="form-success">
                                                         <img src="/static/template/images/tick.png" alt="">
-                                                        <div Aclass="title">Ваш заказ принят.</div>
+                                                        <div class="title">Ваш заказ принят.</div>
                                                         <div class="description">Мы обязательно свяжемся с вами в самое
                                                             ближайшее время, расскажем про материалы и пришлем макет на
                                                             утверждение.</div>
@@ -787,7 +744,7 @@
                                             <div class="tab-content full-order">
                                                 <div class="step step-1">
                                                     <div class="wall-params">
-                                                        <divA class="title-item">1. Ölçünü seçin</div>
+                                                        <div class="title-item">1. Ölçünü seçin</div>
                                                         <div class="wrrp">
                                                             <div class="dost clearfix">
                                                                 <div class="desc">Eni</div>
@@ -815,7 +772,7 @@
                                                                 onchange="togglecrop()">
                                                             <label for="onOff" id="offCropper"></label>
                                                             <div class="text">Formanı özünüz təyin edin.</div>
-                                                            
+                                                            <div class="question">?</div>
                                                             <div class="hidden-text-save-foto">
                                                                 <div class="item">Şəkildə sizin ölçüyə uyğun sahə
                                                                     görünəcək, onu mərkəzdən kənara keçirə bilərsiniz.
@@ -1454,32 +1411,33 @@
         "itemCondition": "http://schema.org/NewCondition"
 }}
 </script>
-                <p>{% trans 'No1 3D Photooboy manufacturer in Azerbaijan. Great quality and affordable prices.' %}</p>
-                <p>© 2010-2022 iDesign Bureau.{% trans 'All rights reserved' %}</p>
-            </div>
-            <div class="col2 right">
+<p>{% trans 'No1 3D Photooboy manufacturer in Azerbaijan. Great quality and affordable prices.' %}</p>
+<p>© 2010-2022 iDesign Bureau.{% trans 'All rights reserved' %}</p>
+</div>
+<div class="col2 right">
 
-                <div class="social">
-                    {%for i in socials%}
-                    <a href="{{i.url}}" target="_blank" style="background-image: url({{i.icon.url}})"></a>
-                    {% endfor %}
+<div class="social">
+    {%for i in socials%}
+    <a href="{{i.url}}" target="_blank" style="background-image: url({{i.icon.url}})"></a>
+    {% endfor %}
+    
+</div>
+<a class="email" href="mailto:info@idesignbureau.com">info@idesignbureau.com</a><br>
+<a>Subhi Salayev küç.102</a><br>
+<a>+994 556777410</a><div style="margin-top: 53px;"><a href="https://kodergroup.az" target="_blank">Made by <img style="width:50px;margin-left: 9px;" src="{% static 'koderlogo.png'%}"/></a></div>
+</div>
 
-                </div>
-                <a class="email" href="mailto:info@idesignbureau.com">info@idesignbureau.com</a><br>
-                <a>Subhi Salayev küç.102</a><br>
-                <a>+994 556777410</a><div style="margin-top: 53px;"><a href="https://kodergroup.az" target="_blank">Made by <img style="width:50px;margin-left: 9px;" src="{% static 'koderlogo.png'%}"/></a></div>
-            </div>
+<div class="clear"></div>
+<div class="footer-text">
+<p style=" margin-top: 89px; ">{% trans 'Foto divar kağızları, freskalar və kətan şəkilləri əldə etmək mümkündür! Aşağı qiymətlər və Azərbaycanın bütün şəhərlərinə çatdırılma: Bakı, Sumqayıt, Gəncə, Qəbələ, Şamaxı, Quba, Lənkaran, Astara, Qazax, Şuşa, Mingəçevir, İsmayıllı, Kürdəmir, Ucar, Balakən, Zaqatala' %}
+<br>
 
-            <div class="clear"></div>
-            <div class="footer-text">
-                <p style=" margin-top: 89px; ">{% trans 'Foto divar kağızları, freskalar və kətan şəkilləri əldə etmək  mümkündür! Aşağı qiymətlər və Azərbaycanın bütün şəhərlərinə çatdırılma: Bakı, Sumqayıt, Gəncə, Qəbələ, Şamaxı, Quba, Lənkaran, Astara, Qazax, Şuşa, Mingəçevir, İsmayıllı, Kürdəmir, Ucar, Balakən, Zaqatala' %}
-                    <br>
-
-            </div>
-        </div>
+</div>
+</div>
 
 
-    </footer>
+</footer>
+
 
     <div class="btn-whatsapp">
         <a href="https://wa.link/atc0qj" target="_blank">
