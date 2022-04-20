@@ -198,6 +198,9 @@
 #imagearea2 img {
     width: 100% !important;
 }
+#imagearea2 {
+    width: 799px !important; height: 300px;
+}
 #imagearea3 img {
     width: 100% !important;
 }
@@ -618,16 +621,16 @@
                                             imgg.addEventListener("load", function() {
                                                 if(this.naturalWidth>this.naturalHeight){
                                                     const myElement = document.getElementById("imagearea");
-                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; margin-left: auto; margin-right: auto;"><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div>';
+                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; margin-left: auto; margin-right: auto;"><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div><div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div><img id="image" src="{{product.images.first.image.url}}" class="cropper-hidden"></div></div><div class="imgf" id="imagearea3" style="display:none; margin-left: auto; margin-right: auto; margin-top: 0px; margin-bottom: 0px;"><div id="fitimage" style=" text-align: center;  "></div></div><div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div style=" text-align: center; "><img id="fittedimage" style=" width: 798px; " src="{{product.images.first.image.url}}"></div></div>';
                                                 }
                                                 else if(this.naturalWidth<this.naturalHeight){
                                                     const myElement = document.getElementById("imagearea");
-                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; "><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div>';
+                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; "><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div><div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div><img id="image" src="{{product.images.first.image.url}}" class="cropper-hidden"></div></div><div class="imgf" id="imagearea3" style="display:none; margin-left: auto; margin-right: auto; margin-top: 0px; margin-bottom: 0px;"><div id="fitimage" style=" text-align: center;  "></div></div><div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div style=" text-align: center; "><img id="fittedimage" style=" width: 798px; " src="{{product.images.first.image.url}}"></div></div>';
                                              
                                                 }
                                                 else {
                                                     const myElement = document.getElementById("imagearea");
-                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; "><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div>';
+                                                    myElement.innerHTML='<div class="imgf imagearea1hor" id="imagearea1"  style="opacity: 1 !important; width: 380px; margin-left: auto; margin-right: auto; "><div><img src="{{product.images.first.image.url}}"/></div></div><div class="mebel"><img src="" style="display: inline;"></div><div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div><img id="image" src="{{product.images.first.image.url}}" class="cropper-hidden"></div></div><div class="imgf" id="imagearea3" style="display:none; margin-left: auto; margin-right: auto; margin-top: 0px; margin-bottom: 0px;"><div id="fitimage" style=" text-align: center;  "></div></div><div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div style=" text-align: center; "><img id="fittedimage" style=" width: 798px; " src="{{product.images.first.image.url}}"></div></div>';
                                              
                                                 }
 
@@ -645,34 +648,7 @@
 
 
 
-                                    <div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;">
-
-
-                                        <div>
-                                            <img id="image" src="{{product.images.first.image.url}}"
-                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
-                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
-                                                class="cropper-hidden">
-                                        </div>
-                                    </div>
-
-                                    <div class="imgf" id="imagearea3" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;">
-
-
-                                        <div id="fitimage" style=" text-align: center; height: 401px; ">
-                                        </div>
-                                    </div>
-
-                                    <div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;">
-
-
-                                        <div style=" text-align: center; ">
-                                            <img id="fittedimage" style=" width: 798px; "
-                                                src="{{product.images.first.image.url}}"
-                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
-                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru">
-                                        </div>
-                                    </div>
+                                    <div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div><img id="image" src="{{product.images.first.image.url}}" class="cropper-hidden"></div></div><div class="imgf" id="imagearea3" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div id="fitimage" style=" text-align: center; height: 401px; "></div></div><div class="imgf" id="imagearea4" style="display:none;width: 380px; margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 74px;"><div style=" text-align: center; "><img id="fittedimage" style=" width: 798px; " src="{{product.images.first.image.url}}"></div></div>
 
 
                                     {% endif %}

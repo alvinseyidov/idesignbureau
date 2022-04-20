@@ -369,7 +369,152 @@
                 <div class="content">
                     <div class="big_slider">
                         
-                        <a href="{{general.main_image.url}}"><img src="{{general.main_image.url}}" alt=""></a>
+                        
+
+
+                            <style>
+                                
+
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+    width: 100%; 
+    height: 600px;
+  }
+  
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+  }
+  
+  #slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    
+    height: 600px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+  }
+  
+ #ctrl_left.control_prev, #ctrl_right.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  #ctrl_left.control_prev:hover, #ctrl_right.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+  }
+  
+  #ctrl_left.control_prev {
+    border-radius: 0 2px 2px 0;
+  }
+  
+  #ctrl_right.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+  
+  .slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+  }
+  img.slider-img {
+    width:1000px;
+}
+  @media only screen and (max-width: 600px) {
+    #slider{
+        width: 100%; 
+        height: 300px;
+      }
+      img.slider-img {
+        width:500px;
+      }
+   }
+  
+  
+                            </style>
+                        
+                                <div id="slider">
+                                    <div id="ctrl_right" class="control_next">></div>
+                                    <div id="ctrl_left" class="control_prev"><</div>
+                                    <ul>
+                                    <li><img class="slider-img"  src="{{general.main_image.url}}" alt=""></li>
+                                    <li><img class="slider-img"  src="{{general.main_image.url}}" alt=""></li>
+                                    <li><img class="slider-img"  src="{{general.main_image.url}}" alt=""></li>
+                                    <li><img class="slider-img"  src="{{general.main_image.url}}" alt=""></li>
+                                    </ul>  
+                                </div>
+
+                                <script>jQuery(document).ready(function ($) {
+
+                                    setInterval(function () {
+                                        moveRight();
+                                    }, 60000);
+                                  
+                                    var slideCount = $('#slider ul li').length;
+                                    var slideWidth = $('.slider-img').width();
+                                    var slideHeight = $('#slider ul li').height();
+                                    var sliderUlWidth = slideCount * slideWidth;
+                                    
+                                    
+                                    
+                                    $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+                                    
+                                    $('#slider ul li:last-child').prependTo('#slider ul');
+                                
+                                    function moveLeft() {
+                                        $('#slider ul').animate({
+                                            left: + slideWidth
+                                        }, 500, function () {
+                                            $('#slider ul li:last-child').prependTo('#slider ul');
+                                            $('#slider ul').css('left', '');
+                                        });
+                                    };
+                                
+                                    function moveRight() {
+                                        $('#slider ul').animate({
+                                            left: - slideWidth
+                                        }, 500, function () {
+                                            $('#slider ul li:first-child').appendTo('#slider ul');
+                                            $('#slider ul').css('left', '');
+                                        });
+                                    };
+                                
+                                    $('#ctrl_left.control_prev').click(function () {
+                                        moveLeft();
+                                    });
+                                
+                                    $('#ctrl_right.control_next').click(function () {
+                                        moveRight();
+                                    });
+                                
+                                });    
+                                
+                                </script>
                         
                     </div>
                     
