@@ -865,24 +865,8 @@ figure.effect-apollo:hover figcaption::before {
     </div>
     </div>
 </div>
-
-<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="resource" data-msfavorites-animation style="display: none;">
-    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
-</div>
-<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="poster" data-msfavorites-animation style="display: none;">
-    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
-</div>
-<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="module" data-msfavorites-animation style="display: none;">
-    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
-</div>
-<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="curtains" data-msfavorites-animation style="display: none;">
-    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
-</div>
-<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="shower" data-msfavorites-animation style="display: none;">
-    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
-</div>
-<div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="pillow" data-msfavorites-animation style="display: none;">
-    <a href="favorites"><svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#supermarket"></use></svg> <span>Корзина</span></a>
+<div class="link-fixed-cart msfavorites-total-all" style="display: block !important;">
+    <a href="{% url 'cart' %}"><img src="{% static 'cart2.png'%}" style="margin-top: 14px;"> <span>Корзина</span></a>
 </div>
 
 

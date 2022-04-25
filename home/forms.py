@@ -1,5 +1,5 @@
 from django import forms
-from .models import Contact, Order
+from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
@@ -7,8 +7,3 @@ class ContactForm(forms.ModelForm):
         model = Contact
         fields = '__all__'
 
-
-class OrderForm(forms.ModelForm):
-    class Meta:
-        model = Order
-        fields = '__all__'

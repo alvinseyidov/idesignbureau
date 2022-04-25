@@ -27,7 +27,7 @@
     <meta name="yandex-verification" content="7f935cbb666e2ee4" />
     
     <meta name="yandex-verification" content="c7ac87cea76f8192" />
-    
+
     <script src="//code-eu1.jivosite.com/widget/vprirZRm5q" async></script>
     
   
@@ -431,14 +431,18 @@ figure.effect-apollo:hover figcaption::before {
         <div class="info">
              <div class="wrrp-article">
                 <div class="article">арт. 07709</div>
-                <div class="msfavorites"
+                  <form method="POST">
+                    {% csrf_token %}
+                    <input min="1" value=1 type="hidden" name="quantity">
+                    <input min="1" value={{p.id}} type="hidden" name="pr">
+                        <button type="submit" style="display: block !important;position: inherit !important;padding: 0px 2px 0 0;width: 111px;"><div class="msfavorites"
                     data-click
                     data-data-list="default"
                     data-data-type="curtains"
-                    data-data-key="10566">
-                    <div class="msfavorites-text-add"><span>добавить </span><svg class="icon"><use xlink:href="/static/template/svg/sprite.svg#add-to-cart"></use></svg></div>
-                    <div class="msfavorites-text-remove"><span>убрать </span><svg class="icon"><use xlink:href="/static/template/svg/sprite.svg#remove-from-cart"></use></svg></div>
-                </div>
+                    data-data-key="10566">{% trans 'в корзину ' %}
+                   <img src="{% static 'cart.png'%}" style="width: 24px;height: auto !important;min-height: auto !important;" />
+                </div></button>
+                </form>
             </div>
             <a href="{% url 'product' p.id %}" >
             <div class="title">{{p.name}}</div></a>

@@ -680,30 +680,21 @@
                                         <div class="wrrp-decision">
                                             <div class="tab-content quick-order">
                                                 <div class="wrrp-form-ajax">
-                                                    <form action="catalog-forest-012-18901" method="POST"
-                                                        class="sendLead" data-id="predzakaz" data-form="quickorder"
-                                                        data-ajax="1">
-                                                        <input type="hidden" name="id" value="28753">
-                                                        <input type="hidden" name="qwerty" value="">
-                                                        <input type="hidden" name="BC" value="">
-                                                        <input type="hidden" name="type" value="7">
-                                                        <input type="hidden" name="name-form" value="quick-order">
-                                                        <input type="hidden" name="device" value="desktop">
-                                                        <input type="hidden" name="template" value="4">
-                                                        <input type="hidden" name="query" value="">
-                                                        <textarea class="message-order-all" style="display:none;"
-                                                            name="message"></textarea>
-                                                        <input type="hidden" name="comment"
-                                                            value="ShutterStock order Picture ID=  " />
-                                                        <input type="hidden" name="count_type"
-                                                            value="photo_buying_count">
+                                                    <form method="POST"
+                                                        class="">
+                                                         {% csrf_token %}
+
 
                                                         <div class="title">{% trans 'Dizaynerimiz sizinlə əlaqə saxlayacaq'%}</div>
 
                                                         <div class="descr">{% trans 'Telefon nömrənizi daxil edin.' %}
                                                         </div>
                                                         <input type="text" placeholder="+994 (___)___-__-__"
-                                                            name="phone" class="required" data-type="phone" />
+                                                            name="telefon" class="required"  />
+                                                        <input type="hidden" value="{{product.name}}"
+                                                            name="product" />
+                                                        <input type="hidden" value="{{product.name}}"
+                                                            name="productcode" />
 
                                                         <button type="submit"
                                                             class="btn btn-orange-2">Göndərin.</button>
@@ -1058,7 +1049,7 @@
                                                 </div>
                                                 <div class="title" itemprop="name">{{p.name}}</div>
                                                 <meta itemprop="description"
-                                                    content="Современные фотообои Белые олени в лесу в наличии и под заказ! Большой выбор готовых решений и изготовление по индивидуальному изображению. 
+                                                    content="Современные фотообои Белые олени в лесу в наличии и под заказ! Большой выбор готовых решений и изготовление по индивидуальному изображению.
                 Купить фотообои Белые олени в лесу в интернет-магазине Photostena по самой низкой цене и бесплатной доставкой по России просто! Подробности по тел. 8-800-500-44-16.">
 
                                                 <div class="wrrp-price clearfix" itemprop="offers" itemscope=""
@@ -1285,7 +1276,7 @@
             <!--div class="we_works row">
             <div class="title-block">Наши работы</div>
             <div class="items slider-work owl-carousel owl-theme">
-                
+
             </div>
         </div-->
 
@@ -1420,7 +1411,7 @@
     {%for i in socials%}
     <a href="{{i.url}}" target="_blank" style="background-image: url({{i.icon.url}})"></a>
     {% endfor %}
-    
+
 </div>
 <a class="email" href="mailto:info@idesignbureau.com">info@idesignbureau.com</a><br>
 <a>Subhi Salayev küç.102</a><br>
@@ -1454,43 +1445,9 @@
             </div>
         </div>
     </div>
-
-    <div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="resource"
-        data-msfavorites-animation style="display: none;">
-        <a href="favorites"><svg class="icon">
-                <use xlink:href="/static/template/svg/sprite.svg#supermarket"></use>
-            </svg> <span>Корзина</span></a>
-    </div>
-    <div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="poster"
-        data-msfavorites-animation style="display: none;">
-        <a href="favorites"><svg class="icon">
-                <use xlink:href="/static/template/svg/sprite.svg#supermarket"></use>
-            </svg> <span>Корзина</span></a>
-    </div>
-    <div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="module"
-        data-msfavorites-animation style="display: none;">
-        <a href="favorites"><svg class="icon">
-                <use xlink:href="/static/template/svg/sprite.svg#supermarket"></use>
-            </svg> <span>Корзина</span></a>
-    </div>
-    <div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="curtains"
-        data-msfavorites-animation style="display: none;">
-        <a href="favorites"><svg class="icon">
-                <use xlink:href="/static/template/svg/sprite.svg#supermarket"></use>
-            </svg> <span>Корзина</span></a>
-    </div>
-    <div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="shower"
-        data-msfavorites-animation style="display: none;">
-        <a href="favorites"><svg class="icon">
-                <use xlink:href="/static/template/svg/sprite.svg#supermarket"></use>
-            </svg> <span>Корзина</span></a>
-    </div>
-    <div class="link-fixed-cart msfavorites-total-all" data-data-list="default" data-data-type="pillow"
-        data-msfavorites-animation style="display: none;">
-        <a href="favorites"><svg class="icon">
-                <use xlink:href="/static/template/svg/sprite.svg#supermarket"></use>
-            </svg> <span>Корзина</span></a>
-    </div>
+<div class="link-fixed-cart msfavorites-total-all" style="display: block !important;">
+    <a href="{% url 'cart' %}"><img src="{% static 'cart2.png'%}" style="margin-top: 14px;"> <span>Корзина</span></a>
+</div>
 
 
 
@@ -1547,7 +1504,6 @@
     var _emv = _emv || [];
     _emv['campaign'] = 'f02b3153b7cd949403726f74';
     _emv['lang'] = 'ru';
-
     (function() {
         var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
         em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
@@ -1579,7 +1535,7 @@
         });
 
         /*$('.change-type-product .btn-select').click(function(){
-           $('.list-select-type-product').fadeIn(); 
+           $('.list-select-type-product').fadeIn();
         });*/
 
     </script>

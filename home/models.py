@@ -25,17 +25,7 @@ class Social(models.Model):
         return self.name
 
 
-class Order(models.Model):
-    productcode = models.CharField(max_length=255)
-    product = models.CharField(max_length=255, null=True, blank=True)
-    telefon = models.CharField(max_length=255)
 
-    class Meta:
-        verbose_name = 'Sifarişlər'
-        verbose_name_plural = verbose_name
-
-    def __str__(self):
-        return f'{self.telefon} - {self.product}'
 
 
 class Contact(models.Model):

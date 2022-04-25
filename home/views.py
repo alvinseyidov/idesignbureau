@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from product.models import *
+from shop.models import Customer, OrderItem, Order
 from .forms import ContactForm
 from .models import *
 from django.db.models import Q
@@ -25,25 +26,26 @@ def index(request):
         'colors': colors,
         'rooms': rooms,
     }
-    if request.method == "POST":
-        images = request.FILES.getlist('images')
-        print("hey hey---------------------------------------------------------------------------------------------------------------1")
-        n = 0
-        name = request.POST['name']
-        catt = request.POST['cat']
-        for image in images:
-            print("hey hey------------------------------------------------------------------------------------------------------------")
-            n = n + 1
-            nm = name + " " + str(n)
-            sub = SubCategory.objects.get(pk=int(catt))
-            category = Category.objects.get(pk=1)
-            product = Product.objects.create(main_category=category,price=30,sub_category=sub,name=nm)
-            image = ProductImage.objects.create(image = image, product=product)
-            list = request.POST['tags'].split(",")
-            for l in list:
-                tag = Tag.objects.filter(name=l).last()
-                if tag:
-                    product.tags.add(tag)
+    if request.method == 'POST':
+        product = Product.objects.get(id=request.POST.get('pr'))
+        try:
+            customer = request.user.customer
+        except:
+            device = request.COOKIES['device']
+            customer, created = Customer.objects.get_or_create(device=device)
+
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+        orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+        orderItem.quantity = request.POST['quantity']
+        orderItem.save()
+        device = request.COOKIES['device']
+        customer, created = Customer.objects.get_or_create(device=device)
+
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+
+        context = {'order': order}
+
+        return render(request, 'cart.html', context)
             
     return render(request, "index.html", context)
 
@@ -182,7 +184,26 @@ def search(request):
     general = General.objects.all()[0]
     clients = Client.objects.all()
     socials = Social.objects.all()
+    if request.method == 'POST':
+        product = Product.objects.get(id=request.POST.get('pr'))
+        try:
+            customer = request.user.customer
+        except:
+            device = request.COOKIES['device']
+            customer, created = Customer.objects.get_or_create(device=device)
 
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+        orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+        orderItem.quantity = request.POST['quantity']
+        orderItem.save()
+        device = request.COOKIES['device']
+        customer, created = Customer.objects.get_or_create(device=device)
+
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+
+        context = {'order': order}
+
+        return render(request, 'cart.html',context)
     context = {
         
         'products': products,
@@ -203,6 +224,27 @@ def filter(request,id):
     clients = Client.objects.all()
     socials = Social.objects.all()
 
+    if request.method == 'POST':
+        product = Product.objects.get(id=request.POST.get('pr'))
+        try:
+            customer = request.user.customer
+        except:
+            device = request.COOKIES['device']
+            customer, created = Customer.objects.get_or_create(device=device)
+
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+        orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+        orderItem.quantity = request.POST['quantity']
+        orderItem.save()
+        device = request.COOKIES['device']
+        customer, created = Customer.objects.get_or_create(device=device)
+
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+
+        context = {'order': order}
+
+        return render(request, 'cart.html',context)
+
     context = {
         
         'products': products,
@@ -214,6 +256,19 @@ def filter(request,id):
 
     }
     return render(request, "filter.html", context)
+
+def cart(request):
+	try:
+		customer = request.user.customer
+	except:
+		device = request.COOKIES['device']
+		customer, created = Customer.objects.get_or_create(device=device)
+
+	order, created = Order.objects.get_or_create(customer=customer, complete=False)
+
+	context = {'order':order}
+	return render(request, 'cart.html', context)
+
 
 def filterotaq(request,id):
     query = Room.objects.get(pk=id)

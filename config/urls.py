@@ -3,6 +3,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from home import views as home_views
+from shop import views as shop_views
 from fotooboy import views as fotooboy_views
 from skinali import views as skinali_views
 from tablo import views as tablo_views
@@ -51,6 +52,8 @@ urlpatterns += i18n_patterns(
 
     path('contact/', home_views.contact, name="contact"),
     path('about/', home_views.about, name="about"),
+    path('cart/', shop_views.cart, name="cart"),
+    path('clearcart/', shop_views.clearcart, name="clearcart"),
     path('search/', home_views.search, name="search"),
     path('filter/<int:id>/', home_views.filter, name="filter"),
     path('otaq/<int:id>/', home_views.filterotaq, name="filterotaq"),

@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-from home.forms import ContactForm, OrderForm
+from home.forms import ContactForm
+from shop.forms import OrderForm
+from shop.models import Customer, OrderItem, Order
 from .models import *
 from home.models import *
 from fotooboy.models import *
@@ -71,6 +73,8 @@ def product(request, id):
             }
             return render(request, "ordersuccess.html", context)
 
+
+
     context = {
         'product': product,
         'categories': categories,
@@ -87,3 +91,6 @@ def product(request, id):
     }
 
     return render(request, "product.html", context)
+
+
+
