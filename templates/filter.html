@@ -332,7 +332,7 @@
                                                             </div>
                                                         {% endif %}
                                                 
-                                               
+                                                
                                                
                                                 <ul class="sidebar-list sidebar-list-2 pop-5" id="sub{{i.id}}" style="display: none;">
                                                     {% for c in i.subs.all%}
@@ -548,12 +548,12 @@ figure.effect-apollo:hover figcaption::before {
                     {% csrf_token %}
                     <input min="1" value=1 type="hidden" name="quantity">
                     <input min="1" value={{p.id}} type="hidden" name="pr">
-                        <button type="submit" style="display: block !important;position: inherit !important;padding: 0px 2px 0 0;width: 111px;"><div class="msfavorites"
+                        <button type="submit" style="display: block !important;position: inherit !important;padding: 0px 2px 0 0;width: 116px;"><div class="msfavorites"
                     data-click
                     data-data-list="default"
                     data-data-type="curtains"
-                    data-data-key="10566">{% trans 'в корзину ' %}
-                   <img src="{% static 'cart.png'%}" style="width: 24px;height: auto !important;min-height: auto !important;" />
+                    data-data-key="10566">{% trans 'В избранное ' %}
+                   <img src="{% static 'heart1.png'%}" style="width: 24px;height: auto !important;min-height: auto !important;" />
                 </div></button>
                 </form>
 
@@ -808,7 +808,8 @@ figure.effect-apollo:hover figcaption::before {
 }}
 </script>
 			<p>{% trans 'No1 3D Photooboy manufacturer in Azerbaijan. Great quality and affordable prices.' %}</p>
-			<p>© 2010-2022 iDesign Bureau.{% trans 'All rights reserved' %}</p>
+			<p>© 2010-2022 iDesign Bureau.{% trans 'All rights reserved' %}</p><div style="margin-top: 24px;margin-bottom: -24px;font-size: 20px;">VÖEN: 1501425072
+            </div> 
 		</div>
 		<div class="col2 right">
 		   
@@ -854,7 +855,9 @@ figure.effect-apollo:hover figcaption::before {
 <div class="link-fixed-cart msfavorites-total-all" style="display: block !important;">
     <a href="{% url 'cart' %}"><img src="{% static 'cart2.png'%}" style="margin-top: 14px;"> <span>Корзина</span></a>
 </div>
-
+<div class="link-fixed-cart msfavorites-total-all" style="display: block !important;top: 39%;">
+    <a href="{% url 'cart' %}" style="height: 57px !important;"><img src="{% static 'heart.png'%}" style="margin-top: 14px; "> </a>
+</div>
 <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
 <script type="text/javascript" src="/static/components/minifyx/cache/scripts_fb61d70ee4.min.js"></script>
 
