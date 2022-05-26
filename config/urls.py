@@ -61,6 +61,10 @@ urlpatterns += i18n_patterns(
     path('', home_views.index, name="shipping"),
     path('category/<int:id>/', product_views.main_category, name="category"),
     path('product/<int:id>/', product_views.product, name="product"),
+
+
+    path('ordernow/', shop_views.order_now, name="order_now"),
+    path('successpay/', shop_views.success, name="successpay"),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

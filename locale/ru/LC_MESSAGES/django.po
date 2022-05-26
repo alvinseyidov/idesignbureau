@@ -20,6 +20,19 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
+msgid "FOTOOBOY VƏ FRESKA"
+msgstr "ФОТООБОИ"
+msgid "TABLO VƏ ÇƏRÇİVƏLƏR"
+msgstr "КАРТИНЫ И ПОСТЕРЫ"
+msgid "ÖZ ŞƏKİLİNİZ İLƏ TABLO"
+msgstr "ПОСТЕРЫ"
+msgid "SKİNALİ"
+msgstr "СКИНАЛИ"
+msgid "EV ÜÇÜN DEKOR"
+msgstr "ДЕКОР ДЛЯ ДОМА"
+msgid "EXCLUSİVE ƏL İŞLƏRİ"
+msgstr "ЭКСКЛЮЗИВ"
+
 #: .\templates\about.html:74 .\templates\about.html:110
 #: .\templates\about.html:370 .\templates\about.html:386
 #: .\templates\contact.html:74 .\templates\contact.html:110

@@ -437,8 +437,10 @@ figure.effect-apollo:hover figcaption::before {
 
 
                     <div class="block-product">
-                        <div class="title-block">{% trans 'Товары в корзине' %}</div>
-
+                        <div class="title-block">{% trans 'Платеж успешно принят' %}</div>
+						<div style="text-align: center;">
+							<img  style="width: 86px;margin-top: 52px;" src="{% static 'check.png'%}"/>
+						</div>
                         <div class="catalog grid new-collection row without-mebel">
 						{% if order.items.count == 0 %}
 
@@ -630,9 +632,7 @@ figure.effect-apollo:hover figcaption::before {
             </div>
         </div>
     </div>
-	<div class="wrrp-btn-clean-favorite" style="width: 244px;text-align: center;margin: auto;">
-                                <a href="{% url 'clearcart'%}"<button class="btn btn-gray msfavorites msfavorites-action load" >Очистить корзину</button></a>
-                            </div>
+
 	<div class="container">
 	<div class="wrrp-form-favorite wrrp-form-ajax">
                         <form action="favorites" method="POST" class="sendLead" data-id="predzakaz" id="cartSubmitForm" data-form="#msProduct .ms2_form" data-ajax="3">
@@ -653,12 +653,12 @@ https://photostena.ru/catalog-pastel-004-18913
 </textarea>
                             <input type="hidden" name="comment" value="ShutterStock order Picture ID=  ">
 
-                            <div class="title-item">Для оформления заказа заполните поля.</div>
+                            <div class="title-item">Мы свяжемся с вами в ближайшее время.</div>
 
                             <div class="wrrp-order-input row">
                                 <div class="col col-md-4"></div>
                                 <div class="col col-md-4" id="ordernowbutton" onclick="changeOrderStyle()">
-
+                                    <button type="submit" class="btn btn-orange-2">Главная страница</button>
                                 </div>
 								<div class="col col-md-4"></div>
                             </div>
@@ -683,7 +683,7 @@ https://photostena.ru/catalog-pastel-004-18913
                 			    </label>
                     		</div>
 
-							 <div class="wrrp-order-input row" style="margin-top:18px;display:block;" id="orderfields">
+							 <div class="wrrp-order-input row" style="margin-top:18px;display:none;" id="orderfields">
                                 <div class="col col-md-4">
                                     <input type="text" placeholder="Имя" name="name" class="required">
                                 </div>
@@ -705,9 +705,7 @@ https://photostena.ru/catalog-pastel-004-18913
 
 
 								 <div class="col col-md-4"></div>
-								 <div class="col col-md-4"  style="margin-top:18px;">
-                                   <a href="{% url 'order_now'%}"> <button type="button" class="btn btn-orange-2">Заказать сейчас</button></a>
-                                </div>
+
 								 <div class="col col-md-4"></div>
                             </div>
                 	    </form>
