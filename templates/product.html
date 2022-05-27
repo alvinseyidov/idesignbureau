@@ -563,16 +563,41 @@
                                     <img src="upload/action/stiker-discount-2.png" alt="">
                                     <span>SALE - 63%</span>
                                 </div>
+                                
+                                <script>
+                                    (function() {
+
+                                        var orientation,
+                                            img = new Image();
+                                        
+                                        img.onload = function () {
+                                        
+                                        if (img.naturalWidth > img.naturalHeight) {
+                                            document.getElementById('imagearea1inner').innerHTML += '<img style="width: 100%;" src="' + img.src + '"/>';
+                                            document.getElementById('imagearea2inner').innerHTML += '<img id="image" style="width: 100%;" src="' + img.src + '"/>';
+                                        } else if (img.naturalWidth < img.naturalHeight) {
+                                            document.getElementById('imagearea1inner').innerHTML += '<img style="width: 50%;" src="' + img.src + '"/>';
+                                            document.getElementById('imagearea2inner').innerHTML += '<img id="image" style="width: 50%;" src="' + img.src + '"/>';
+                                        } else {
+                                        orientation = 'even';
+                                        }
+                                          
+                                        
+                                        }
+                                        
+                                        img.src = "{{product.images.first.image.url}}";
+                                        
+                                        })();
+                                </script> 
                                 <div class="browsing wallpaper">
                                     {% if product.images.first %}
                                     <div class="imgf" id="imagearea1" style="opacity: 1 !important;">
 
 
-                                        <div>
-                                            <img src="{{product.images.first.image.url}}"
-                                            style="width: 100%;"
-                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
-                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru">
+                                        
+
+                                        <div id="imagearea1inner" style="text-align:center;">
+                                             
                                         </div>
                                     </div>
 
@@ -580,14 +605,11 @@
                                     <div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;" >
 
 
-                                        <div>
-                                            <img id="image" src="{{product.images.first.image.url}}"
-                                            style="width: 100%;"
-                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
-                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
-                                                class="cropper-hidden">
+                                        <div id="imagearea2inner" style="text-align:center;">
+                                            
                                         </div>
                                     </div>
+                                    
  
                                     <div class="imgf" id="imagearea3" style="display:none;">
 
@@ -599,7 +621,7 @@
                                     <div class="imgf" id="imagearea4" style="display:none;">
 
 
-                                        <div style=" text-align: center; ">
+                                        <div id="imagearea4inner" style="text-align:center;">
                                             <img id="fittedimage" style="width: 100%;"
                                                 src="{{product.images.first.image.url}}"
                                                 alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
@@ -1731,6 +1753,7 @@
 
             var fitimage = document.getElementById("fitimage");
             var elem = document.createElement("img");
+            elem.style="width:100%";
             elem.src = imgurl;
             document.getElementById("fitimage").replaceChildren(elem);
         }
