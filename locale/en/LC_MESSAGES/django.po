@@ -31,6 +31,67 @@ msgstr "HOME DECOR"
 msgid "EXCLUSİVE ƏL İŞLƏRİ"
 msgstr "EXCLUSIVE"
 
+
+
+msgid "Made by"
+msgstr "Made by"
+
+msgid "В избранное"
+msgstr "Add To Favorites" 
+
+msgid "Foto divar kağızları, freskalar və kətan şəkilləri əldə etmək mümkündür! Aşağı qiymətlər və Azərbaycanın bütün şəhərlərinə çatdırılma: Bakı, Sumqayıt, Gəncə, Qəbələ, Şamaxı, Quba, Lənkaran, Astara, Qazax, Şuşa, Mingəçevir, İsmayıllı, Kürdəmir, Ucar, Balakən, Zaqatala"
+msgstr "Buying photo wallpapers, frescoes and paintings on canvas is very easy! Low prices and delivery to all cities of Azerbaijan: Baku, Sumgayit, Ganja, Gabala, Shamakhi, Guba, Lankaran, Astara, Gazakh, Shusha, Mingachevir, Ismayilli, Kurdamir, Ujar, Balakan, Zagatala"
+
+
+msgid "TABLO SİFARİŞİ"
+msgstr "POSTER"
+msgid "SÜRƏTLİ SİFARİŞ"
+msgstr "FAST ORDER"
+msgid "DİVAR KAĞIZI"
+msgstr "WALLPAPER"
+ 
+
+
+msgid "Ölçünü seçin"
+msgstr "Choose Size"
+msgid "Eni"
+msgstr "Width"
+msgid "Hündürlük"
+msgstr "Heigth"
+msgid "Formanı özünüz təyin edin."
+msgstr "Custom sizing."
+msgid "Şəkildə sizin ölçüyə uyğun sahə görünəcək, onu mərkəzdən kənara keçirə bilərsiniz. Ancaq bu işi dizaynerlərimizə həvalə etmək daha yaxşıdır - onlar bütün təsviri ölçülərinizə uyğunlaşdırmağa çalışacaqlar ki, nisbətlər pozulmasın."
+msgstr "The image will show an area that fits your size, you can move it away from the center. But it is better to entrust this work to our designers - they will try to fit all your descriptive dimensions so as not to distort the proportions."
+msgid "Обрезать"
+msgstr "Cut"
+msgid "Вместить все"
+msgstr "Fit to size"
+msgid "Material seçin"
+msgstr "Choose material"
+msgid "Sifariş məbləği"
+msgstr "Order amount"
+msgid "Minimal sifariş məbləği 200 AZN"
+msgstr "Minimum order amount is 200 AZN"
+msgid "İNDİ SİFARİŞ EDİN"
+msgstr "ORDER NOW"
+msgid "ENDİRİMLƏRDƏN YARARLANIN"
+msgstr "DON'T MISS OUR DISCOUNTS"
+msgid "Ваш E-mail"
+msgstr "E-mail"
+msgid "Əlaqə məlumatlarını daxil edin."
+msgstr "Input you contact informations."
+msgid "Məlumat təqdim etməklə, Şəxsi məlumatlar haqqında Qanuna uyğun olaraq şəxsi məlumatlarımın emalına razılığımı verirəm, şərtləri oxudum və qəbul edirəm..."
+msgstr "By submitting the information, I consent to the processing of my personal data in accordance with the Personal Data Act, read and accept the terms..."
+msgid "SİFARİŞ"
+msgstr "ORDER"
+msgid "Dizaynerimiz sizinlə əlaqə saxlayacaq"
+msgstr "Our designers will contact you soon."
+msgid "Telefon nömrənizi daxil edin"
+msgstr "Input you phone number"
+msgid "Göndərin."
+msgstr "Send"
+
+
 #: .\templates\about.html:74 .\templates\about.html:110
 #: .\templates\about.html:370 .\templates\about.html:386
 #: .\templates\contact.html:74 .\templates\contact.html:110

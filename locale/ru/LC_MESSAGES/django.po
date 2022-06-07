@@ -32,6 +32,72 @@ msgid "EV ÜÇÜN DEKOR"
 msgstr "ДЕКОР ДЛЯ ДОМА"
 msgid "EXCLUSİVE ƏL İŞLƏRİ"
 msgstr "ЭКСКЛЮЗИВ"
+ 
+
+msgid "Made by"
+msgstr "Сделано"
+ 
+
+msgid "Foto divar kağızları, freskalar və kətan şəkilləri əldə etmək mümkündür! Aşağı qiymətlər və Azərbaycanın bütün şəhərlərinə çatdırılma: Bakı, Sumqayıt, Gəncə, Qəbələ, Şamaxı, Quba, Lənkaran, Astara, Qazax, Şuşa, Mingəçevir, İsmayıllı, Kürdəmir, Ucar, Balakən, Zaqatala"
+msgstr "Купить фотообои, фрески и картины на холсте очень просто! Низкие цены и доставка во все города Азербайджан: Баку,Сумгаит,Гянджа, Габала, Шамаха, Губа, Лянкяран, Астара, Газах, Шуша, Мингячевир, Исмаиллы, Кюрдамир, Уджар, Балакан, Загатала"
+
+
+
+
+
+msgid "SÜRƏTLİ SİFARİŞ"
+msgstr "БЫСТРЫЙ ЗАКАЗ"
+msgid "DİVAR KAĞIZI"
+msgstr "ОБОИ"
+msgid "TABLO SİFARİŞİ"
+msgstr "ПОСТЕР"
+
+
+msgid "Ölçünü seçin"
+msgstr "Выберите размер"
+msgid "Eni"
+msgstr "Ширина"
+msgid "Hündürlük"
+msgstr "Высота"
+msgid "Formanı özünüz təyin edin."
+msgstr "Установите форму самостоятельно"
+msgid "Şəkildə sizin ölçüyə uyğun sahə görünəcək, onu mərkəzdən kənara keçirə bilərsiniz. Ancaq bu işi dizaynerlərimizə həvalə etmək daha yaxşıdır - onlar bütün təsviri ölçülərinizə uyğunlaşdırmağa çalışacaqlar ki, nisbətlər pozulmasın."
+msgstr "На изображении будет показана область, подходящая вашему размеру, вы можете отодвинуть ее от центра. Но лучше доверить эту работу нашим дизайнерам - они постараются подогнать все ваши описательные размеры, чтобы не исказить пропорции."
+msgid "Обрезать"
+msgstr "Обрезать"
+msgid "Вместить все"
+msgstr "Вместить все"
+msgid "Material seçin"
+msgstr "Выберите материал"
+msgid "Sifariş məbləği"
+msgstr "Сумма заказа"
+msgid "Minimal sifariş məbləği 200 AZN"
+msgstr "Минимальная сумма заказа 200 AZN"
+msgid "İNDİ SİFARİŞ EDİN"
+msgstr "ЗАКАЗАТЬ СЕЙЧАС"
+msgid "ENDİRİMLƏRDƏN YARARLANIN"
+msgstr "ВОСПОЛЬЗУЙТЕСЬ СКИДКАМИ"
+msgid "Ваш E-mail"
+msgstr "Ваш E-mail"
+msgid "Əlaqə məlumatlarını daxil edin."
+msgstr "Введите свою контактную информацию"
+msgid "Məlumat təqdim etməklə, Şəxsi məlumatlar haqqında Qanuna uyğun olaraq şəxsi məlumatlarımın emalına razılığımı verirəm, şərtləri oxudum və qəbul edirəm..."
+msgstr "Предоставляя информацию, я даю согласие на обработку моих персональных данных в соответствии с Законом о персональных данных, я прочитал и принимаю условия..."
+msgid "SİFARİŞ"
+msgstr "Заказать"
+msgid "Dizaynerimiz sizinlə əlaqə saxlayacaq"
+msgstr "Наш дизайнер свяжется с вами"
+
+
+msgid "Telefon nömrənizi daxil edin"
+msgstr "Введите свой номер телефона"
+msgid "Göndərin."
+msgstr "Отправлять"
+
+ 
+ 
+
+
 
 #: .\templates\about.html:74 .\templates\about.html:110
 #: .\templates\about.html:370 .\templates\about.html:386
@@ -307,7 +373,7 @@ msgstr "Доставка"
 msgid ""
 "No1 3D Photooboy manufacturer in Azerbaijan. Great quality and affordable "
 "prices."
-msgstr ""
+msgstr "Печать фотообоев, фресок, картин и фото на холсте. İdesignbureau - крупнейший интернет-магазин фотообоев."
 
 #: .\templates\about.html:426 .\templates\contact.html:430
 #: .\templates\filter.html:629 .\templates\filterotaq.html:629
@@ -327,7 +393,7 @@ msgstr "Все права защищены"
 msgid ""
 "No1 3D Photooboy manufacturer in Azerbaijan. Great quality and affordable "
 "prices. Fast shipping."
-msgstr ""
+msgstr "Печать фотообоев, фресок, картин и фото на холсте. İdesignbureau - крупнейший интернет-магазин фотообоев."
 
 #: .\templates\contact.html:217
 msgid "Contact Us"

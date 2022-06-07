@@ -92,5 +92,58 @@ def product(request, id):
 
     return render(request, "product.html", context)
 
+def producttablo(request, id):
+    product = Product.objects.get(pk=id)
+    categories = Category.objects.all()
+    cat_id = id
 
+    featured = SubCategory.objects.filter()
+    general = General.objects.all()[0]
+    clients = Client.objects.all()
+    socials = Social.objects.all()
+    products = Product.objects.all()[:10]
+    colors = Color.objects.all()
+    rooms = Room.objects.all()
+    interiers = Interier.objects.all()
+
+    material = Material.objects.all()
+
+    form = OrderForm()
+    if request.method == "POST":
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            form.save()
+            context = {
+                'product': product,
+                'categories': categories,
+                'cat_id': cat_id,
+                'featured': featured,
+                'general': general,
+                'clients': clients,
+                'socials': socials,
+                'products': products,
+                'colors': colors,
+                'rooms': rooms,
+                'interiers': interiers,
+            }
+            return render(request, "ordersuccess.html", context)
+
+
+
+    context = {
+        'product': product,
+        'categories': categories,
+        'cat_id': cat_id,
+        'featured': featured,
+        'general': general,
+        'clients': clients,
+        'socials': socials,
+        'products': products,
+        'colors': colors,
+        'rooms': rooms,
+        'material': material,
+        'interiers': interiers
+    }
+
+    return render(request, "producttablo.html", context)
 

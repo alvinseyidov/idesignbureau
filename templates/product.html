@@ -560,8 +560,6 @@
 
                             <div class="left-column">
                                 <div class="sticker-discount">
-                                    <img src="upload/action/stiker-discount-2.png" alt="">
-                                    <span>SALE - 63%</span>
                                 </div>
                                 
                                 <script>
@@ -698,8 +696,9 @@
                                         <div class="tab-link">
                                             <!--div class="item first" data-tab="quick-order">Быстрый заказ</div>
                 <div class="item last active" data-tab="full-order">Полный заказ</div-->
-                                            <div class="item first active" data-tab="quick-order">SÜRƏTLİ SİFARİŞ</div>
-                                            <div class="item last sdfbsdfbsdf" data-tab="full-order">TAM SİFARİŞ</div>
+                                            <div class="item first active" style="font-size: 12px;" data-tab="quick-order">{% trans 'SÜRƏTLİ SİFARİŞ' %}</div>
+                                            <div class="item last sdfbsdfbsdf" style="font-size: 12px;" data-tab="full-order">{% trans 'DİVAR KAĞIZI' %}</div>
+                                            <a style=" width: 92px; " href="{% url 'producttablo' product.id%}"><div class="item last sdfbsdfbsdf" style="font-size: 12px;width: 104px;margin-left: -2px;" >{% trans 'TABLO SİFARİŞİ' %}</div></a>
                                         </div>
                                         <div class="wrrp-decision">
                                             <div class="tab-content quick-order">
@@ -721,26 +720,23 @@
                                                             name="productcode" />
 
                                                         <button type="submit"
-                                                            class="btn btn-orange-2">Göndərin.</button>
+                                                            class="btn btn-orange-2">{% trans 'Göndərin.'%}</button>
                                                         <div class="wrrp-policy clearfix">
                                                             <label>
-                                                                Məlumat təqdim etməklə, Şəxsi məlumatlar haqqında Qanuna
-                                                                uyğun olaraq şəxsi məlumatlarımın emalına razılığımı
-                                                                verirəm, şərtləri oxudum və qəbul edirəm...
+                                                                {% trans 'Məlumat təqdim etməklə, Şəxsi məlumatlar haqqında Qanuna uyğun olaraq şəxsi məlumatlarımın emalına razılığımı verirəm, şərtləri oxudum və qəbul edirəm...'%}
 
                                                             </label>
                                                         </div>
 
                                                         <div class="price-total" itemprop="offers" itemscope
                                                             itemtype="http://schema.org/Offer">
-                                                            180 AZN'dən
                                                         </div>
 
                                                         <div class="wrrp-option">
                                                             <div class="action">
-                                                                <div class="title">İNDİ SİFARİŞ EDİN</div>
+                                                                <div class="title">{% trans 'İNDİ SİFARİŞ EDİN'%}</div>
                                                                 <!--<div class="discount">до 15%</div>-->
-                                                                <div class="title">GÜZƏŞTLƏRDƏN YARARLANIN</div>
+                                                                <div class="title">{% trans 'ENDİRİMLƏRDƏN YARARLANIN'%}</div>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -759,10 +755,10 @@
                                             <div class="tab-content full-order">
                                                 <div class="step step-1">
                                                     <div class="wall-params">
-                                                        <div class="title-item">1. Ölçünü seçin</div>
+                                                        <div class="title-item">1. {% trans 'Ölçünü seçin'%}</div>
                                                         <div class="wrrp">
                                                             <div class="dost clearfix">
-                                                                <div class="desc">Eni</div>
+                                                                <div class="desc">{% trans 'Eni'%}</div>
                                                                 <label class="icon-unit" for="dataWidth"><img
                                                                         class="icon"
                                                                         src="/static/template/svg/width-wall.svg"></label>
@@ -772,7 +768,7 @@
                                                                     size="2" value="200" autocomplete="off" />
                                                             </div>
                                                             <div class="dost clearfix">
-                                                                <div class="desc">Hündürlük </div>
+                                                                <div class="desc">{% trans 'Hündürlük'%} </div>
                                                                 <label class="icon-unit" for="dataHeight"><img
                                                                         class="icon"
                                                                         src="/static/template/svg/height-wall.svg"></label>
@@ -786,15 +782,10 @@
                                                             <input type="checkbox" id="onOff" name="" value=""
                                                                 onchange="togglecrop()">
                                                             <label for="onOff" id="offCropper"></label>
-                                                            <div class="text">Formanı özünüz təyin edin.</div>
+                                                            <div class="text">{% trans 'Formanı özünüz təyin edin.'%}</div>
                                                             <div class="question">?</div>
                                                             <div class="hidden-text-save-foto">
-                                                                <div class="item">Şəkildə sizin ölçüyə uyğun sahə
-                                                                    görünəcək, onu mərkəzdən kənara keçirə bilərsiniz.
-                                                                    Ancaq bu işi dizaynerlərimizə həvalə etmək daha
-                                                                    yaxşıdır - onlar bütün təsviri ölçülərinizə
-                                                                    uyğunlaşdırmağa çalışacaqlar ki, nisbətlər
-                                                                    pozulmasın.
+                                                                <div class="item">{% trans 'Şəkildə sizin ölçüyə uyğun sahə görünəcək, onu mərkəzdən kənara keçirə bilərsiniz. Ancaq bu işi dizaynerlərimizə həvalə etmək daha yaxşıdır - onlar bütün təsviri ölçülərinizə uyğunlaşdırmağa çalışacaqlar ki, nisbətlər pozulmasın.'%}
                                                                 </div>
                                                             </div>
 
@@ -805,7 +796,7 @@
                                                                         <input type="checkbox" id="cropToArea"
                                                                             onchange="fitToImage()" name="" value="">
                                                                         <label for="cropToArea" id=""
-                                                                            class="btn btn-blue">Обрезать</label>
+                                                                            class="btn btn-blue">{% trans 'Обрезать'%}</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col col-xs-6">
@@ -813,7 +804,7 @@
                                                                         <input type="checkbox" id="fitCropper"
                                                                             onchange="fitToImage2()" name="" value="">
                                                                         <label for="fitCropper" id=""
-                                                                            class="btn btn-blue">Вместить все</label>
+                                                                            class="btn btn-blue">{% trans 'Вместить все'%}</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -825,7 +816,7 @@
 
                                                     <div class="step step-2">
                                                         <div class="mat-wrrp">
-                                                            <div class="title-item">2. Material seçin</div>
+                                                            <div class="title-item">2. {% trans 'Material seçin'%}</div>
 
                                                             <div class="mat-select">
 
@@ -851,7 +842,7 @@
                                                                                 <span
                                                                                     class="show-popup-material popup-video"
                                                                                     data-fancybox
-                                                                                    href="https://youtu.be/bhyt-SH_aiY"></span>
+                                                                                    href="https://youtu.be/5N6vxQ1XTSY"></span>
 
                                                                             </div>
                                                                         </div>
@@ -877,7 +868,7 @@
                                                             <div class="wrrp">
                                                                 <div class="old-price-wallpaper"></div>
                                                                 <div class="main-price">
-                                                                    <div class="ttl">Sifariş məbləği</div>
+                                                                    <div class="ttl">{% trans 'Sifariş məbləği'%}</div>
                                                                     <span class="insert-price"></span><span
                                                                         class="price_wallpaper" id="pricee">0</span>
                                                                     <span>AZN</span>
@@ -891,15 +882,15 @@
 
                                                         <div class="kupon">
                                                             <div class="text">
-                                                                Minimal sifariş məbləği 200 AZN
+                                                                {% trans 'Minimal sifariş məbləği 200 AZN'%}
                                                             </div>
                                                         </div>
 
                                                         <div class="wrrp-option">
                                                             <div class="action">
-                                                                <div class="title">İNDİ SİFARİŞ EDİN</div>
+                                                                <div class="title">{% trans 'İNDİ SİFARİŞ EDİN'%}</div>
                                                                 <!--<div class="discount">до 15%</div>-->
-                                                                <div class="title">ENDİRİMLƏRDƏN YARARLANIN</div>
+                                                                <div class="title">{% trans 'ENDİRİMLƏRDƏN YARARLANIN'%}</div>
                                                             </div>
                                                         </div>
 
@@ -928,8 +919,7 @@
                                                                     value="ShutterStock order Picture ID=  " />
                                                                 <input type="hidden" name="cropped" value="" />
 
-                                                                <div class="title-item">3. Əlaqə məlumatlarını daxil
-                                                                    edin.</div>
+                                                                <div class="title-item">3. {% trans 'Əlaqə məlumatlarını daxil edin.'%}</div>
 
                                                                 <div class="row">
                                                                     <div class="col">
@@ -939,17 +929,14 @@
                                                                             data-type="phone" />
                                                                     </div>
                                                                     <div class="col">
-                                                                        <input type="text" placeholder="Ваш E-mail"
+                                                                        <input type="text" placeholder="{% trans 'Ваш E-mail'%}"
                                                                             name="email" />
                                                                     </div>
                                                                 </div>
 
                                                                 <div class="wrrp-policy clearfix">
                                                                     <label>
-                                                                        Məlumat təqdim etməklə, Şəxsi məlumatlar
-                                                                        haqqında Qanuna uyğun olaraq şəxsi
-                                                                        məlumatlarımın emalına razılığımı verirəm,
-                                                                        şərtləri oxudum və qəbul edirəm...
+                                                                        {% trans 'Məlumat təqdim etməklə, Şəxsi məlumatlar haqqında Qanuna uyğun olaraq şəxsi məlumatlarımın emalına razılığımı verirəm, şərtləri oxudum və qəbul edirəm...'%}
 
                                                                     </label>
                                                                 </div>
@@ -963,7 +950,7 @@
                                                                     </div>
                                                                     <div class="col">
                                                                         <button type="submit"
-                                                                            class="btn-orange-2">SİFARİŞ</button>
+                                                                            class="btn-orange-2"> {% trans 'SİFARİŞ'%}</button>
                                                                     </div>
                                                                 </div>
 
@@ -1337,13 +1324,13 @@
                 <div class="item-menu">
                     <div class="title">{% trans 'Our Catalog' %}</div>
                     <ul>
-                        <li><a href="{% url 'fotooboy'%}">FOTOOBOY VƏ FRESKA</a></li>
-                        <li><a href="{% url 'tablo'%}">TABLO VƏ ÇƏRÇİVƏLƏR</a></li>
-                        <li><a href="{% url 'selftablo' %}">ÖZ ŞƏKİLİNİZ İLƏ TABLO</a></li>
-                        <li><a href="{% url 'skinali' %}">SKİNALİ</a></li>
-                        <li><a href="{% url 'evdekor' %}">EV ÜÇÜN DEKOR</a></li>
-                        <li><a href="{% url 'exclusive' %}">EXCLUSİVE ƏL İŞLƏRİ</a></li>
-                    </ul>
+                        <li><a href="{% url 'fotooboy'%}">{% trans 'FOTOOBOY VƏ FRESKA' %}</a></li>
+                            <li><a href="{% url 'tablo'%}">{% trans 'TABLO VƏ ÇƏRÇİVƏLƏR' %}</a></li>
+                            <li><a href="{% url 'selftablo' %}">{% trans 'ÖZ ŞƏKİLİNİZ İLƏ TABLO' %}</a></li>
+                            <li><a href="{% url 'skinali' %}">{% trans 'SKİNALİ' %}</a></li>
+                            <li><a href="{% url 'evdekor' %}">{% trans 'EV ÜÇÜN DEKOR' %}</a></li>
+                            <li><a href="{% url 'exclusive' %}">{% trans 'EXCLUSİVE ƏL İŞLƏRİ' %}</a></li>
+                        </ul>  
                 </div>
                 <div class="item-menu">
                     <div class="title">{% trans 'Shotcuts' %}</div>
@@ -1699,14 +1686,15 @@
     <script type="text/javascript" src="/static/components/simplerating/js/web/default.js"></script>
     <script
         type="text/javascript">if (typeof jQuery == "undefined") { document.write("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js\" type=\"text/javascript\"><\/script>"); }</script>
-    <script>
-
+    <script  type="text/javascript">
+        var matr = 0
         {% for i in material %}
-        function myFunction{ { i.idd } } () {
+        function myFunction{{ i.idd }} () {
             var width = document.getElementById('dataWidthh').value
             var height = document.getElementById('dataHeightt').value
             console.log(width);
             document.getElementById("pricee").innerHTML = parseInt({{ i.price }})* parseInt(width) * parseInt(height) / 10000;
+            matr = parseInt({{ i.price }})
 }
         {% endfor %}
     </script>
@@ -1731,8 +1719,10 @@
 
         function myFunction() {
             myCropper.setAspectRatio(parseInt(document.getElementById('dataWidthh').value) / parseInt(document.getElementById('dataHeightt').value));
-            console.log(myCropper.getCropBoxData())
-
+            console.log(document.getElementById('dataWidthh').value)
+            var width = document.getElementById('dataWidthh').value
+            var height = document.getElementById('dataHeightt').value
+            document.getElementById("pricee").innerHTML = matr* parseInt(width) * parseInt(height) / 10000;
 
 
         }

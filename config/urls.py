@@ -61,6 +61,7 @@ urlpatterns += i18n_patterns(
     path('', home_views.index, name="shipping"),
     path('category/<int:id>/', product_views.main_category, name="category"),
     path('product/<int:id>/', product_views.product, name="product"),
+    path('producttablo/<int:id>/', product_views.producttablo, name="producttablo"),
 
 
     path('ordernow/', shop_views.order_now, name="order_now"),

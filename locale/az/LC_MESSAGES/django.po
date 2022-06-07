@@ -18,6 +18,83 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "FOTOOBOY VƏ FRESKA"
+msgstr "FOTOOBOY VƏ FRESKA"
+msgid "TABLO VƏ ÇƏRÇİVƏLƏR"
+msgstr "TABLO VƏ ÇƏRÇİVƏLƏR"
+msgid "ÖZ ŞƏKİLİNİZ İLƏ TABLO"
+msgstr "ÖZ ŞƏKİLİNİZ İLƏ TABLO"
+msgid "SKİNALİ"
+msgstr "SKİNALİ"
+msgid "EV ÜÇÜN DEKOR"
+msgstr "EV ÜÇÜN DEKOR"
+msgid "EXCLUSİVE ƏL İŞLƏRİ"
+msgstr "EXCLUSİVE ƏL İŞLƏRİ"
+
+
+msgid "Made by"
+msgstr "Hazırladı"
+ 
+msgid "В избранное"
+msgstr "Seçilmişlərə at" 
+
+msgid "Foto divar kağızları, freskalar və kətan şəkilləri əldə etmək mümkündür! Aşağı qiymətlər və Azərbaycanın bütün şəhərlərinə çatdırılma: Bakı, Sumqayıt, Gəncə, Qəbələ, Şamaxı, Quba, Lənkaran, Astara, Qazax, Şuşa, Mingəçevir, İsmayıllı, Kürdəmir, Ucar, Balakən, Zaqatala"
+msgstr "Foto divar kağızları, freskalar və kətan şəkilləri əldə etmək mümkündür! Aşağı qiymətlər və Azərbaycanın bütün şəhərlərinə çatdırılma: Bakı, Sumqayıt, Gəncə, Qəbələ, Şamaxı, Quba, Lənkaran, Astara, Qazax, Şuşa, Mingəçevir, İsmayıllı, Kürdəmir, Ucar, Balakən, Zaqatala"
+
+
+
+
+ 
+
+msgid "SÜRƏTLİ SİFARİŞ"
+msgstr "SÜRƏTLİ SİFARİŞ"
+msgid "DİVAR KAĞIZI"
+msgstr "DİVAR KAĞIZI"
+msgid "TABLO SİFARİŞİ"
+msgstr "TABLO SİFARİŞİ"
+
+msgid "Ölçünü seçin"
+msgstr "Ölçünü seçin"
+msgid "Eni"
+msgstr "Eni"
+msgid "Hündürlük"
+msgstr "Hündürlük"
+msgid "Formanı özünüz təyin edin."
+msgstr "Formanı özünüz təyin edin."
+msgid "Şəkildə sizin ölçüyə uyğun sahə görünəcək, onu mərkəzdən kənara keçirə bilərsiniz. Ancaq bu işi dizaynerlərimizə həvalə etmək daha yaxşıdır - onlar bütün təsviri ölçülərinizə uyğunlaşdırmağa çalışacaqlar ki, nisbətlər pozulmasın."
+msgstr "Şəkildə sizin ölçüyə uyğun sahə görünəcək, onu mərkəzdən kənara keçirə bilərsiniz. Ancaq bu işi dizaynerlərimizə həvalə etmək daha yaxşıdır - onlar bütün təsviri ölçülərinizə uyğunlaşdırmağa çalışacaqlar ki, nisbətlər pozulmasın."
+msgid "Обрезать"
+msgstr "Kəs"
+msgid "Вместить все"
+msgstr "Ölçüyə uyğunlaşdır"
+msgid "Material seçin"
+msgstr "Material seçin"
+msgid "Sifariş məbləği"
+msgstr "Sifariş məbləği"
+msgid "Minimal sifariş məbləği 200 AZN"
+msgstr "Minimal sifariş məbləği 200 AZN"
+msgid "İNDİ SİFARİŞ EDİN"
+msgstr "İNDİ SİFARİŞ EDİN"
+msgid "ENDİRİMLƏRDƏN YARARLANIN"
+msgstr "ENDİRİMLƏRDƏN YARARLANIN"
+msgid "Ваш E-mail"
+msgstr "E-mail"
+msgid "Əlaqə məlumatlarını daxil edin."
+msgstr "Əlaqə məlumatlarını daxil edin."
+msgid "Məlumat təqdim etməklə, Şəxsi məlumatlar haqqında Qanuna uyğun olaraq şəxsi məlumatlarımın emalına razılığımı verirəm, şərtləri oxudum və qəbul edirəm..."
+msgstr "Məlumat təqdim etməklə, Şəxsi məlumatlar haqqında Qanuna uyğun olaraq şəxsi məlumatlarımın emalına razılığımı verirəm, şərtləri oxudum və qəbul edirəm..."
+msgid "SİFARİŞ"
+msgstr "SİFARİŞ"
+msgid "Dizaynerimiz sizinlə əlaqə saxlayacaq"
+msgstr "Dizaynerimiz sizinlə əlaqə saxlayacaq"
+
+msgid "Telefon nömrənizi daxil edin"
+msgstr "Telefon nömrənizi daxil edin"
+msgid "Göndərin."
+msgstr "Göndərin"
+
+
+
 #: .\templates\about.html:74 .\templates\about.html:110
 #: .\templates\about.html:370 .\templates\about.html:386
 #: .\templates\contact.html:74 .\templates\contact.html:110
