@@ -318,6 +318,8 @@
         integrity="sha512-6QxSiaKfNSQmmqwqpTNyhHErr+Bbm8u8HHSiinMEz0uimy9nu7lc/2NaXJiUJj2y4BApd5vgDjSHyLzC8nP6Ng=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <script src="https://unpkg.com/konva@8.3.5/konva.min.js"></script>
+
 </head>
 
 <body>
@@ -571,11 +573,13 @@
                                         img.onload = function () {
                                         
                                         if (img.naturalWidth > img.naturalHeight) {
-                                            document.getElementById('imagearea1inner').innerHTML += '<img style="width: 100%;" src="' + img.src + '"/>';
-                                            document.getElementById('imagearea2inner').innerHTML += '<img id="image" style="width: 100%;" src="' + img.src + '"/>';
+                                            document.getElementById('imagearea1inner').innerHTML += '<img id="realimage" style="width: 100%;" src="' + img.src + '"/>';
+                                            document.getElementById('imagearea11inner').innerHTML += '<img id="imagearea11innerimage" style="width: 100%;" src="' + img.src + '"/>';
+                                            document.getElementById('imagearea2inner').innerHTML += '<img id="realimage" style="width: 100%;" src="' + img.src + '"/>';
                                         } else if (img.naturalWidth < img.naturalHeight) {
-                                            document.getElementById('imagearea1inner').innerHTML += '<img style="width: 50%;" src="' + img.src + '"/>';
-                                            document.getElementById('imagearea2inner').innerHTML += '<img id="image" style="width: 50%;" src="' + img.src + '"/>';
+                                            document.getElementById('imagearea1inner').innerHTML += '<img  id="realimage" style="width: 50%;" src="' + img.src + '"/>';
+                                            document.getElementById('imagearea11inner').innerHTML += '<img  id="imagearea11innerimage" style="width: 50%;" src="' + img.src + '"/>';
+                                            document.getElementById('imagearea2inner').innerHTML += '<img id="realimage" style="width: 50%;" src="' + img.src + '"/>';
                                         } else {
                                         orientation = 'even';
                                         }
@@ -598,34 +602,27 @@
                                              
                                         </div>
                                     </div>
+                                    
 
 
-                                    <div class="imgf" id="imagearea2" style="opacity: 0;position: absolute;" >
+                                    <div class="imgf" id="container" style="opacity: 0;display: none;    width: 100%;" >
 
 
                                         <div id="imagearea2inner" style="text-align:center;">
                                             
                                         </div>
                                     </div>
+
+                                    <div class="imgf" id="imagearea11" style="opacity: 0;position:absolute;    width: 100%;" >
+
+
+                                        <div id="imagearea11inner" style="text-align:center;">
+                                            
+                                        </div>
+                                    </div>
                                     
  
-                                    <div class="imgf" id="imagearea3" style="display:none;">
-
-
-                                        <div id="fitimage" style=" text-align: center; height: 401px; ">
-                                        </div>
-                                    </div>
-
-                                    <div class="imgf" id="imagearea4" style="display:none;">
-
-
-                                        <div id="imagearea4inner" style="text-align:center;">
-                                            <img id="fittedimage" style="width: 100%;"
-                                                src="{{product.images.first.image.url}}"
-                                                alt="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru"
-                                                title="Фотообои Тайга и птицы - заказать в интернет-магазине Photostena.ru">
-                                        </div>
-                                    </div>
+                                   
 
 
                                     {% endif %}
@@ -704,13 +701,13 @@
                                             <div class="type-product">
                                                 <div class="title-item">1. Formanı seçin</div>
                                                 <div class="wrrp">
-                                                    <input type="radio" 2="" name="type-product" id="type-product-banner" data-name="Стандарт" class="rb-type-product" value="0">
-                                                    <label for="type-product-banner" data-price="0" data-name="Стандарт">
+                                                    <input type="radio"  checked="checked" name="type-product" id="type-product-banner" data-name="Стандарт" class="rb-type-product" value="0">
+                                                    <label for="type-product-banner" data-price="0" data-name="Стандарт" onclick="showStandart()">
                                                         <svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#posterflat"></use></svg>
                                                         <div class="title">Standart</div>
                                                     </label>
-                                                    <input type="radio" checked="checked" name="type-product" id="type-product-module" data-name="Модульные" class="rb-type-product" value="0">
-                                                    <label for="type-product-module" data-price="0" data-name="Модульные">
+                                                    <input type="radio"  name="type-product" id="type-product-module" data-name="Модульные" class="rb-type-product" value="0">
+                                                    <label for="type-product-module" data-price="0" data-name="Модульные"  onclick="showModular()">
                                                         <svg class="icon"><use xlink:href="/assets/template/svg/sprite.svg#modulflat"></use></svg>
                                                         <div class="title">Modulyar</div>
                                                     </label>
@@ -1716,7 +1713,22 @@
     <script>
 
 
+        function showStandart() {
+            var imagearea1 = document.getElementById("imagearea1");
+            var container = document.getElementById("container");
 
+            imagearea1.style="display:block !important;";
+            container.style="display:none !important";
+            console.log("show standart")
+        }
+        function showModular() {
+            var imagearea1 = document.getElementById("imagearea1");
+            var container = document.getElementById("container");
+
+            imagearea1.style="display:none !important;";
+            container.style="display:block !important";
+            console.log("show showModular")
+        }
 
 
         var image = document.getElementById('image');
@@ -1795,6 +1807,175 @@
         });
 
     </script>
+
+<script>
+    function getImgSize(imgSrc){
+            var myImg = document.querySelector("#imagearea11innerimage");
+            var currWidth = myImg.clientWidth;
+            var currHeight = myImg.clientHeight;
+   
+    }
+</script>
+    <script>
+        var myImg = document.querySelector("#imagearea11innerimage");
+        var currWidthh = myImg.clientWidth;
+        var currHeighth = myImg.clientHeight;
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+  
+        var stage = new Konva.Stage({
+          container: 'container',
+          width: width,
+          height: 500,
+        });
+        var imageObj2  = new Image();
+        var yoda2 = new Konva.Image({
+            x: 0,
+            y: 0,
+            image: imageObj2,
+            height: 200
+          });
+          imageObj2.src = '{{product.images.first.image.url}}';
+
+
+
+        var bglayer = new Konva.Layer();
+        
+         var imageObj  = new Image();
+         imageObj.onload = function () {
+           var yoda = new Konva.Image({
+             x: 0,
+             y: 0,
+             image: imageObj,
+             width: 820,
+             height: 610.08,
+           });
+   
+           // add the shape to the layer
+           bglayer.add(yoda);
+         };
+         imageObj.src = '{% static 'bg2.jpg'%}';
+
+         var layer = new Konva.Layer();
+       
+
+
+
+         var group11 = new Konva.Group({
+            clip: {
+              x: 80,
+              y: 40,
+              width: 150,
+              height: 430,
+              
+            },
+            draggable: false,
+          });
+          
+          var group22 = new Konva.Group({
+            clip: {
+              x: 250,
+              y: 40,
+              width: 150,
+              height: 430,
+            },
+            draggable: false,
+          });
+          var group33 = new Konva.Group({
+            clip: {
+              x: 420,
+              y: 40,
+              width: 150,
+              height: 430,
+            },
+            draggable: false,
+          });
+          
+          var group44 = new Konva.Group({
+            clip: {
+              x: 590,
+              y: 40,
+              width: 150,
+              height: 430,
+            },
+            draggable: false,
+          });
+          
+          var imageObj11  = new Image();
+         imageObj11.onload = function () {
+           var yoda11 = new Konva.Image({
+             x: 0,
+             y: 0,
+             image: imageObj11, 
+             width: currWidthh,
+             height: currHeighth
+           });
+   
+           // add the shape to the layer
+		    group11.add(yoda11); 
+         };
+		 imageObj11.src = '{{product.images.first.image.url}}';
+		 
+	    var imageObj22  = new Image();
+         imageObj22.onload = function () {
+           var yoda22 = new Konva.Image({
+             x: 0,
+             y: 0,
+             image: imageObj22, 
+             width: currWidthh,
+             height: currHeighth
+           });
+   
+           // add the shape to the layer 
+			group22.add(yoda22);
+         };
+		 imageObj22.src = '{{product.images.first.image.url}}';	 
+
+
+         var imageObj33  = new Image();
+         imageObj33.onload = function () {
+           var yoda33 = new Konva.Image({
+             x: 0,
+             y: 0,
+             image: imageObj33, 
+             width: currWidthh,
+             height: currHeighth
+           });
+   
+           // add the shape to the layer 
+			group33.add(yoda33);
+         };
+		 imageObj33.src = '{{product.images.first.image.url}}';	
+
+
+         var imageObj44  = new Image();
+         imageObj44.onload = function () {
+           var yoda44 = new Konva.Image({
+             x: 0,
+             y: 0,
+             image: imageObj44, 
+             width: currWidthh,
+             height: currHeighth
+           });
+   
+           // add the shape to the layer 
+			group44.add(yoda44);
+         };
+		 imageObj44.src = '{{product.images.first.image.url}}';	
+          layer.add(group11); 
+	     layer.add(group22);
+         layer.add(group33);
+         layer.add(group44);
+         
+  
+       
+  
+        // add the layer to the stage
+        stage.add(bglayer);
+        stage.add(layer)
+       
+        
+      </script>
 
 
 </body>
