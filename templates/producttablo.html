@@ -1871,6 +1871,17 @@
             },
             draggable: false,
           });
+          var rect11 = new Konva.Rect({
+            x: 80,
+            y: 40,
+            width: 150,
+            height: 430,
+            fill:'red',
+              shadowColor: 'black',
+              shadowBlur: 10,
+              shadowOffset: { x: 10, y: 10 },
+              shadowOpacity: 0.5,
+          });
           
           var group22 = new Konva.Group({
             clip: {
@@ -1881,6 +1892,17 @@
             },
             draggable: false,
           });
+          var rect22 = new Konva.Rect({
+            x: 250,
+            y: 40,
+            width: 150,
+            height: 430,
+            fill:'red',
+              shadowColor: 'black',
+              shadowBlur: 10,
+              shadowOffset: { x: 10, y: 10 },
+              shadowOpacity: 0.5,
+          });
           var group33 = new Konva.Group({
             clip: {
               x: 420,
@@ -1889,6 +1911,17 @@
               height: 430,
             },
             draggable: false,
+          });
+          var rect33 = new Konva.Rect({
+            x: 420,
+              y: 40,
+              width: 150,
+              height: 430,
+              fill:'red',
+              shadowColor: 'black',
+              shadowBlur: 10,
+              shadowOffset: { x: 10, y: 10 },
+              shadowOpacity: 0.5,
           });
           
           var group44 = new Konva.Group({
@@ -1899,6 +1932,17 @@
               height: 430,
             },
             draggable: false,
+          });
+          var rect44 = new Konva.Rect({
+            x: 590,
+              y: 40,
+              width: 150,
+              height: 430,
+              fill:'red',
+              shadowColor: 'black',
+              shadowBlur: 10,
+              shadowOffset: { x: 10, y: 10 },
+              shadowOpacity: 0.5,
           });
           
           var imageObj11  = new Image();
@@ -1962,6 +2006,10 @@
 			group44.add(yoda44);
          };
 		 imageObj44.src = '{{product.images.first.image.url}}';	
+         layer.add(rect11); 
+	     layer.add(rect22);
+         layer.add(rect33);
+         layer.add(rect44);
           layer.add(group11); 
 	     layer.add(group22);
          layer.add(group33);
