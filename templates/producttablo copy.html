@@ -1,5 +1,4 @@
 {% load static i18n %}
-{% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage">
 
@@ -159,17 +158,6 @@
             display:none !important;
         }
     </style>
-    <style>
-        @media only screen and (max-width: 600px) {
-   
-    footer .social {
-        padding: 0;
-        margin-top: 33px !important;
-    }
-     
-    }	
-        
-        </style>
 
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -340,13 +328,7 @@
 <body>
 
     <header class="header">
-        {% if LANGUAGE_CODE == 'en'%}
-    <div class="top-promo" style="background-image: url({% static 'images/en/topbannerr.png'%}	)"></div>
-    {% elif LANGUAGE_CODE == 'az'%}
-    <div class="top-promo" style="background-image: url({% static 'images/az/topbannerr.png'%}	)"></div>
-    {% elif LANGUAGE_CODE == 'ru'%}
-    <div class="top-promo" style="background-image: url({% static 'images/ru/topbannerr.png'%}	)"></div>
-    {% endif%}
+        <div class="top-promo" style="background-image: url({% static 'images/topbannerr.png'%}	)"></div>
 
         <div class="top-line clearfix">
             <div class="container">
@@ -816,9 +798,9 @@
                                                     <div class="type-module">
                                                         <div class="title-item">Тип модулей</div>
                                                         <div class="wrrp clearfix">
-                                                            <input type="radio" name="type-module" id="type-module-1" checked="checked" value="vertical" onclick="vertical()">
+                                                            <input type="radio" name="type-module" id="type-module-1" checked="checked" value="vertical">
                                                             <label for="type-module-1" class="btn-size" style="background-image: url(/static/type1.png)"></label>
-                                                            <input type="radio" name="type-module" id="type-module-2" value="horizontal" onclick="horizontal()">
+                                                            <input type="radio" name="type-module" id="type-module-2" value="horizontal">
                                                             <label for="type-module-2" class="btn-size" style="background-image: url(/static/type2.png)"></label>
                                                         </div>
                                                     </div>
@@ -840,39 +822,39 @@
                                                     <div class="wrrp-personal-size" id="size-modules">
                                                         <div class="item " id="module1size" style="display: block;">
                                                             <label for="module-1">Modul 1</label>
-                                                            <input type="text" id="module-1w" data-module-id="0" name="width" placeholder="sm"   title="Ширина">
+                                                            <input type="text" id="module-1w" data-module-id="0" name="width" value="150"  title="Ширина">
                                                             <div class="x">x</div>
-                                                            <input type="text" data-module-id="0" name="height" id="module-1h" placeholder="sm"   title="Высота">
+                                                            <input type="text" data-module-id="0" name="height" id="module-1h" value="430"  title="Высота">
                                                         </div>
                                                         <div class="item " id="module2size" style="display: block;">
                                                             <label for="module-2">Modul 2</label>
-                                                            <input type="text" id="module-2w" data-module-id="1" name="width" placeholder="sm"   title="Ширина">
+                                                            <input type="text" id="module-2w" data-module-id="1" name="width" value="150"  title="Ширина">
                                                             <div class="x">x</div>
-                                                            <input type="text" data-module-id="1" name="height" id="module-2h" placeholder="sm"  title="Высота">
+                                                            <input type="text" data-module-id="1" name="height" id="module-2h" value="430"  title="Высота">
                                                         </div>
                                                         <div class="item " id="module3size" style="display: block;">
                                                             <label for="module-3">Modul 3</label>
-                                                            <input type="text" id="module-3w" data-module-id="2" name="width" placeholder="sm"  title="Ширина">
+                                                            <input type="text" id="module-3w" data-module-id="2" name="width" value="150"  title="Ширина">
                                                             <div class="x">x</div>
-                                                            <input type="text" name="height" data-module-id="2" id="module-3h" placeholder="sm"  title="Высота">
+                                                            <input type="text" name="height" data-module-id="2" id="module-3h" value="430"  title="Высота">
                                                         </div>
                                                         <div class="item " id="module4size" style="display: block;">
                                                             <label for="module-4">Modul 4</label>
-                                                            <input type="text" id="module-4w" data-module-id="3" name="width" placeholder="sm"  title="Ширина">
+                                                            <input type="text" id="module-4w" data-module-id="3" name="width" value="150"  title="Ширина">
                                                             <div class="x">x</div>
-                                                            <input type="text" name="height" data-module-id="3" id="module-4h" placeholder="sm"  title="Высота">
+                                                            <input type="text" name="height" data-module-id="3" id="module-4h" value="430"  title="Высота">
                                                         </div>
                                                         <div class="item displaynone" id="module5size" style="display: block;">
                                                             <label for="module-5">Modul 5</label>
-                                                            <input type="text" id="module-5w" data-module-id="3" name="width" placeholder="sm"  title="Ширина">
+                                                            <input type="text" id="module-5w" data-module-id="3" name="width" value="150"  title="Ширина">
                                                             <div class="x">x</div>
-                                                            <input type="text" name="height" data-module-id="3" id="module-5h" placeholder="sm"  title="Высота">
+                                                            <input type="text" name="height" data-module-id="3" id="module-5h" value="430"  title="Высота">
                                                         </div>
                                                         <div class="item displaynone" id="module6size" style="display: block;">
                                                             <label for="module-4">Modul 6</label>
-                                                            <input type="text" id="module-6w" data-module-id="3" name="width" placeholder="sm"  title="Ширина">
+                                                            <input type="text" id="module-6w" data-module-id="3" name="width" value="150"  title="Ширина">
                                                             <div class="x">x</div>
-                                                            <input type="text" name="height" data-module-id="3" id="module-6h" placeholder="sm"  title="Высота">
+                                                            <input type="text" name="height" data-module-id="3" id="module-6h" value="430"  title="Высота">
                                                         </div>
                                                        
                                                     </div>
@@ -1753,13 +1735,7 @@
 
             modulayarlari.classList.toggle("displaynone");
         }
-
-        function horizontal() {
-            threePilehorizontal();
-        }
-        function vertical() {
-            threePile();
-        }
+        
 
 
         var image = document.getElementById('image');
@@ -1855,245 +1831,98 @@
         else if(moduleCount===6){sixPile();console.log("moduleCount 6");}
 
 }
-let pileCount = 4;
 function upModuleCount(){
     console.log("moduleCount 3");
     var moduleCount = document.getElementById("moduleCount").value;
     document.getElementById("moduleCount").value = parseInt(moduleCount)+1;
-    if(parseInt(moduleCount)+1===2){pileCount=2;twoPile();console.log("moduleCount 2");
+    if(parseInt(moduleCount)+1===2){twoPile();console.log("moduleCount 2");
     }
-        else if(parseInt(moduleCount)+1===3){pileCount=3;threePile();console.log("moduleCount 3");
+        else if(parseInt(moduleCount)+1===3){threePile();console.log("moduleCount 3");
         document.getElementById("module3size").classList.remove('displaynone');
     }
-        else if(parseInt(moduleCount)+1===4){pileCount=4;fourPile();console.log("moduleCount 4");
+        else if(parseInt(moduleCount)+1===4){fourPile();console.log("moduleCount 4");
         document.getElementById("module3size").classList.remove('displaynone');
         document.getElementById("module4size").classList.remove('displaynone');
         }
-        else if(parseInt(moduleCount)+1===5){pileCount=5;fivePile();console.log("moduleCount 5");
+        else if(parseInt(moduleCount)+1===5){fivePile();console.log("moduleCount 5");
         document.getElementById("module3size").classList.remove('displaynone');
         document.getElementById("module4size").classList.remove('displaynone');
         document.getElementById("module5size").classList.remove('displaynone');    
     }
-        else if(parseInt(moduleCount)+1===6){pileCount=6;sixPile();console.log("moduleCount 6");
+        else if(parseInt(moduleCount)+1===6){sixPile();console.log("moduleCount 6");
         document.getElementById("module3size").classList.remove('displaynone');
         document.getElementById("module4size").classList.remove('displaynone');
         document.getElementById("module5size").classList.remove('displaynone');
         document.getElementById("module6size").classList.remove('displaynone');
         }
 }
-
 function downModuleCount(){
     console.log("moduleCount 3");
     var moduleCount = document.getElementById("moduleCount").value;
     document.getElementById("moduleCount").value = parseInt(moduleCount)-1;
-    if(parseInt(moduleCount)-1===2){pileCount=2;twoPile();console.log("moduleCount 2");
+    if(parseInt(moduleCount)-1===2){twoPile();console.log("moduleCount 2");
     document.getElementById("module3size").classList.add('displaynone');
     document.getElementById("module4size").classList.add('displaynone');
     document.getElementById("module5size").classList.add('displaynone');
     document.getElementById("module6size").classList.add('displaynone');}
-        else if(parseInt(moduleCount)-1===3){pileCount=3;threePile();console.log("moduleCount 3");
+        else if(parseInt(moduleCount)-1===3){threePile();console.log("moduleCount 3");
         document.getElementById("module4size").classList.add('displaynone');
         document.getElementById("module5size").classList.add('displaynone');
         document.getElementById("module6size").classList.add('displaynone');}
-        else if(parseInt(moduleCount)-1===4){pileCount=4;fourPile();console.log("moduleCount 4");
+        else if(parseInt(moduleCount)-1===4){fourPile();console.log("moduleCount 4");
         document.getElementById("module5size").classList.add('displaynone');
         document.getElementById("module6size").classList.add('displaynone');}
-        else if(parseInt(moduleCount)-1===5){pileCount=5;fivePile();console.log("moduleCount 5");
+        else if(parseInt(moduleCount)-1===5){fivePile();console.log("moduleCount 5");
         document.getElementById("module6size").classList.add('displaynone');
 }
-        else if(parseInt(moduleCount)-1===6){pileCount=6;sixPile();console.log("moduleCount 6")}
+        else if(parseInt(moduleCount)-1===6){sixPile();console.log("moduleCount 6")}
 }
 
 
 
 document.getElementById('moduleCount').addEventListener('change', function() {
-    if(this.value==='2'){pileCount=2;twoPile();console.log("moduleCount 2xx");}
-        else if(this.value==='3'){pileCount=3;threePile();console.log("moduleCount 3xx")}
-        else if(this.value==='4'){pileCount=4;fourPile();console.log("moduleCount 4xx")}
-        else if(this.value==='5'){pileCount=5;fivePile();console.log("moduleCount 5xx")}
-        else if(this.value==='6'){pileCount=6;sixPile();console.log("moduleCount 6xx")}
+    console.log('You selected: ', this.value);
+    if(this.value==='2'){twoPile();console.log("moduleCount 2xx");}
+        else if(this.value==='3'){threePile();console.log("moduleCount 3xx")}
+        else if(this.value==='4'){fourPile();console.log("moduleCount 4xx")}
+        else if(this.value==='5'){fivePile();console.log("moduleCount 5xx")}
+        else if(this.value==='6'){sixPile();console.log("moduleCount 6xx")}
   });
 
-  
+  let modul1height = 430
+  let modul1width = 150
   let oldTwoPile1X = 240
   let oldTwoPile1Y = 410
 
   let oldTwoPile2X = 40
   let oldTwoPile2Y = 40
-
-  let modul1height = 430
-  let modul1width = 150
-  let modul1width3 = 150
-  let modul1width4 = 150
-  let modul1width5 = 130
-  let modul1width6 = 100
   document.getElementById('module-1h').addEventListener('change', function() {
+      console.log('You selected in twhopile: ', this.value);
       modul1height = parseInt(this.value)
-      if(pileCount===2){twoPile()}
-      else if(pileCount===3){threePile()}
-      else if(pileCount===4){fourPile()}
-      else if(pileCount===5){fivePile()}
-      else if(pileCount===6){sixPile()}
-      
+      twoPile()
     });
 
     document.getElementById('module-1w').addEventListener('change', function() {
+        console.log('You selected in twhopile: ', this.value);
         modul1width = parseInt(this.value)
-        modul1width3 = parseInt(this.value)
-        modul1width4 = parseInt(this.value)
-        modul1width5 = parseInt(this.value)
-        modul1width6 = parseInt(this.value)
-        if(pileCount===2){twoPile()}
-      else if(pileCount===3){threePile()}
-      else if(pileCount===4){fourPile()}
-      else if(pileCount===5){fivePile()}
-      else if(pileCount===6){sixPile()}
+        twoPile()
       });
 
 
-let modul2height = 430
+      let modul2height = 430
   let modul2width = 150
-  let modul2width3 = 150
-  let modul2width4 = 150
-  let modul2width5 = 130
-  let modul2width6 = 100
   document.getElementById('module-2h').addEventListener('change', function() {
+      console.log('You selected in twhopile: ', this.value);
       modul2height = parseInt(this.value)
-      if(pileCount===2){twoPile()}
-      else if(pileCount===3){threePile()}
-      else if(pileCount===4){fourPile()}
-      else if(pileCount===5){fivePile()}
-      else if(pileCount===6){sixPile()}
+      twoPile()
     });
 
     document.getElementById('module-2w').addEventListener('change', function() {
+        console.log('You selected in twhopile: ', this.value);
         modul2width = parseInt(this.value)
-        modul2width3 = parseInt(this.value)
-        modul2width4 = parseInt(this.value)
-        modul2width5 = parseInt(this.value)
-        modul2width6 = parseInt(this.value)
-        if(pileCount===2){twoPile()}
-        else if(pileCount===3){threePile()}
-        else if(pileCount===4){fourPile()}
-        else if(pileCount===5){fivePile()}
-        else if(pileCount===6){sixPile()}
+        twoPile()
       });
-
-
-
-  let modul3height = 430
-  let modul3width = 150
-  let modul3width3 = 150
-  let modul3width4 = 150
-  let modul3width5 = 130
-  let modul3width6 = 100
-  document.getElementById('module-3h').addEventListener('change', function() {
-    modul3height = parseInt(this.value) 
-    if(pileCount===2){twoPile()}
-      else if(pileCount===3){threePile()}
-      else if(pileCount===4){fourPile()}
-      else if(pileCount===5){fivePile()}
-      else if(pileCount===6){sixPile()}
-    });
-
-    document.getElementById('module-3w').addEventListener('change', function() {
-        modul3width = parseInt(this.value)
-        modul3width3 = parseInt(this.value)
-        modul3width4 = parseInt(this.value)
-        modul3width5 = parseInt(this.value)
-        modul3width6 = parseInt(this.value)
-        ;console.log("ppileCount - ");console.log(pileCount);
-        if(pileCount===2){twoPile()}
-        else if(pileCount===3){threePile()}
-        else if(pileCount===4){fourPile();console.log("pileCount - ");console.log(pileCount)}
-        else if(pileCount===5){fivePile()}
-        else if(pileCount===6){sixPile()}
-      });
-
-      let modul4height = 430
-      let modul4width = 150
-      let modul4width3 = 150
-      let modul4width4 = 150
-      let modul4width5 = 130
-      let modul4width6 = 100
-      document.getElementById('module-4h').addEventListener('change', function() {
-        modul4height = parseInt(this.value)
-        if(pileCount===2){twoPile()}
-          else if(pileCount===3){threePile()}
-          else if(pileCount===4){fourPile()}
-          else if(pileCount===5){fivePile()}
-          else if(pileCount===6){sixPile()}
-        });
     
-        document.getElementById('module-4w').addEventListener('change', function() {
-            modul4width = parseInt(this.value)
-        modul4width3 = parseInt(this.value)
-        modul4width4 = parseInt(this.value)
-        modul4width5 = parseInt(this.value)
-        modul4width6 = parseInt(this.value)
-            if(pileCount===2){twoPile()}
-            else if(pileCount===3){threePile()}
-            else if(pileCount===4){fourPile()}
-            else if(pileCount===5){fivePile()}
-            else if(pileCount===6){sixPile()}
-          });
-let modul5height = 430
-let modul5width = 150
-let modul5width3 = 150
-let modul5width4 = 150
-let modul5width5 = 130
-let modul5width6 = 100
-document.getElementById('module-5h').addEventListener('change', function() {
-    modul5height = parseInt(this.value)
-    if(pileCount===2){twoPile()}
-    else if(pileCount===3){threePile()}
-    else if(pileCount===4){fourPile()}
-    else if(pileCount===5){fivePile()}
-    else if(pileCount===6){sixPile()}
-});
-
-document.getElementById('module-5w').addEventListener('change', function() {
-    modul5width = parseInt(this.value)
-        modul5width3 = parseInt(this.value)
-        modul5width4 = parseInt(this.value)
-        modul5width5 = parseInt(this.value)
-        modul5width6 = parseInt(this.value)
-    if(pileCount===2){twoPile()}
-    else if(pileCount===3){threePile()}
-    else if(pileCount===4){fourPile()}
-    else if(pileCount===5){fivePile()}
-    else if(pileCount===6){sixPile()}
-              });
-
-let modul6height = 430
-let modul6width = 150
-let modul6width3 = 150
-let modul6width4 = 150
-let modul6width5 = 150
-let modul6width6 = 100
-document.getElementById('module-6h').addEventListener('change', function() {
-    modul6height = parseInt(this.value)
-    console.log("pileCount");
-    console.log(pileCount);
-    if(pileCount===2){twoPile()}
-    else if(pileCount===3){threePile()}
-    else if(pileCount===4){fourPile()}
-    else if(pileCount===5){fivePile()}
-    else if(pileCount===6){sixPile()}
-});
-
-document.getElementById('module-6w').addEventListener('change', function() {
-    modul6width = parseInt(this.value)
-        modul6width3 = parseInt(this.value)
-        modul6width4 = parseInt(this.value)
-        modul6width5 = parseInt(this.value)
-        modul6width6 = parseInt(this.value)
-    if(pileCount===2){twoPile()}
-    else if(pileCount===3){threePile()}
-    else if(pileCount===4){fourPile()}
-    else if(pileCount===5){fivePile()}
-    else if(pileCount===6){sixPile()}
-            });
 </script>
     <script>
         var myImg = document.querySelector("#imagearea11innerimage");
@@ -2290,7 +2119,7 @@ document.getElementById('module-6w').addEventListener('change', function() {
                x: 140,
                y: 40,
                width: modul1width3,
-                 height: modul1height,
+               height: modul1height,
                fill:'white',
                  shadowColor: 'black',
                  shadowBlur: 10,
@@ -2311,7 +2140,7 @@ document.getElementById('module-6w').addEventListener('change', function() {
                x: 310,
                y: 40,
                width: modul2width3,
-                 height: modul2height,
+               height: modul2height,
                fill:'white',
                  shadowColor: 'black',
                  shadowBlur: 10,
@@ -2342,9 +2171,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
               });
              
              var imageObj11  = new Image();
-             var yoda11 = 0;
             imageObj11.onload = function () {
-               yoda11 = new Konva.Image({
+              var yoda11 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj11, 
@@ -2358,9 +2186,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
             imageObj11.src = '{{product.images.first.image.url}}';
             
            var imageObj22  = new Image();
-           var yoda22 = 0;
             imageObj22.onload = function () {
-               yoda22 = new Konva.Image({
+              var yoda22 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj22, 
@@ -2374,9 +2201,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
             imageObj22.src = '{{product.images.first.image.url}}';	 
    
             var imageObj33  = new Image();
-            var yoda33 =0;
             imageObj33.onload = function () {
-               yoda33 = new Konva.Image({
+              var yoda33 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj33, 
@@ -2396,39 +2222,33 @@ document.getElementById('module-6w').addEventListener('change', function() {
             layer.add(group22);
             layer.add(group33);
       
-            
+            group11.on('dragmove', function () {
+                rect11.position({x: group11.x()+240,y: group11.y()+40
+                  });
+                  yoda11.position({x: 0-group11.x(),y: 0 -group11.y()
+                  });
+                  layer.draw()
+              });
+              group22.on('dragmove', function () {
+                rect22.position({x: group22.x()+240,y: group22.y()+40
+                  });
+                  yoda22.position({x: 0-group22.x(),y: 0 -group22.y()
+                  });
+                  layer.draw()
+              });
+              group33.on('dragmove', function () {
+                rect33.position({x: group33.x()+240,y: group33.y()+40
+                  });
+                  yoda33.position({x: 0-group33.x(),y: 0 -group33.y()
+                  });
+                  layer.draw()
+              });
      
           
      
            // add the layer to the stage
            stage.add(bglayer);
            stage.add(layer)
-
-           group11.on('dragmove', function () {
-               console.log("----===---")
-               console.log(yoda11.x())
-            rect11.position({x: group11.x()+140,y: group11.y()+40
-              });
-              yoda11.position({x: 0-group11.x(),y: 0 -group11.y()
-              });
-              console.log("----===---")
-               console.log(yoda11.x())
-              layer.draw()
-          });
-          group22.on('dragmove', function () {
-            rect22.position({x: group22.x()+310,y: group22.y()+40
-              });
-              yoda22.position({x: 0-group22.x(),y: 0 -group22.y()
-              });
-              layer.draw()
-          });
-          group33.on('dragmove', function () {
-            rect33.position({x: group33.x()+480,y: group33.y()+40
-              });
-              yoda33.position({x: 0-group33.x(),y: 0 -group33.y()
-              });
-              layer.draw()
-          });
         }
         function fourPile(){
             console.log("fourPile")
@@ -2451,7 +2271,7 @@ document.getElementById('module-6w').addEventListener('change', function() {
                x: 80,
                y: 40,
                width: modul1width4,
-                 height: modul1height,
+               height: modul1height,
                fill:'white',
                  shadowColor: 'black',
                  shadowBlur: 10,
@@ -2472,7 +2292,7 @@ document.getElementById('module-6w').addEventListener('change', function() {
                x: 250,
                y: 40,
                width: modul2width4,
-                 height: modul2height,
+               height: modul2height,
                fill:'white',
                  shadowColor: 'black',
                  shadowBlur: 10,
@@ -2522,9 +2342,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
              });
              
              var imageObj11  = new Image();
-             var yoda11 = 0;
             imageObj11.onload = function () {
-               yoda11 = new Konva.Image({
+              var yoda11 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj11, 
@@ -2538,9 +2357,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
             imageObj11.src = '{{product.images.first.image.url}}';
             
            var imageObj22  = new Image();
-           var yoda22 = 0;
             imageObj22.onload = function () {
-               yoda22 = new Konva.Image({
+              var yoda22 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj22, 
@@ -2555,9 +2373,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
    
    
             var imageObj33  = new Image();
-            var yoda33 = 0;
             imageObj33.onload = function () {
-               yoda33 = new Konva.Image({
+              var yoda33 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj33, 
@@ -2572,9 +2389,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
    
    
             var imageObj44  = new Image();
-            var yoda44 = 0;
             imageObj44.onload = function () {
-               yoda44 = new Konva.Image({
+              var yoda44 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj44, 
@@ -2596,28 +2412,28 @@ document.getElementById('module-6w').addEventListener('change', function() {
             layer.add(group44);
             
             group11.on('dragmove', function () {
-                rect11.position({x: group11.x()+80,y: group11.y()+40
+                rect11.position({x: group11.x()+240,y: group11.y()+40
                   });
                   yoda11.position({x: 0-group11.x(),y: 0 -group11.y()
                   });
                   layer.draw()
               });
               group22.on('dragmove', function () {
-                rect22.position({x: group22.x()+250,y: group22.y()+40
+                rect22.position({x: group22.x()+240,y: group22.y()+40
                   });
                   yoda22.position({x: 0-group22.x(),y: 0 -group22.y()
                   });
                   layer.draw()
               });
               group33.on('dragmove', function () {
-                rect33.position({x: group33.x()+420,y: group33.y()+40
+                rect33.position({x: group33.x()+240,y: group33.y()+40
                   });
                   yoda33.position({x: 0-group33.x(),y: 0 -group33.y()
                   });
                   layer.draw()
               });
               group44.on('dragmove', function () {
-                rect44.position({x: group44.x()+590,y: group44.y()+40
+                rect44.position({x: group44.x()+240,y: group44.y()+40
                   });
                   yoda44.position({x: 0-group44.x(),y: 0 -group44.y()
                   });
@@ -2650,7 +2466,7 @@ document.getElementById('module-6w').addEventListener('change', function() {
                x: 40,
                y: 40,
                width: modul1width5,
-                 height: modul1height,
+               height: modul1height,
                fill:'white',
                  shadowColor: 'black',
                  shadowBlur: 10,
@@ -2671,7 +2487,7 @@ document.getElementById('module-6w').addEventListener('change', function() {
                x: 185,
                y: 40,
                width: modul2width5,
-                 height: modul2height,
+               height: modul2height,
                fill:'white',
                  shadowColor: 'black',
                  shadowBlur: 10,
@@ -2742,9 +2558,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
               
              
              var imageObj11  = new Image();
-             var yoda11 = 0;
             imageObj11.onload = function () {
-               yoda11 = new Konva.Image({
+              var yoda11 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj11, 
@@ -2758,9 +2573,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
             imageObj11.src = '{{product.images.first.image.url}}';
             
            var imageObj22  = new Image();
-           var yoda22 = 0;
             imageObj22.onload = function () {
-               yoda22 = new Konva.Image({
+              var yoda22 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj22, 
@@ -2775,9 +2589,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
    
    
             var imageObj33  = new Image();
-            var yoda33 = 0;
             imageObj33.onload = function () {
-               yoda33 = new Konva.Image({
+              var yoda33 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj33, 
@@ -2792,9 +2605,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
    
    
             var imageObj44  = new Image();
-            var yoda44 = 0;
             imageObj44.onload = function () {
-               yoda44 = new Konva.Image({
+              var yoda44 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj44, 
@@ -2807,9 +2619,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
             };
             imageObj44.src = '{{product.images.first.image.url}}';	
             var imageObj55  = new Image();
-            var yoda55 = 0;
             imageObj55.onload = function () {
-               yoda55 = new Konva.Image({
+              var yoda55 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj55, 
@@ -2833,35 +2644,35 @@ document.getElementById('module-6w').addEventListener('change', function() {
             layer.add(group55);
             
             group11.on('dragmove', function () {
-                rect11.position({x: group11.x()+40,y: group11.y()+40
+                rect11.position({x: group11.x()+240,y: group11.y()+40
                   });
                   yoda11.position({x: 0-group11.x(),y: 0 -group11.y()
                   });
                   layer.draw()
               });
               group22.on('dragmove', function () {
-                rect22.position({x: group22.x()+185,y: group22.y()+40
+                rect22.position({x: group22.x()+240,y: group22.y()+40
                   });
                   yoda22.position({x: 0-group22.x(),y: 0 -group22.y()
                   });
                   layer.draw()
               });
               group33.on('dragmove', function () {
-                rect33.position({x: group33.x()+330,y: group33.y()+40
+                rect33.position({x: group33.x()+240,y: group33.y()+40
                   });
                   yoda33.position({x: 0-group33.x(),y: 0 -group33.y()
                   });
                   layer.draw()
               });
               group44.on('dragmove', function () {
-                rect44.position({x: group44.x()+475,y: group44.y()+40
+                rect44.position({x: group44.x()+240,y: group44.y()+40
                   });
                   yoda44.position({x: 0-group44.x(),y: 0 -group44.y()
                   });
                   layer.draw()
               });
               group55.on('dragmove', function () {
-                rect55.position({x: group55.x()+620,y: group55.y()+40
+                rect55.position({x: group55.x()+240,y: group55.y()+40
                   });
                   yoda55.position({x: 0-group55.x(),y: 0 -group55.y()
                   });
@@ -2894,7 +2705,7 @@ document.getElementById('module-6w').addEventListener('change', function() {
                x: 40,
                y: 40,
                width: modul1width6,
-                 height: modul1height,
+               height: modul1height,
                fill:'white',
                  shadowColor: 'black',
                  shadowBlur: 10,
@@ -2915,7 +2726,7 @@ document.getElementById('module-6w').addEventListener('change', function() {
                x: 160,
                y: 40,
                width: modul2width6,
-                 height: modul2height,
+               height: modul2height,
                fill:'white',
                  shadowColor: 'black',
                  shadowBlur: 10,
@@ -3007,9 +2818,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
               });
              
              var imageObj11  = new Image();
-             var yoda11 = 0;
             imageObj11.onload = function () {
-               yoda11 = new Konva.Image({
+              var yoda11 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj11, 
@@ -3023,9 +2833,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
             imageObj11.src = '{{product.images.first.image.url}}';
             
            var imageObj22  = new Image();
-           var yoda22 = 0;
             imageObj22.onload = function () {
-               yoda22 = new Konva.Image({
+              var yoda22 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj22, 
@@ -3040,9 +2849,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
    
    
             var imageObj33  = new Image();
-            var yoda33 = 0;
             imageObj33.onload = function () {
-               yoda33 = new Konva.Image({
+              var yoda33 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj33, 
@@ -3057,9 +2865,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
    
    
             var imageObj44  = new Image();
-            var yoda44 = 0;
             imageObj44.onload = function () {
-               yoda44 = new Konva.Image({
+              var yoda44 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj44, 
@@ -3072,9 +2879,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
             };
             imageObj44.src = '{{product.images.first.image.url}}';	
             var imageObj55  = new Image();
-            var yoda55 = 0;
             imageObj55.onload = function () {
-               yoda55 = new Konva.Image({
+              var yoda55 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj55, 
@@ -3087,9 +2893,8 @@ document.getElementById('module-6w').addEventListener('change', function() {
             };
             imageObj55.src = '{{product.images.first.image.url}}';	
             var imageObj66  = new Image();
-            var yoda66 = 0;
             imageObj66.onload = function () {
-               yoda66 = new Konva.Image({
+              var yoda66 = new Konva.Image({
                 x: 0,
                 y: 0,
                 image: imageObj66, 
@@ -3115,42 +2920,42 @@ document.getElementById('module-6w').addEventListener('change', function() {
             layer.add(group66);
             
             group11.on('dragmove', function () {
-                rect11.position({x: group11.x()+40,y: group11.y()+40
+                rect11.position({x: group11.x()+240,y: group11.y()+40
                   });
                   yoda11.position({x: 0-group11.x(),y: 0 -group11.y()
                   });
                   layer.draw()
               });
               group22.on('dragmove', function () {
-                rect22.position({x: group22.x()+160,y: group22.y()+40
+                rect22.position({x: group22.x()+240,y: group22.y()+40
                   });
                   yoda22.position({x: 0-group22.x(),y: 0 -group22.y()
                   });
                   layer.draw()
               });
               group33.on('dragmove', function () {
-                rect33.position({x: group33.x()+280,y: group33.y()+40
+                rect33.position({x: group33.x()+240,y: group33.y()+40
                   });
                   yoda33.position({x: 0-group33.x(),y: 0 -group33.y()
                   });
                   layer.draw()
               });
               group44.on('dragmove', function () {
-                rect44.position({x: group44.x()+400,y: group44.y()+40
+                rect44.position({x: group44.x()+240,y: group44.y()+40
                   });
                   yoda44.position({x: 0-group44.x(),y: 0 -group44.y()
                   });
                   layer.draw()
               });
               group55.on('dragmove', function () {
-                rect55.position({x: group55.x()+520,y: group55.y()+40
+                rect55.position({x: group55.x()+240,y: group55.y()+40
                   });
                   yoda55.position({x: 0-group55.x(),y: 0 -group55.y()
                   });
                   layer.draw()
               });
               group66.on('dragmove', function () {
-                rect66.position({x: group66.x()+640,y: group66.y()+40
+                rect66.position({x: group66.x()+240,y: group66.y()+40
                   });
                   yoda66.position({x: 0-group66.x(),y: 0 -group66.y()
                   });
@@ -3161,170 +2966,6 @@ document.getElementById('module-6w').addEventListener('change', function() {
            // add the layer to the stage
            stage.add(bglayer);
            stage.add(layer)
-        }
-
-
-
-        function threePilehorizontal(){
-            console.log("twoPile")
-            var layer = new Konva.Layer();
-       
-
-
-
-            var group11 = new Konva.Group({
-               clip: {
-                 x: 140,
-                 y: 40,
-                 width: 420,
-                 height: 100,
-                 
-               },
-               draggable: true,
-             });
-             var rect11 = new Konva.Rect({
-               x: 140,
-               y: 40,
-               width: 420,
-                 height: 100,
-               fill:'white',
-                 shadowColor: 'black',
-                 shadowBlur: 10,
-                 shadowOffset: { x: 10, y: 10 },
-                 shadowOpacity: 0.5,
-             });
-             
-             var group22 = new Konva.Group({
-               clip: {
-                 x: 140,
-                 y: 170,
-                 width: 420,
-                 height: 100,
-               },
-               draggable: true,
-             });
-             var rect22 = new Konva.Rect({
-               x: 140,
-               y: 170,
-               width: 420,
-                 height: 100,
-               fill:'white',
-                 shadowColor: 'black',
-                 shadowBlur: 10,
-                 shadowOffset: { x: 10, y: 10 },
-                 shadowOpacity: 0.5,
-             });
-
-
-             var group33 = new Konva.Group({
-                clip: {
-                  x: 140,
-                  y: 300,
-                  width: 420,
-                  height: 100,
-                },
-                draggable: true,
-              });
-              var rect33 = new Konva.Rect({
-                x: 140,
-                  y: 300,
-                  width: 420,
-                  height: 100,
-                  fill:'white',
-                  shadowColor: 'black',
-                  shadowBlur: 10,
-                  shadowOffset: { x: 10, y: 10 },
-                  shadowOpacity: 0.5,
-              });
-             
-             var imageObj11  = new Image();
-             var yoda11 = 0;
-            imageObj11.onload = function () {
-               yoda11 = new Konva.Image({
-                x: 0,
-                y: 0,
-                image: imageObj11, 
-                width: currWidthh,
-                height: currHeighth,
-              });
-      
-              // add the shape to the layer
-               group11.add(yoda11); 
-            };
-            imageObj11.src = '{{product.images.first.image.url}}';
-            
-           var imageObj22  = new Image();
-           var yoda22 = 0;
-            imageObj22.onload = function () {
-               yoda22 = new Konva.Image({
-                x: 0,
-                y: 0,
-                image: imageObj22, 
-                width: currWidthh,
-                height: currHeighth
-              });
-      
-              // add the shape to the layer 
-               group22.add(yoda22);
-            };
-            imageObj22.src = '{{product.images.first.image.url}}';	 
-   
-            var imageObj33  = new Image();
-            var yoda33 =0;
-            imageObj33.onload = function () {
-               yoda33 = new Konva.Image({
-                x: 0,
-                y: 0,
-                image: imageObj33, 
-                width: currWidthh,
-                height: currHeighth
-              });
-      
-              // add the shape to the layer 
-               group33.add(yoda33);
-            };
-            imageObj33.src = '{{product.images.first.image.url}}';	
-            layer.add(rect11); 
-            layer.add(rect22);
-            layer.add(rect33);
-    
-             layer.add(group11); 
-            layer.add(group22);
-            layer.add(group33);
-      
-            
-     
-          
-     
-           // add the layer to the stage
-           stage.add(bglayer);
-           stage.add(layer)
-
-           group11.on('dragmove', function () {
-               console.log("----===---")
-               console.log(yoda11.x())
-            rect11.position({x: group11.x()+140,y: group11.y()+40
-              });
-              yoda11.position({x: 0-group11.x(),y: 0 -group11.y()
-              });
-              console.log("----===---")
-               console.log(yoda11.x())
-              layer.draw()
-          });
-          group22.on('dragmove', function () {
-            rect22.position({x: group22.x()+140,y: group22.y()+170
-              });
-              yoda22.position({x: 0-group22.x(),y: 0 -group22.y()
-              });
-              layer.draw()
-          });
-          group33.on('dragmove', function () {
-            rect33.position({x: group33.x()+140,y: group33.y()+300
-              });
-              yoda33.position({x: 0-group33.x(),y: 0 -group33.y()
-              });
-              layer.draw()
-          });
         }
       </script>
 
