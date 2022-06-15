@@ -124,7 +124,7 @@ msgstr "Отправлять"
 #: .\templates\success.html:74 .\templates\success.html:110
 #: .\templates\success.html:335 .\templates\success.html:351
 msgid "Contact"
-msgstr "Контакт"
+msgstr "Контакты"
 
 #: .\templates\about.html:75 .\templates\about.html:367
 #: .\templates\about.html:383 .\templates\contact.html:75
@@ -144,7 +144,7 @@ msgstr "Контакт"
 #: .\templates\success.html:75 .\templates\success.html:332
 #: .\templates\success.html:348
 msgid "Stores"
-msgstr "Филиали"
+msgstr "Филиалы"
 
 #: .\templates\about.html:76 .\templates\contact.html:76
 #: .\templates\filter.html:76 .\templates\filterotaq.html:76
@@ -153,7 +153,7 @@ msgstr "Филиали"
 #: .\templates\product.html:76 .\templates\search.html:76
 #: .\templates\success.html:76
 msgid "Shipping and Payment"
-msgstr "Доставка"
+msgstr "Доставка и оплата"
 
 #: .\templates\about.html:78 .\templates\about.html:218
 #: .\templates\about.html:366 .\templates\about.html:382
