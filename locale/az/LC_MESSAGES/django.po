@@ -639,7 +639,9 @@ msgstr "Endirimlərdən yararlanın"
 msgid "Search Results"
 msgstr "Axtarış nəticələri"
 
- 
+msgid "Made by"
+msgstr "Hazırladı"
+
 msgid "Your message received"
 msgstr "Mesajınız qəbul olundu"
 

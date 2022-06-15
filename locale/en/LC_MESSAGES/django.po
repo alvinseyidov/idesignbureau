@@ -53,6 +53,9 @@ msgstr "WALLPAPER"
 msgid "Your message received"
 msgstr "Your message received"
 
+msgid "Made by"
+msgstr "Made by"
+
 msgid "Ölçünü seçin"
 msgstr "Choose Size"
 msgid "Eni"
