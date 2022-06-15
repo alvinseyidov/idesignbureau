@@ -50,7 +50,8 @@ msgstr "FAST ORDER"
 msgid "DİVAR KAĞIZI"
 msgstr "WALLPAPER"
  
-
+msgid "Your message received"
+msgstr "Your message received"
 
 msgid "Ölçünü seçin"
 msgstr "Choose Size"

@@ -639,11 +639,9 @@ msgstr "Endirimlərdən yararlanın"
 msgid "Search Results"
 msgstr "Axtarış nəticələri"
 
-#: .\templates\success.html:216
-#, fuzzy
-#| msgid "Your Message"
+ 
 msgid "Your message received"
-msgstr "Mesajınız"
+msgstr "Mesajınız qəbul olundu"
 
 #: .\venv\Lib\site-packages\click\_termui_impl.py:496
 #, python-brace-format
