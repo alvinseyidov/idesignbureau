@@ -33,8 +33,7 @@ msgstr "EXCLUSIVE"
 
 
 
-msgid "Made by"
-msgstr "Made by"
+ 
 
 msgid "В избранное"
 msgstr "Add To Favorites" 

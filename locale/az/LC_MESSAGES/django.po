@@ -31,9 +31,7 @@ msgstr "EV ÜÇÜN DEKOR"
 msgid "EXCLUSİVE ƏL İŞLƏRİ"
 msgstr "EXCLUSİVE ƏL İŞLƏRİ"
 
-
-msgid "Made by"
-msgstr "Hazırladı"
+ 
  
 msgid "В избранное"
 msgstr "Seçilmişlərə at" 
