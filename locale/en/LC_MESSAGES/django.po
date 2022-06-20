@@ -18,18 +18,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "FOTOOBOY VƏ FRESKA"
-msgstr "WALLPAPERS"
-msgid "TABLO VƏ ÇƏRÇİVƏLƏR"
-msgstr "POSTERS, FRAMES"
-msgid "ÖZ ŞƏKİLİNİZ İLƏ TABLO"
-msgstr "POSTER WITH PHOTO"
+msgid "FOTOOBOY/ŞƏKİLLƏR/TAVAN"
+msgstr "PHOTO WALLPAPERS/POSTERS"
+
+msgid "DİVAR KAĞIZI"
+msgstr "ROLL WALLPAPER"
+
+msgid "3D DİVAR PANOLARI"
+msgstr "3D WALL PANELS"
+
 msgid "SKİNALİ"
 msgstr "SKINALI"
-msgid "EV ÜÇÜN DEKOR"
-msgstr "HOME DECOR"
-msgid "EXCLUSİVE ƏL İŞLƏRİ"
-msgstr "EXCLUSIVE"
+
+msgid "DEKOR"
+msgstr "DECOR"
+
+msgid "MEBEL"
+msgstr "FURNITURE"
+
+msgid "XALÇALAR"
+msgstr "CARPETS"
 
 
 

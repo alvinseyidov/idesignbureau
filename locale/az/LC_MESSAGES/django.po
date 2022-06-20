@@ -18,18 +18,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "FOTOOBOY VƏ FRESKA"
-msgstr "FOTOOBOY VƏ FRESKA"
-msgid "TABLO VƏ ÇƏRÇİVƏLƏR"
-msgstr "TABLO VƏ ÇƏRÇİVƏLƏR"
-msgid "ÖZ ŞƏKİLİNİZ İLƏ TABLO"
-msgstr "ÖZ ŞƏKİLİNİZ İLƏ TABLO"
+msgid "FOTOOBOY/ŞƏKİLLƏR/TAVAN"
+msgstr "FOTOOBOY/ŞƏKİLLƏR/TAVAN"
+
+msgid "DİVAR KAĞIZI"
+msgstr "DİVAR KAĞIZI"
+
+msgid "3D DİVAR PANOLARI"
+msgstr "3D DİVAR PANOLARI"
+
 msgid "SKİNALİ"
 msgstr "SKİNALİ"
-msgid "EV ÜÇÜN DEKOR"
-msgstr "EV ÜÇÜN DEKOR"
-msgid "EXCLUSİVE ƏL İŞLƏRİ"
-msgstr "EXCLUSİVE ƏL İŞLƏRİ"
+
+msgid "DEKOR"
+msgstr "DEKOR"
+
+msgid "MEBEL"
+msgstr "MEBEL"
+
+msgid "XALÇALAR"
+msgstr "XALÇALAR"
 
  
  

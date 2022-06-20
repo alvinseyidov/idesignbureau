@@ -20,18 +20,26 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-msgid "FOTOOBOY VƏ FRESKA"
-msgstr "ФОТООБОИ"
-msgid "TABLO VƏ ÇƏRÇİVƏLƏR"
-msgstr "КАРТИНЫ И ПОСТЕРЫ"
-msgid "ÖZ ŞƏKİLİNİZ İLƏ TABLO"
-msgstr "ПОСТЕРЫ"
+msgid "FOTOOBOY/ŞƏKİLLƏR/TAVAN"
+msgstr "ФОТООБОИ/КАРТИНЫ/ПОТОЛКИ"
+
+msgid "DİVAR KAĞIZI"
+msgstr "РУЛОННЫЕ ОБОИ"
+
+msgid "3D DİVAR PANOLARI"
+msgstr "3D ПАНЕЛИ ДЛЯ СТЕН"
+
 msgid "SKİNALİ"
 msgstr "СКИНАЛИ"
-msgid "EV ÜÇÜN DEKOR"
-msgstr "ДЕКОР ДЛЯ ДОМА"
-msgid "EXCLUSİVE ƏL İŞLƏRİ"
-msgstr "ЭКСКЛЮЗИВ"
+
+msgid "DEKOR"
+msgstr "ДЕКОРЫ"
+
+msgid "MEBEL"
+msgstr "МЕБЕЛЬ"
+
+msgid "XALÇALAR"
+msgstr "КОВРЫ"
  
 
 msgid "Made by"
