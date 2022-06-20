@@ -22,7 +22,7 @@ msgid "FOTOOBOY/ŞƏKİLLƏR/TAVAN"
 msgstr "PHOTO WALLPAPERS/POSTERS"
 
 msgid "DİVAR KAĞIZI"
-msgstr "ROLL WALLPAPER"
+msgstr "WALLPAPER"
 
 msgid "3D DİVAR PANOLARI"
 msgstr "3D WALL PANELS"
@@ -54,8 +54,7 @@ msgid "TABLO SİFARİŞİ"
 msgstr "POSTER"
 msgid "SÜRƏTLİ SİFARİŞ"
 msgstr "FAST ORDER"
-msgid "DİVAR KAĞIZI"
-msgstr "WALLPAPER"
+ 
  
 msgid "Your message received"
 msgstr "Your message received"

@@ -54,8 +54,7 @@ msgstr "Foto divar kağızları, freskalar və kətan şəkilləri əldə etmək
 
 msgid "SÜRƏTLİ SİFARİŞ"
 msgstr "SÜRƏTLİ SİFARİŞ"
-msgid "DİVAR KAĞIZI"
-msgstr "DİVAR KAĞIZI"
+ 
 msgid "TABLO SİFARİŞİ"
 msgstr "TABLO SİFARİŞİ"
 

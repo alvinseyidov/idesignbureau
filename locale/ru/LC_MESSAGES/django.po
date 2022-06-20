@@ -57,8 +57,7 @@ msgstr "Ваше сообщение получено"
 
 msgid "SÜRƏTLİ SİFARİŞ"
 msgstr "БЫСТРЫЙ ЗАКАЗ"
-msgid "DİVAR KAĞIZI"
-msgstr "ОБОИ"
+ 
 msgid "TABLO SİFARİŞİ"
 msgstr "ПОСТЕР"
 
