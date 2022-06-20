@@ -21,7 +21,7 @@ msgstr ""
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
 msgid "FOTOOBOY/ŞƏKİLLƏR/TAVAN"
-msgstr "ФОТООБОИ/КАРТИНЫ/ПОТОЛКИ"
+msgstr "ФОТООБОИ /КАРТИНЫ /ПОТОЛКИ"
 
 msgid "DİVAR KAĞIZI"
 msgstr "РУЛОННЫЕ ОБОИ"
