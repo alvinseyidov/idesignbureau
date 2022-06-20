@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "FOTOOBOY/ŞƏKİLLƏR/TAVAN"
-msgstr "WALLPAPERS/POSTERS"
+msgstr "PHOTO WALLPAPERS /POSTERS"
 
 msgid "DİVAR KAĞIZI"
 msgstr "WALLPAPER"
