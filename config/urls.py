@@ -9,6 +9,7 @@ from skinali import views as skinali_views
 from tablo import views as tablo_views
 from selftablo import views as selftablo_views
 from exclusive import views as exclusive_views
+from carpet import views as carpet_views
 from evdekor import views as evdekor_views
 from product import views as product_views
 from django.conf.urls.i18n import i18n_patterns
@@ -40,6 +41,9 @@ urlpatterns += i18n_patterns(
     path('cat/selftablo/modular/', selftablo_views.modular, name="selftablomodular"),
     path('cat/selftablo/calculator/', selftablo_views.calculator, name="selftablocalculator"),
 
+
+    path('cat/carpets/', carpet_views.products, name="carpets"),
+    path('cat/carpets/<int:id>/', carpet_views.product, name="carpet"),
 
     path('cat/exclusive/', home_views.exclusive, name="exclusive"),
     path('cat/exclusive/portfolio/', exclusive_views.portfolio, name="exclusiveportfolio"),

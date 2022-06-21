@@ -35,7 +35,8 @@ INSTALLED_APPS = [
     'selftablo',
     'skinali',
     'tablo',
-    'shop'
+    'shop',
+    'carpet'
 ]
 
 MIDDLEWARE = [
