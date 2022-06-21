@@ -10,6 +10,7 @@ from tablo import views as tablo_views
 from selftablo import views as selftablo_views
 from exclusive import views as exclusive_views
 from carpet import views as carpet_views
+from furniture import views as furniture_views
 from evdekor import views as evdekor_views
 from product import views as product_views
 from django.conf.urls.i18n import i18n_patterns
@@ -44,6 +45,9 @@ urlpatterns += i18n_patterns(
 
     path('cat/carpets/', carpet_views.products, name="carpets"),
     path('cat/carpets/<int:id>/', carpet_views.product, name="carpet"),
+
+    path('cat/furnitures/', furniture_views.products, name="furnitures"),
+    path('cat/furnitures/<int:id>/', furniture_views.product, name="furniture"),
 
     path('cat/exclusive/', home_views.exclusive, name="exclusive"),
     path('cat/exclusive/portfolio/', exclusive_views.portfolio, name="exclusiveportfolio"),
