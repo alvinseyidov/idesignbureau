@@ -586,7 +586,7 @@ figure.effect-apollo:hover figcaption::before {
 			
         	<div class="link-quick link-popup-quick" data-fancybox data-src="#popup_quick{{p.id}}"
         	    data-id="10566" 
-    		    data-price="{% if p.discount_price != null %}{{p.discount_price}} azn/м²{%else%}{{p.price}} azn/м²{%endif%}" 
+    		    data-price="{% if p.discount_price != null %}{{p.discount_price}} azn{%else%}{{p.price}} azn{%endif%}" 
     		    data-image="{{p.images.first.image.url}}" 
     		    data-name="{{p.name}}" 
     		    data-article="07709" 
@@ -614,11 +614,11 @@ figure.effect-apollo:hover figcaption::before {
 			{% endif %}
 					
 					{% if p.discount_price != null %}
-                    <div class="price">{{p.discount_price}} azn/м²</div>
+                    <div class="price">{{p.discount_price}} azn</div>
 					
-                    <div class="old-price">{{p.price}} azn/м²</div>
+                    <div class="old-price">{{p.price}} azn</div>
 					{% else %}
-					<div class="price">{{p.price}} azn/м²</div>
+					<div class="price">{{p.price}} azn</div>
 					{% endif %}
                                 
             </div>
