@@ -230,36 +230,57 @@
     		<ul class="clearfix">
 			
                 <li class="item_menu " style="    width: 160px !important;">
-        		    <a class="main-link" href="{% url 'fotooboy' %}" style=" font-family: system-ui; font-weight: 600;  font-size:12px;   padding: 0 11px 2px 51px;">
-					<span class="icon oboi"></span>{% trans 'FOTOOBOY/ŞƏKİLLƏR/TAVAN'%}</a>
+        		    <a class="main-link" href="{% url 'fotooboy' %}" style=" font-family: system-ui; font-weight: 600;  font-size:12px;   padding: 0 11px 2px 0;">
+					<div>
+                        <img src="{% static 'images/wallpaper.png'%}" style="width: 36px;margin-right: 15px;margin-left: 8px;"/>
+                    </div>
+                    <div> {% trans 'FOTOOBOY/ŞƏKİLLƏR/TAVAN'%}</div></a>
                     
         		</li>
 				<li class="item_menu " style="    width: 160px !important;">
-        		    <a class="main-link" href="{% url 'tablo' %}" style=" font-family: system-ui; font-weight: 600;     font-size:12px; padding: 0 11px 2px 51px;">
-					<span class="icon freski"></span>{% trans 'DİVAR KAĞIZI'%}</a>
+        		    <a class="main-link" href="{% url 'tablo' %}" style=" font-family: system-ui; font-weight: 600;     font-size:12px; padding: 0 11px 2px 0;">
+                        <div>
+                            <img src="{% static 'images/wall.png'%}" style="width: 36px;margin-right: 15px;margin-left: 8px;"/>
+                        </div>
+                        <div> {% trans 'DİVAR KAĞIZI'%} </div></a>
                     
         		</li>
 				<li class="item_menu " style="    width: 160px !important;">
-        		    <a class="main-link" href="{% url 'selftablo' %}" style=" font-family: system-ui; font-weight: 600;    font-size:12px;  padding: 0 11px 2px 51px;">
-					<span class="icon poster"></span>{% trans '3D DİVAR PANOLARI'%}</a>
+        		    <a class="main-link" href="{% url 'selftablo' %}" style=" font-family: system-ui; font-weight: 600;    font-size:12px;  padding: 0 11px 2px 0;">
+                        <div>
+                            <img src="{% static 'images/3d.png'%}" style="width: 36px;margin-right: 15px;margin-left: 8px;"/>
+                        </div>
+                        {% trans '3D DİVAR PANOLARI'%}</a>
                     
         		</li>
 				<li class="item_menu " style="    width: 160px !important;">
-        		    <a class="main-link" href="{% url 'skinali' %}" style=" font-family: system-ui; font-weight: 600;    font-size:12px;  padding: 0 11px 2px 51px;">
-					<span class="icon photo"></span>{% trans 'SKİNALİ'%}</a>
+        		    <a class="main-link" href="{% url 'skinali' %}" style=" font-family: system-ui; font-weight: 600;    font-size:12px;  padding: 0 11px 2px 0;">
+                        <div>
+                            <img src="{% static 'images/kitchen.png'%}" style="width: 36px;margin-right: 15px;margin-left: 8px;"/>
+                        </div>
+                        {% trans 'SKİNALİ'%}</a>
                     
         		</li>
 				<li class="item_menu " style="    width: 160px !important;">
-        		    <a class="main-link" href="{% url 'evdekor' %}" style=" font-family: system-ui; font-weight: 600;    font-size:12px;  padding: 0 11px 2px 51px;">
-					<span class="icon curtains"></span>{% trans 'DEKOR'%}</a>
+        		    <a class="main-link" href="{% url 'evdekor' %}" style=" font-family: system-ui; font-weight: 600;    font-size:12px;  padding: 0 11px 2px 0;">
+                        <div>
+                            <img src="{% static 'images/decor.png'%}" style="width: 36px;margin-right: 15px;margin-left: 8px;"/>
+                        </div>
+                        {% trans 'DEKOR'%}</a>
         		</li>
                 <li class="item_menu " style="    width: 160px !important;">
-        		    <a class="main-link" href="{% url 'evdekor' %}" style=" font-family: system-ui; font-weight: 600;     font-size:12px; padding: 0 11px 2px 51px;">
-					<span class="icon curtains"></span>{% trans 'MEBEL'%}</a>
+        		    <a class="main-link" href="{% url 'evdekor' %}" style=" font-family: system-ui; font-weight: 600;     font-size:12px; padding: 0 11px 2px 0;">
+                        <div>
+                            <img src="{% static 'images/couch.png'%}" style="width: 36px;margin-right: 15px;margin-left: 8px;"/>
+                        </div>
+                        {% trans 'MEBEL'%}</a>
         		</li>
 				<li class="item_menu " style="    width: 160px !important;">
-        		    <a class="main-link" href="{% url 'exclusive' %}" style=" font-family: system-ui; font-weight: 600;    font-size:12px;  padding: 0 11px 2px 51px;">
-					<span class="icon pillow"></span>{% trans 'XALÇALAR'%}</a>
+        		    <a class="main-link" href="{% url 'carpets' %}" style=" font-family: system-ui; font-weight: 600;    font-size:12px;  padding: 0 11px 2px 0;">
+                        <div>
+                            <img src="{% static 'images/carpet.png'%}" style="width: 36px;margin-right: 15px;margin-left: 8px;"/>
+                        </div>
+                        {% trans 'XALÇALAR'%}</a>
                     
         		</li>
         		
@@ -335,7 +356,7 @@
 			<li class="category"><a href="{% url 'evdekor'%}" class="dropdown" style=" font-size: 16px; ">
 				<span class="icon curtains"></span>{% trans 'EV ÜÇÜN DEKOR'%}</a>
 		    </li>
-			<li class="category"><a href="{% url 'exclusive'%}" class="dropdown" style=" font-size: 16px; ">
+			<li class="category"><a href="{% url 'carpets'%}" class="dropdown" style=" font-size: 16px; ">
 				<span class="icon pillow"></span>{% trans 'EXCLUSİVE ƏL İŞLƏRİ'%}</a>
 		    </li>
 			<table style=" float: right; margin: 8px 0 0 0; ">
@@ -835,7 +856,7 @@ figure.effect-apollo:hover figcaption::before {
                         <li><a href="{% url 'selftablo' %}">{% trans 'ÖZ ŞƏKİLİNİZ İLƏ TABLO' %}</a></li>
                         <li><a href="{% url 'skinali' %}">{% trans 'SKİNALİ' %}</a></li>
                         <li><a href="{% url 'evdekor' %}">{% trans 'EV ÜÇÜN DEKOR' %}</a></li>
-                        <li><a href="{% url 'exclusive' %}">{% trans 'EXCLUSİVE ƏL İŞLƏRİ' %}</a></li>
+                        <li><a href="{% url 'carpets' %}">{% trans 'EXCLUSİVE ƏL İŞLƏRİ' %}</a></li>
                     </ul>      
 	        </div>
 	        <div class="item-menu">
