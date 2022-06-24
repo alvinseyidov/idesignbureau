@@ -33,7 +33,7 @@ def product(request, id):
     general = General.objects.all()[0]
     clients = Client.objects.all()
     socials = Social.objects.all()
-    products = Product.objects.all()[:10]
+    products = Product.objects.all()
     colors = Color.objects.all()
     rooms = Room.objects.all()
     interiers = Interier.objects.all()
