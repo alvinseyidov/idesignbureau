@@ -6,9 +6,6 @@ from home import views as home_views
 from shop import views as shop_views
 from fotooboy import views as fotooboy_views
 from skinali import views as skinali_views
-from tablo import views as tablo_views
-from selftablo import views as selftablo_views
-from exclusive import views as exclusive_views
 from carpet import views as carpet_views
 from furniture import views as furniture_views
 from evdekor import views as evdekor_views
@@ -31,17 +28,8 @@ urlpatterns += i18n_patterns(
     path('cat/fotooboy/glue/', fotooboy_views.fotooboyglue, name="fotooboyglue"),
     path('cat/fotooboy/portfolio/', fotooboy_views.fotooboyportfolio, name="fotooboyportfolio"),
     path('cat/fotooboy/customers/', fotooboy_views.fotooboycustomers, name="fotooboycustomers"),
-
-    path('cat/tablo/', home_views.tablo, name="tablo"),
-    path('cat/tablo/ketan/', tablo_views.ketan, name="tabloketan"),
-    path('cat/tablo/modular/', tablo_views.modular, name="tablomodular"),
-    path('cat/tablo/calculator/', tablo_views.calculator, name="tablocalculator"),
-
-    path('cat/selftablo/', home_views.selftablo, name="selftablo"),
-    path('cat/selftablo/ketan/', selftablo_views.ketan, name="selftabloketan"),
-    path('cat/selftablo/modular/', selftablo_views.modular, name="selftablomodular"),
-    path('cat/selftablo/calculator/', selftablo_views.calculator, name="selftablocalculator"),
-
+ 
+ 
 
     path('cat/carpets/', carpet_views.products, name="carpets"),
     path('cat/carpets/<int:id>/', carpet_views.product, name="carpet"),
@@ -49,9 +37,7 @@ urlpatterns += i18n_patterns(
     path('cat/furnitures/', furniture_views.products, name="furnitures"),
     path('cat/furnitures/<int:id>/', furniture_views.product, name="furniture"),
 
-    path('cat/exclusive/', home_views.exclusive, name="exclusive"),
-    path('cat/exclusive/portfolio/', exclusive_views.portfolio, name="exclusiveportfolio"),
-
+ 
     path('cat/skinali/', home_views.skinali, name="skinali"),
     path('cat/skinali/portfolio/', skinali_views.portfolio, name="skinaliportfolio"),
 

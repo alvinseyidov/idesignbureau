@@ -16,24 +16,23 @@ class Tag(models.Model):
 
 class Category(models.Model):
     icon = models.FileField()
-    icon_class = models.CharField(max_length=255)
-    image = models.ImageField()
     name = models.CharField(max_length=255)
+    sort = models.IntegerField()
 
     def __str__(self):
         return self.name
 
 
+
 class SubCategory(models.Model):
     icon = models.FileField()
-    parent = models.ForeignKey("self", on_delete=models.CASCADE, related_name="subs", null=True, blank=True)
+    parent = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="subs", null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     name = models.CharField(max_length=250)
     class Meta:
         ordering=('name',)	
     def __str__(self):
         return self.name
-
 
 
 class Color(models.Model):
@@ -43,12 +42,14 @@ class Color(models.Model):
     def __str__(self):
         return self.name
 
+
 class Room(models.Model):
     name = models.CharField(max_length=255)
     icon = models.ImageField()
 
     def __str__(self):
         return self.name 
+
 
 class Product(models.Model):
     main_category = models.ForeignKey(Category, on_delete=models.SET_NULL, related_name="products", null=True, default=4)
@@ -75,6 +76,20 @@ class ProductImage(models.Model):
     image = models.ImageField()
     is_main = models.BooleanField(default=False)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="images")
+
+
+
+ 
+
+
+#-------------------------------------------------------
+
+
+
+
+
+
+ 
 
 class Interier(models.Model):
     image = models.ImageField()
