@@ -7,10 +7,6 @@ class CategoryTranslationOptions(TranslationOptions):
 translator.register(Category, CategoryTranslationOptions)
 
 
-class SubCategoryTranslationOptions(TranslationOptions):
-    fields = ('name',)
-
-translator.register(SubCategory, SubCategoryTranslationOptions)
 
 
 class RoomTranslationOptions(TranslationOptions):
