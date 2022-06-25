@@ -26,7 +26,7 @@ class Category(models.Model):
 
 class SubCategory(models.Model):
     icon = models.FileField()
-    cat = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="subs", null=True, blank=True)
+    cat = models.ForeignKey(Category, on_delete=models.SET_NULL, related_name="subs", null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     name = models.CharField(max_length=250)
     class Meta:
