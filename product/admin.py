@@ -11,9 +11,14 @@ admin.site.register(Tag)
 admin.site.register(Category)
 admin.site.register(Room)
 admin.site.register(Color)
-admin.site.register(SubCategory)
 admin.site.register(Material)
 admin.site.register(Interier)
+
+@admin.register(SubCategory)
+class SubCategoryAdmin(admin.ModelAdmin):
+    list_display = ('id','name')
+    list_editable = ('name',  )
+
 
 class ProductImageInline(admin.TabularInline):
     model = ProductImage
