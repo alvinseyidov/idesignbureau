@@ -28,11 +28,11 @@ class SubCategory(models.Model):
     icon = models.FileField()
     image = models.ImageField(null=True, blank=True)
     name = models.CharField(max_length=250)
-    cate = models.CharField(max_length=250)
     par = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True, related_name="cates")
-    
+
     class Meta:
         ordering=('name',)	
+        
     def __str__(self):
         return self.name
 
